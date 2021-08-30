@@ -1,0 +1,23 @@
+/* MAPA DE COLORES */
+
+$colores: (
+    negro: #000000,
+    blanco-f: #ffffff,
+    blanco: #e7e7e7,
+    gris: #0009,
+    rojo-oscuro: #7d1c0d,
+    terracota : #d37f53,
+    verde-1: #356b4f,
+    verde-2 : #225239,
+    verde-3: #113a26,
+); 
+
+$negro: map-get($colores, negro);
+$blanco: map-get($colores, blanco);
+$blanco-f: map-get($colores, blanco-f);
+$gris: map-get($colores, gris);
+$rojo-oscuro: map-get($colores, rojo-oscuro);
+$terracota: map-get($colores, terracota);
+$verde-1: map-get($colores, verde-1);
+$verde-2: map-get($colores, verde-2);
+$verde-3: map-get($colores, verde-3);

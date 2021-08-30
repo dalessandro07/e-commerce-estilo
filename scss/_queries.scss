@@ -1,0 +1,132 @@
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 900px) {
+    .asesoria__formulario {
+        #formulario {
+            width: 70%;
+        }
+    }
+}
+
+@media only screen and (max-width:560px) {
+    .banner {
+        #titulo__banner--size {
+            font-size: 4.5rem;
+        }
+        .banner__imagen {
+            width: 100%;
+            min-height: 64.5vh;
+            object-fit: cover;
+        }
+    }
+    .titulo {
+        .titulo__h1 {
+            font-size: 3rem;
+        }
+    }
+    .noticias__titulo {
+        .noticias__titulo--style {
+            font-size: 2.5rem;
+        }
+    }
+    .seccion__parrafo {
+        .seccion__parrafo--style {
+            font-size: 1.8rem;
+        }
+    }
+
+    .container__formulario {
+        margin: 3rem;
+        width: 88%;
+        #boton__enviar {
+            font-size: 1.4rem;
+        }
+        label, input, select, textarea, option {
+            font-size: 1.2rem;
+        }
+    }
+    .asesoria__formulario {
+        #formulario {
+            width: 90%;
+        }
+    }
+    .contenedor__404 {
+        height: 75vh;
+        .error {
+            height: 300px;
+            .error--style {
+                color: $blanco;
+                font-size: 20rem;
+            }
+        }
+        .titulo {
+            margin: 0;
+    
+            .titulo__principal, .pregunta {
+                font-size: 4rem;
+                color: $blanco;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:430px) {
+    .banner {
+        #titulo__banner--size {
+            font-size: 3.5rem;
+        }
+        .banner__imagen {
+            width: 100%;
+            min-height: 44.5vh;
+            object-fit: cover;
+        }
+    }
+    .titulo {
+        .titulo__h1 {
+            font-size: 2.6rem;
+        }
+    }
+    .noticias__titulo {
+        .noticias__titulo--style {
+            font-size: 2rem;
+        }
+    }
+    .seccion__parrafo {
+        .seccion__parrafo--style {
+            font-size: 1.6rem;
+        }
+    }
+    .container__formulario {
+        margin: 3rem;
+        width: 85%;
+        #boton__enviar {
+            font-size: 1.4rem;
+        }
+        label, input, select, textarea, option {
+            font-size: 1.2rem;
+        }
+    }
+    .asesoria__formulario {
+        #formulario {
+            width: 100%;
+        }
+    }
+    .contenedor__404 {
+        height: 75vh;
+        .error {
+            height: 250px;
+            .error--style {
+                color: $blanco;
+                font-size: 16rem;
+            }
+        }
+        .titulo {
+            margin: 0;
+    
+            .titulo__principal, .pregunta {
+                font-size: 3rem;
+                color: $blanco;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+/* MEDIDAS */
+
+$medidas: (
+    completo: 100%,
+    medio: 50%,
+    500: 500px,
+    250: 250px,
+);
+
+$completo: map-get($medidas, completo);
+$medio: map-get($medidas, medio);
+$w-250: map-get($medidas, 250);
+$h-250: map-get($medidas, 250);
