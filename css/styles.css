@@ -255,6 +255,7 @@ body .cabecera {
   z-index: 100;
   top: 0;
   right: 0;
+  opacity: .95;
 }
 
 body .cabecera .cabecera__logo {
