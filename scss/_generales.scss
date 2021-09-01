@@ -1,0 +1,211 @@
+/* ESTILOS GENERALES */
+
+/* CSS GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $fuente-lato;
+    background-color: $blanco;
+
+    /* CSS BOOTSTRAP */
+
+    .container-fluid {
+        padding: 0;
+        margin: 0;
+    }
+
+    .row {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-expand-lg {
+        flex-flow: nowrap;
+        justify-content: flex-end;
+    }
+
+    /* ESTILOS GENERALES HEADER */
+
+    .cabecera {
+        background-color: $blanco-f;
+        position: sticky;
+        z-index: 100;
+        top: 0;
+        right: 0;
+
+        .cabecera__logo {
+            width: 90px;
+            height: 90px;
+        }
+
+        .cabecera__logo:hover {
+            opacity: .8;
+        }
+
+        .cabecera__logo:active {
+            transform: translateY(6px);
+            transition: all .3s;
+        }
+    }
+
+    /* ESTILOS GENERALES NAVEGACIÓN */
+
+    .nav__lista {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+
+        .lista__item {
+            list-style-type: none;
+            margin: 0 1.6rem;
+        }
+
+        .lista__item--margin {
+            margin: 0;
+        }
+
+        .lista__item:active {
+            transform: translateY(6px);
+            transition: all .4s;
+        }
+
+        .lista__item a {
+            color: #000000;
+            opacity: .55;
+            padding: 5px;
+            font-size: 1.3rem;
+            font-weight: 500;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .lista__item a:hover {
+            opacity: 1;
+            border-bottom: 1.6px solid $negro;
+        }
+
+        #seccionActiva {
+            color: $negro;
+            opacity: 1;
+        }
+    }
+
+    .btn-secondary {
+        background: none;
+        border: none;
+        color: #000000;
+        opacity: .55;
+        padding: 5px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .dropdown-item {
+        font-size: 1.5rem;
+    }
+
+    /* ESTILOS GENERALES FOOTER */
+
+    .redes {
+        margin-top: 10rem;
+
+        .redes__container--padding {
+            padding: 0;
+
+            .titulo__h3 {
+                margin: 0 3rem;
+                color: $verde-2;
+                font-size: 1.65rem;
+                text-decoration: underline;
+            }
+        }
+
+        .redes__lista {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 1rem;
+            margin-bottom: 4rem;
+
+            $redes: (wsp: #00bb2d,
+                    fb: #3b5998,
+                    is: #c13584,
+                    msg: #0078ff,
+                );
+
+            @each $site,
+            $color in $redes {
+                .#{$site} i:hover {
+                    color: $color;
+                }
+            }
+
+            .redes__icon {
+                transition: 1s;
+                margin: 2rem 1rem 0 1rem;
+                color: $negro;
+                font-size: 3.5rem;
+                text-decoration: none;
+            }
+
+            .redes__icon:hover {
+                transform: rotate(360deg);
+            }
+        }
+
+    }
+
+    .marca {
+        margin: 0;
+        padding: 0;
+
+        .marca__contenedor--padding {
+            padding: 0;
+        }
+
+        .marca__titulo--gradient {
+            background: linear-gradient(to right, #093028, #237a57);
+        }
+
+        .marca__titulo {
+            display: block;
+            text-align: center;
+            font-family: 'ONEDAY';
+            font-size: 1.8rem;
+            padding: 12px 0 15px 0;
+            margin: 0;
+            color: #e7e7e7;
+            background-color: #2b5f44;
+            border-top: 3px solid #000;
+            word-spacing: 5px;
+
+            .marca__enlace {
+                font-family: 'ailerons';
+                font-size: 2.6rem;
+                color: #e7e7e7;
+                padding: 0;
+                opacity: .5;
+            }
+
+            .marca__enlace:hover {
+                opacity: 1;
+            }
+
+            .marca__copy {
+                position: absolute;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
