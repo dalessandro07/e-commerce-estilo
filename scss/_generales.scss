@@ -15,6 +15,15 @@ body {
 
     /* CSS BOOTSTRAP */
 
+    .navbar-toggler-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .col-xs-6 {
+        width: auto;
+    }
+
     .container-fluid {
         padding: 0;
         margin: 0;
@@ -25,14 +34,11 @@ body {
         padding: 0;
     }
 
-    .navbar-expand-lg {
-        flex-flow: nowrap;
-        justify-content: flex-end;
-    }
-
     /* ESTILOS GENERALES HEADER */
 
     .cabecera {
+        display: flex;
+        justify-content: space-between;
         background-color: $blanco-f;
         position: sticky;
         z-index: 100;
@@ -40,9 +46,14 @@ body {
         right: 0;
         opacity: .95;
 
+        .cabecera__nav {
+            display: flex;
+            justify-content: flex-end;
+        }
+
         .cabecera__logo {
-            width: 90px;
-            height: 90px;
+            width: 85px;
+            height: 85px;
         }
 
         .cabecera__logo:hover {
@@ -83,8 +94,8 @@ body {
             color: #000000;
             opacity: .55;
             padding: 5px;
-            font-size: 1.3rem;
-            font-weight: 500;
+            font-size: 1.25rem;
+            font-weight: 600;
             text-decoration: none;
             text-transform: uppercase;
         }
@@ -98,6 +109,15 @@ body {
             color: $negro;
             opacity: 1;
         }
+    }
+
+    .servicios--style {
+        color: #000000;
+        padding: 5px;
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
     }
 
     .btn-secondary {

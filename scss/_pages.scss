@@ -23,7 +23,7 @@
 
     .banner__imagen {
         width: $completo;
-        min-height: 84.5vh;
+        min-height: 87vh;
         object-fit: cover;
     }
 }
@@ -60,50 +60,54 @@
     }
 }
 
-.noticias__titulo {
-    text-align: center;
-    margin: 4rem 0;
-    color: $blanco-f;
-    background-color: $verde-2;
+#noticias {
+    padding: 0 6rem;
 
-    .noticias__titulo--style {
-        display: inline-block;
-        font-size: 3.2rem;
+    .noticias__titulo {
         text-align: center;
-        text-transform: capitalize;
-        padding: 0.7rem 3rem;
+        margin: 4rem;
+        color: $blanco-f;
+        background-color: $verde-2;
+    
+        .noticias__titulo--style {
+            display: inline-block;
+            font-size: 2.8rem;
+            word-spacing: .6rem;
+            text-align: center;
+            text-transform: capitalize;
+            padding: 0.7rem 3rem;
+        }
+    }
+
+    .seccion__parrafo {
+        display: flex;
+        align-items: center;
+    
+        .seccion__parrafo--style {
+            font-size: 2rem;
+            font-weight: 500;
+            text-align: justify;
+            line-height: 4.5rem;
+            padding: 0 4rem;
+        }
+    }
+    
+    .seccion__imagen {
+        display: flex;
+        justify-content: center;
+        height: $h-250 + 100px;
+        padding: 3rem;
+    
+        .seccion__imagen--style {
+            width: $completo - 10%;
+            height: $completo;
+            object-fit: cover;
+            outline: 3.5px solid $gris;
+        }
     }
 }
 
-.noticias__seccion {
-    margin-left: 1rem;
-}
 
-.seccion__parrafo {
-    display: flex;
-    align-items: center;
-    height: $h-250 + 200px;
-
-    .seccion__parrafo--style {
-        font-size: 2.2rem;
-        font-weight: 500;
-        text-align: justify;
-        line-height: 4.5rem;
-        padding: 0 4rem;
-    }
-}
-
-.seccion__imagen {
-    height: $h-250 + 200px;
-    padding: 3rem;
-
-    .seccion__imagen--style {
-        width: $completo;
-        height: $completo;
-        object-fit: cover;
-        outline: 3.5px solid $gris;
-    }
-}
 
 /* ESTILOS PRODUCTOS */
 
@@ -353,6 +357,7 @@
             padding: 0 1rem;
 
             img {
+                width: $completo;
                 outline: 3px solid $verde-2;
                 height: $h-250 + 15px;
                 object-fit: cover;

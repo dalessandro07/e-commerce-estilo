@@ -1,11 +1,22 @@
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 520px) and (max-width: 990px) {
     .asesoria__formulario {
         #formulario {
-            width: 70%;
+            width: 80%;
         }
     }
+
+    body {
+        .cabecera {
+            .nav__lista {
+                width: 100%;
+                justify-content: center;
+                flex-direction: row;
+            }
+        }
+    }
+    
 }
 
 @media only screen and (max-width:560px) {
@@ -15,7 +26,7 @@
         }
         .banner__imagen {
             width: 100%;
-            min-height: 64.5vh;
+            min-height: 84.5vh;
             object-fit: cover;
         }
     }
@@ -71,13 +82,14 @@
 }
 
 @media only screen and (max-width:430px) {
+
     .banner {
         #titulo__banner--size {
             font-size: 3.5rem;
         }
         .banner__imagen {
             width: 100%;
-            min-height: 44.5vh;
+            min-height: 84.5vh;
             object-fit: cover;
         }
     }
@@ -130,3 +142,13 @@
         }
     }
 }
+
+@media only screen and (max-width:335px) {
+    body {
+        .cabecera {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
