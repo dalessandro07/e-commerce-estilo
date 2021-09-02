@@ -28,86 +28,157 @@
     }
 }
 
+
 .carousel {
     width: 100%;
+    margin-bottom: 3rem;
 
     .carousel-item {
         width: 100%;
-        height: 80vh;
+        height: 70vh;
 
         img {
-            width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
 }
 
 .titulo {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+    margin: 3rem 0;
 
     .titulo__h1,
     .titulo__h2 {
-        font-size: 3.8rem;
+        font-size: 3.6rem;
+        font-family: 'poppins';
         color: $negro;
         font-weight: 600;
         letter-spacing: .5rem;
         text-align: center;
         text-transform: capitalize;
-        border-bottom: 4px solid $terracota;
+        border-bottom: 3px solid $terracota;
+    }
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 0;
+
+    .titulo__h3 {
+        font-size: 3.6rem;
+        font-family: 'poppins';
+        font-weight: 900;
+        letter-spacing: .35rem;
+        border-bottom: 3px solid $terracota;
     }
 }
 
 #noticias {
     padding: 0 6rem;
 
-    .noticias__titulo {
-        text-align: center;
-        margin: 4rem;
-        color: $blanco-f;
-        background-color: $verde-2;
-    
-        .noticias__titulo--style {
-            display: inline-block;
-            font-size: 2.8rem;
-            word-spacing: .6rem;
-            text-align: center;
-            text-transform: capitalize;
-            padding: 0.7rem 3rem;
+    .seccion__texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .seccion__etiqueta {
+            align-self: flex-start;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: $verde-2;
+            margin: 0 2rem;
+        }
+
+        .seccion__etiqueta--2 {
+            color: $madera;
+        }
+
+        .seccion__info {
+            align-self: flex-end;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: $verde-2;
+            margin: 0 2rem;
+        }
+
+        .seccion__titulo {
+            color: $negro;
+            text-decoration: none;
+            font-size: 2.6rem;
+            font-family: 'poppins';
+            padding: 0 1rem;
+            margin: .5rem 0 1rem 1rem;
+        }
+
+        .seccion__titulo:hover {
+            cursor: pointer;
+            color: $verde-4;
+            transition: color .5s;
+        }
+
+        .seccion__parrafo {
+            font-size: 1.4rem;
+            font-family: 'poppins';
+            font-weight: 500;
+            text-align: justify;
+            line-height: 2.5rem;
+            padding: 0 2rem;
         }
     }
 
-    .seccion__parrafo {
-        display: flex;
-        align-items: center;
-    
-        .seccion__parrafo--style {
-            font-size: 2rem;
-            font-weight: 500;
-            text-align: justify;
-            line-height: 4.5rem;
-            padding: 0 4rem;
-        }
+    .separacion {
+        width: 100%;
+        margin: 1.5rem 0;
     }
-    
+
     .seccion__imagen {
         display: flex;
         justify-content: center;
-        height: $h-250 + 100px;
-        padding: 3rem;
-    
+        height: $h-250;
+        padding: 1.5rem;
+
         .seccion__imagen--style {
-            width: $completo - 10%;
+            width: 40vw;
             height: $completo;
             object-fit: cover;
-            outline: 3.5px solid $gris;
+            outline: .00001px solid $gris;
+        }
+
+        .seccion__imagen--style:hover {
+            cursor: pointer;
+            opacity: .85;
+        }
+    }
+
+    .ver-mas {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        margin-top: 5rem;
+
+        .btn {
+            background-color: $verde-2;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            font-family: 'poppins';
+            font-size: 1.6rem;
+        }
+
+        .btn:hover {
+            transform: scale(1.15, 1.15);
+            transition: all .4s;
         }
     }
 }
-
-
 
 /* ESTILOS PRODUCTOS */
 
@@ -380,21 +451,11 @@
     max-width: $completo;
     max-height: $completo;
     text-align: center;
-    margin: 0;
+    margin: 1rem 0 3rem 0;
 
     .video--style {
         max-width: 80vw;
         max-height: 80vh;
-    }
-}
-
-.subtitulo {
-    margin: 5rem 0 3rem 1.5rem;
-
-    &__h2 {
-        display: inline;
-        border-bottom: 3px solid $terracota;
-        font-size: 2.3rem;
     }
 }
 
@@ -406,12 +467,14 @@
     }
 
     .card-body {
-        font-size: 1.7rem;
+        font-family: 'poppins';
+        font-size: 1.8rem;
     }
 
     .btn {
         color: $terracota;
-        font-size: 2rem;
+        font-family: 'poppins';
+        font-size: 2.2rem;
     }
 
 }

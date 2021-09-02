@@ -6,10 +6,13 @@ $colores: (
     blanco: #e7e7e7,
     gris: #0009,
     rojo-oscuro: #7d1c0d,
-    terracota : #d37f53,
+    terracota: #df9b71,
+    terracota-2 : #d37f53,
+    madera: #9d783b,
     verde-1: #356b4f,
     verde-2 : #225239,
     verde-3: #113a26,
+    verde-4: #6e9607,
 ); 
 
 $negro: map-get($colores, negro);
@@ -18,6 +21,9 @@ $blanco-f: map-get($colores, blanco-f);
 $gris: map-get($colores, gris);
 $rojo-oscuro: map-get($colores, rojo-oscuro);
 $terracota: map-get($colores, terracota);
+$terracota-2: map-get($colores, terracota-2);
+$madera: map-get($colores, madera);
 $verde-1: map-get($colores, verde-1);
 $verde-2: map-get($colores, verde-2);
 $verde-3: map-get($colores, verde-3);
+$verde-4: map-get($colores, verde-4)

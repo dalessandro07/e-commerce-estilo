@@ -18,8 +18,20 @@
     src: url(../assets/fonts/Lato/Lato-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'poppins';
+    src: url(../assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'brown';
+    src: url(../assets/fonts/Brown/BrownHeavy\Regular.ttf);
+}
+
 $fuente-general: 'Hahmlet';
 $fuente-blanka: 'blanka';
 $fuente-oneday: 'ONEDAY';
 $fuente-ailerons: 'ailerons';
 $fuente-lato: 'lato';
+$fuente-poppins: 'poppins';
+$fuente-brown: 'brown';

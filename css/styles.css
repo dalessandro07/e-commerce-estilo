@@ -20,6 +20,16 @@
   src: url(../assets/fonts/Lato/Lato-Regular.ttf);
 }
 
+@font-face {
+  font-family: 'poppins';
+  src: url(../assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'brown';
+  src: url(../assets/fonts/Brown/BrownHeavy\Regular.ttf);
+}
+
 /* MEDIDAS */
 @font-face {
   font-family: 'ONEDAY';
@@ -39,6 +49,16 @@
 @font-face {
   font-family: 'lato';
   src: url(../assets/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url(../assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'brown';
+  src: url(../assets/fonts/Brown/BrownHeavy\Regular.ttf);
 }
 
 /* ESTILOS 404 */
@@ -396,72 +416,134 @@ body .marca .marca__titulo .marca__copy {
 
 .carousel {
   width: 100%;
+  margin-bottom: 3rem;
 }
 
 .carousel .carousel-item {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
 }
 
 .carousel .carousel-item img {
-  width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-  margin-top: 4rem;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 
 .titulo .titulo__h1,
 .titulo .titulo__h2 {
-  font-size: 3.8rem;
+  font-size: 3.6rem;
+  font-family: 'poppins';
   color: #000000;
   font-weight: 600;
   letter-spacing: .5rem;
   text-align: center;
   text-transform: capitalize;
-  border-bottom: 4px solid #d37f53;
+  border-bottom: 3px solid #df9b71;
+}
+
+.subtitulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  margin-left: 0;
+}
+
+.subtitulo .titulo__h3 {
+  font-size: 3.6rem;
+  font-family: 'poppins';
+  font-weight: 900;
+  letter-spacing: .35rem;
+  border-bottom: 3px solid #df9b71;
 }
 
 #noticias {
   padding: 0 6rem;
 }
 
-#noticias .noticias__titulo {
-  text-align: center;
-  margin: 4rem;
-  color: #ffffff;
-  background-color: #225239;
-}
-
-#noticias .noticias__titulo .noticias__titulo--style {
-  display: inline-block;
-  font-size: 2.8rem;
-  word-spacing: .6rem;
-  text-align: center;
-  text-transform: capitalize;
-  padding: 0.7rem 3rem;
-}
-
-#noticias .seccion__parrafo {
+#noticias .seccion__texto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-#noticias .seccion__parrafo .seccion__parrafo--style {
-  font-size: 2rem;
+#noticias .seccion__texto .seccion__etiqueta {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #225239;
+  margin: 0 2rem;
+}
+
+#noticias .seccion__texto .seccion__etiqueta--2 {
+  color: #9d783b;
+}
+
+#noticias .seccion__texto .seccion__info {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #225239;
+  margin: 0 2rem;
+}
+
+#noticias .seccion__texto .seccion__titulo {
+  color: #000000;
+  text-decoration: none;
+  font-size: 2.6rem;
+  font-family: 'poppins';
+  padding: 0 1rem;
+  margin: .5rem 0 1rem 1rem;
+}
+
+#noticias .seccion__texto .seccion__titulo:hover {
+  cursor: pointer;
+  color: #6e9607;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+#noticias .seccion__texto .seccion__parrafo {
+  font-size: 1.4rem;
+  font-family: 'poppins';
   font-weight: 500;
   text-align: justify;
-  line-height: 4.5rem;
-  padding: 0 4rem;
+  line-height: 2.5rem;
+  padding: 0 2rem;
+}
+
+#noticias .separacion {
+  width: 100%;
+  margin: 1.5rem 0;
 }
 
 #noticias .seccion__imagen {
@@ -471,16 +553,50 @@ body .marca .marca__titulo .marca__copy {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 350px;
-  padding: 3rem;
+  height: 250px;
+  padding: 1.5rem;
 }
 
 #noticias .seccion__imagen .seccion__imagen--style {
-  width: 90%;
+  width: 40vw;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  outline: 3.5px solid #0009;
+  outline: 0.00001px solid #0009;
+}
+
+#noticias .seccion__imagen .seccion__imagen--style:hover {
+  cursor: pointer;
+  opacity: .85;
+}
+
+#noticias .ver-mas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5rem;
+}
+
+#noticias .ver-mas .btn {
+  background-color: #225239;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: 'poppins';
+  font-size: 1.6rem;
+}
+
+#noticias .ver-mas .btn:hover {
+  -webkit-transform: scale(1.15, 1.15);
+          transform: scale(1.15, 1.15);
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 /* ESTILOS PRODUCTOS */
@@ -672,7 +788,7 @@ body .marca .marca__titulo .marca__copy {
   height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
-  outline: 3.5px solid #d37f53;
+  outline: 3.5px solid #df9b71;
 }
 
 .imagen--style:hover {
@@ -770,7 +886,7 @@ body .marca .marca__titulo .marca__copy {
 
 .servicios__2 .design__gallery .gallery__item img:hover {
   cursor: pointer;
-  outline: 4px solid #d37f53;
+  outline: 4px solid #df9b71;
   opacity: .8;
   -webkit-transform: scale(1.04, 1.04);
           transform: scale(1.04, 1.04);
@@ -785,22 +901,12 @@ body .marca .marca__titulo .marca__copy {
   max-width: 100%;
   max-height: 100%;
   text-align: center;
-  margin: 0;
+  margin: 1rem 0 3rem 0;
 }
 
 .video__container .video--style {
   max-width: 80vw;
   max-height: 80vh;
-}
-
-.subtitulo {
-  margin: 5rem 0 3rem 1.5rem;
-}
-
-.subtitulo__h2 {
-  display: inline;
-  border-bottom: 3px solid #d37f53;
-  font-size: 2.3rem;
 }
 
 .accordion {
@@ -812,12 +918,14 @@ body .marca .marca__titulo .marca__copy {
 }
 
 .accordion .card-body {
-  font-size: 1.7rem;
+  font-family: 'poppins';
+  font-size: 1.8rem;
 }
 
 .accordion .btn {
-  color: #d37f53;
-  font-size: 2rem;
+  color: #df9b71;
+  font-family: 'poppins';
+  font-size: 2.2rem;
 }
 
 /* ESTILOS CONTACTO */
@@ -888,7 +996,19 @@ body .marca .marca__titulo .marca__copy {
   }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 768px) {
+  #noticias {
+    padding: 0 5rem;
+  }
+  #noticias .seccion__imagen {
+    width: 100%;
+  }
+  #noticias .seccion__imagen .seccion__imagen--style {
+    width: 70vw;
+  }
+}
+
+@media only screen and (min-width: 430px) and (max-width: 560px) {
   .banner #titulo__banner--size {
     font-size: 4.5rem;
   }
@@ -940,6 +1060,9 @@ body .marca .marca__titulo .marca__copy {
 }
 
 @media only screen and (max-width: 430px) {
+  #noticias .seccion__texto .seccion__parrafo {
+    font-size: 1.55rem;
+  }
   .banner #titulo__banner--size {
     font-size: 3.5rem;
   }
@@ -998,6 +1121,9 @@ body .marca .marca__titulo .marca__copy {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  #noticias .seccion__parrafo {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */

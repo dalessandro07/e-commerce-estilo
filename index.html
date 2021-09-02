@@ -38,7 +38,7 @@
             <a href="index.html"><img class="cabecera__logo" src="./assets/img/logo.png" alt="logo"></a>
             <!-- cierre logo -->
         </div>
-        
+
         <nav class="col-xs-6 col-md-8 col-lg-8 cabecera__nav navbar navbar-expand-md navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,8 @@
             <!-- inicio menú de navegación -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav__lista navbar-nav">
-                    <li class="nav-item lista__item lista__item--margin"><a class="nav-link" href="#" id="seccionActiva">Inicio</a></li>
+                    <li class="nav-item lista__item lista__item--margin"><a class="nav-link" href="#"
+                            id="seccionActiva">Inicio</a></li>
                     <li class="nav-item lista__item"><a class="nav-link" href="pages/productos.html">Productos</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -68,8 +69,10 @@
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item lista__item"><a class="nav-link" href="pages/sobre-nosotros.html">Sobre Nosotros</a></li>
-                    <li class="nav-item lista__item lista__item--margin"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+                    <li class="nav-item lista__item"><a class="nav-link" href="pages/sobre-nosotros.html">Sobre
+                            Nosotros</a></li>
+                    <li class="nav-item lista__item lista__item--margin"><a class="nav-link"
+                            href="pages/contacto.html">Contacto</a></li>
                 </ul>
             </div>
             <!-- cierre menú de navegación -->
@@ -82,6 +85,7 @@
     <!-- inicio contenido -->
 
     <section class="row principal">
+
         <article data-aos="zoom-in" class="banner col-xs-12 col-md-12 col-lg-12">
             <h1 class="titulo__banner" id="titulo__banner--size">La Casa De Las Plantas Perú</h1>
             <img class="banner__imagen" src="./assets/img/banner-principal.jpg" alt="banner-principal">
@@ -91,79 +95,123 @@
             <h2 class="titulo__h2">¡PRODUCTOS EN OFERTA!</h2>
         </article>
 
-        <section data-aos="zoom-in" class="carousel__container col-xs-12 col-md-12 col-lg-12">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
+        <section data-aos="zoom-in" class="carousel">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="assets/img/macetas.jpeg" class="d-block w-100" alt="macetas más vendidas">
+                        <img src="./assets/img/macetas-carousel-2.jpg" class="d-block w-100" alt="macetas">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/tierras.jpeg" class="d-block w-100" alt="abonos más vendidos">
+                        <img src="./assets/img/orquideas-carousel-1.jpg" class="d-block w-100" alt="orquideas">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/orquideas.jpg" class="d-block w-100" alt="orquideas más vendidas">
+                        <img src="./assets/img/sucucactus-carousel-1.jpg" class="d-block w-100"
+                            alt="suculentas y cactus">
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Siguiente</span>
-                </a>
             </div>
         </section>
 
-        <article class="titulo col-xs-12 col-md-12 col-lg-12">
-            <h2 class="titulo__h2">Beneficios de tener plantas en casa</h2>
-        </article>
     </section>
 
     <section class="container-fluid" id="noticias">
 
-        <article data-aos="fade" class="row noticias__titulo">
-            <div class="col-xs-12 col-md-12 col-lg-12">
-                <h2 class="noticias__titulo--style">Una buena terapia contra el estrés</h2>
-            </div>
-        </article>
+        <div class="row">
 
-        <article data-aos="fade-right" class="row noticias__seccion">
-            <div class="col-xs-12 col-md-6 col-lg-6 seccion__parrafo">
-                <p class="seccion__parrafo--style">Un estudio reveló que media hora diaria
-                    dedicada a cuidar plantas reduce
-                    significativamente los niveles de estrés, nos ayuda a desconectar,
-                    aumentan nuestra autoestima y capacidad de organización.</p>
+            <div class="subtitulo col-xs-12 col-md-12 col-lg-12">
+                <h3 class="titulo__h3">NOTICIAS</h3>
             </div>
-            <div class="seccion__imagen col-xs-12 col-md-6 col-lg-6">
-                <img class="seccion__imagen--style" src="./assets/img/plantas-1.jpg" alt="plantas">
-            </div>
-        </article>
 
-        <article data-aos="fade" class="row noticias__titulo">
-            <div class="col-xs-12 col-md-12 col-lg-12">
-                <h2 class="noticias__titulo--style">Las plantas en casa reducen el ruido</h2>
-            </div>
-        </article>
+            <article data-aos="fade-right" class="noticias__seccion col-xs-12 col-md-6 col-lg-6">
+                <div class="seccion__imagen">
+                    <a href="https://www.t.ly/0ksX" target="_blank">
+                        <img class="seccion__imagen--style" src="./assets/img/plantas-1.jpg" alt="plantas">
+                    </a>
+                </div>
+                <div class="seccion__texto">
+                    <strong class="seccion__etiqueta">Plantas</strong>
+                    <a href="https://www.t.ly/0ksX" target="_blank" class="seccion__titulo">
+                        Cuidar plantas reduce el estrés
+                    </a>
+                    <p class="seccion__parrafo">Un estudio reveló que media hora diaria
+                        dedicada a cuidar plantas reduce
+                        significativamente los niveles de estrés, nos ayuda a desconectar,
+                        aumentan nuestra autoestima y capacidad de organización. Alivian tensiones y nos hacen compañía.
+                    </p>
+                    <a href="https://www.t.ly/0ksX" target="_blank" class="seccion__info">Leer Más...</a>
+                </div>
+            </article>
 
-        <article data-aos="fade-right" class="row noticias__seccion">
-            <div class="col-xs-12 col-md-6 col-lg-6  seccion__parrafo">
-                <p class="seccion__parrafo--style">Los hogares son más equilibrados y tranquilos
-                    cuando tienen plantas porque éstas absorben el ruido y pueden reducirlo ligeramente. Su
-                    aportación
-                    es
-                    pequeña, pero importante.
-                </p>
+            <article data-aos="fade-right" class="noticias__seccion col-xs-12 col-md-6 col-lg-6">
+                <div class="seccion__imagen">
+                    <a href="https://www.t.ly/fN5L" target="_blank">
+                        <img class="seccion__imagen--style" src="./assets/img/plantas-en-casa.jpg" alt="plantas">
+                    </a>
+                </div>
+                <div class="seccion__texto">
+                    <strong class="seccion__etiqueta">Plantas</strong>
+                    <a href="https://www.t.ly/fN5L" target="_blank" class="seccion__titulo">
+                        Las plantas reducen el ruido
+                    </a>
+                    <p class="seccion__parrafo">Ciertas plantas pueden reducir el ruido. Los hogares son más
+                        equilibrados y tranquilos
+                        cuando tienen plantas porque éstas absorben el ruido y pueden reducirlo ligeramente. Su
+                        aportación es pequeña pero importante.
+                    </p>
+                    <a href="https://www.t.ly/fN5L" target="_blank" class="seccion__info">Leer Más...</a>
+                </div>
+            </article>
+
+            <div class="separacion">
             </div>
-            <div class="seccion__imagen col-xs-12 col-md-6 col-lg-6">
-                <img class="seccion__imagen--style" src="./assets/img/plantas-en-casa.jpg" alt="plantas">
+
+            <article data-aos="fade-right" class="noticias__seccion col-xs-12 col-md-6 col-lg-6">
+                <div class="seccion__imagen">
+                    <a href="https://www.t.ly/0ksX" target="_blank">
+                        <img class="seccion__imagen--style" src="./assets/img/cuidando-plantas-del-jardin.jpg"
+                            alt="plantas">
+                    </a>
+                </div>
+                <div class="seccion__texto">
+                    <strong class="seccion__etiqueta">Plantas</strong>
+                    <a href="https://www.t.ly/0ksX" target="_blank" class="seccion__titulo">
+                        Nos enseñan a adquirir responsabilidades
+                    </a>
+                    <p class="seccion__parrafo">Tener plantas que cuidar es una hermosa y muy grande responsabilidad, en
+                        cierta medida dependen de nosotros para crecer y no marchitarse muy pronto. Mira como cultivar
+                        plantas te ayuda y te enseña a ser más responsable.
+                    </p>
+                    <a href="https://www.t.ly/0ksX" target="_blank" class="seccion__info">Leer Más...</a>
+                </div>
+            </article>
+
+            <article data-aos="fade-right" class="noticias__seccion col-xs-12 col-md-6 col-lg-6">
+                <div class="seccion__imagen">
+                    <a href="https://www.t.ly/pmf1" target="_blank">
+                        <img class="seccion__imagen--style" src="./assets/img/elegir-macetas-plastico-ceramica.jpg"
+                            alt="plantas">
+                    </a>
+                </div>
+                <div class="seccion__texto">
+                    <strong class="seccion__etiqueta seccion__etiqueta--2">Macetas</strong>
+                    <a href="https://www.t.ly/qYuW" target="_blank" class="seccion__titulo">
+                        ¿Macetas de plástico o de cerámica?
+                    </a>
+                    <p class="seccion__parrafo">Puede que sólo nos fijemos en el exterior a la hora de escoger una
+                        maceta para nuestras plantas, pero mucho cuidado, porque elegir macetas de plástico o de
+                        cerámica no debe hacerse únicamente por motivos estéticos.
+                    </p>
+                    <a href="https://www.t.ly/qYuW" target="_blank" class="seccion__info">Leer Más...</a>
+                </div>
+            </article>
+
+            <div class="ver-mas">
+                <button type="button" class="btn btn-success">
+                    Ver Más
+                </button>
             </div>
-        </article>
+
+        </div>
 
     </section>
 
