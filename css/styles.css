@@ -353,6 +353,12 @@ body .redes .redes__container--padding {
 }
 
 body .redes .redes__container--padding .titulo__h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: 'poppins';
   margin: 0 3rem;
   color: #000000;
@@ -1440,7 +1446,7 @@ body .marca .marca__titulo .marca__copy {
   }
 }
 
-@media only screen and (max-width: 335px) {
+@media only screen and (max-width: 396px) {
   body .cabecera {
     display: -webkit-box;
     display: -ms-flexbox;
