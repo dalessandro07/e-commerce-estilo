@@ -41,7 +41,6 @@ body {
         justify-content: space-between;
         background-color: $blanco-f;
         position: sticky;
-        height: 82px;
         z-index: 100;
         top: 0;
         right: 0;
@@ -53,8 +52,10 @@ body {
         }
 
         .cabecera__logo {
+            margin-top: 1rem;
             width: 95px;
-            height: 95px;
+            height: 75px;
+            object-fit: cover;
         }
 
         .cabecera__logo:hover {
