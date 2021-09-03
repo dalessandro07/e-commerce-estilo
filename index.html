@@ -95,8 +95,8 @@
             <h2 class="titulo__h2">¡PRODUCTOS EN OFERTA!</h2>
         </article>
 
-        <section data-aos="zoom-in" class="carousel">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <section data-aos="zoom-in" class="carousel row">
+            <div id="carouselExampleSlidesOnly" class="carousel slide col-xs-12 col-md-7 col-lg-8" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./assets/img/macetas-carousel-2.jpg" class="d-block w-100" alt="macetas">
@@ -108,6 +108,25 @@
                         <img src="./assets/img/sucucactus-carousel-1.jpg" class="d-block w-100"
                             alt="suculentas y cactus">
                     </div>
+                </div>
+            </div>
+            <div class="carousel__texto col-xs-12 col-md-5 col-lg-4">
+                <h3 class="carousel__titulo">¡Las mejores ofertas del mes sólo en La Casa De Las Plantas Perú!</h3>
+                <div class="envio">
+                    <strong class="envio__a">ENVÍO GRATIS A TODO EL PERÚ</strong> <b class="envio__b">POR COMPRAS
+                        SUPERIORES A S/100.00</b>
+                </div>
+                <div class="carousel__parrafo">
+                    <p class="carousel__p">¡Se acaban! Aproveche el 3X1 en <a class="carousel__enlace"
+                            href="./pages/productos.html">plantas ornamentales y hortalizas</a>, y sólo hasta fin de mes
+                        40% de descuento en <a class="carousel__enlace" href="/pages/productos.html">macetas de
+                            plástico</a>. ¡No dejes pasar esta gran oportunidad de tener tu hogar decorado y ambientado!
+                        <strong class="compra-ya">¡COMPRA YA!</strong><b class="tyc">Aplican T&C.</b>
+                    </p>
+                    <button class="btn btn-success">
+                        <a class="enlace__productos" href="./pages/productos.html"
+                            target="_blank">Ver Productos</a>
+                    </button>
                 </div>
             </div>
         </section>
@@ -135,7 +154,7 @@
                     </a>
                     <p class="seccion__parrafo">Un estudio reveló que media hora diaria
                         dedicada a cuidar plantas reduce
-                        significativamente los niveles de estrés, nos ayuda a desconectar,
+                        significativamente los niveles de estrés, <b class="keyword">nos ayuda a desconectar</b>,
                         aumentan nuestra autoestima y capacidad de organización. Alivian tensiones y nos hacen compañía.
                     </p>
                     <a href="https://www.t.ly/0ksX" target="_blank" class="seccion__info">Leer Más...</a>
@@ -155,7 +174,8 @@
                     </a>
                     <p class="seccion__parrafo">Ciertas plantas pueden reducir el ruido. Los hogares son más
                         equilibrados y tranquilos
-                        cuando tienen plantas porque éstas absorben el ruido y pueden reducirlo ligeramente. Su
+                        cuando tienen plantas porque éstas <b class="keyword">absorben el ruido</b> y pueden reducirlo
+                        ligeramente. Su
                         aportación es pequeña pero importante.
                     </p>
                     <a href="https://www.t.ly/fN5L" target="_blank" class="seccion__info">Leer Más...</a>
@@ -178,7 +198,8 @@
                         Nos enseñan a adquirir responsabilidades
                     </a>
                     <p class="seccion__parrafo">Tener plantas que cuidar es una hermosa y muy grande responsabilidad, en
-                        cierta medida dependen de nosotros para crecer y no marchitarse muy pronto. Mira como cultivar
+                        cierta medida <b class="keyword">dependen de nosotros para crecer</b> y no marchitarse muy
+                        pronto. Mira como cultivar
                         plantas te ayuda y te enseña a ser más responsable.
                     </p>
                     <a href="https://www.t.ly/0ksX" target="_blank" class="seccion__info">Leer Más...</a>
@@ -199,7 +220,7 @@
                     </a>
                     <p class="seccion__parrafo">Puede que sólo nos fijemos en el exterior a la hora de escoger una
                         maceta para nuestras plantas, pero mucho cuidado, porque elegir macetas de plástico o de
-                        cerámica no debe hacerse únicamente por motivos estéticos.
+                        cerámica <b class="keyword">no debe hacerse únicamente por motivos estéticos</b>.
                     </p>
                     <a href="https://www.t.ly/qYuW" target="_blank" class="seccion__info">Leer Más...</a>
                 </div>
@@ -220,26 +241,55 @@
     <!-- inicio de footer -->
 
     <footer class="container-fluid">
-        <div class="redes row">
-            <div class="col-xs-12 col-md-12 col-lg-12 redes__container--padding">
-                <strong class="titulo__h3">REDES SOCIALES</strong>
+        
+        <div class="footer__principal">
+
+            <div class="info__page">
+                <div class="info__productos">
+                    <h4 class="info__titulo">Productos</h4>
+                    <ul class="productos__lista">
+                        <li class="lista__item"><a href="./pages/productos.html">Tierras y Sustratos</a></li>
+                        <li class="lista__item"><a href="./pages/productos.html">Plantas ornamentales</a></li>
+                        <li class="lista__item"><a href="./pages/productos.html">Hortalizas</a></li>
+                        <li class="lista__item"><a href="./pages/productos.html">Macetas</a></li>
+                        <li class="lista__item"><a href="./pages/productos.html">Decoraciones para jardín</a></li>
+                    </ul>
+                </div>
+                <div class="info__servicios">
+                    <h4 class="info__titulo">Servicios</h4>
+                    <ul class="servicios__lista">
+                        <li class="lista__item"><a href="./pages/servicios.html#delivery">Delivery</a></li>
+                        <li class="lista__item"><a href="./pages/servicios.html#asesoria">Asesoría personalizada</a></li>
+                        <li class="lista__item"><a href="./pages/servicios.html#design">Diseño de jardines e interiores</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-xs-12 col-md-12 col-lg-12 redes__container--padding">
-                <ul class="redes__lista">
-                    <li><a class="wsp" href="https://wa.me/51986307201" target="_blank"><i
-                                class="redes__icon fab fa-whatsapp"></i></a>
-                    </li>
-                    <li><a class="msg" href="https://messenger.com" target="_blank"><i
-                                class="redes__icon fab fa-facebook-messenger" aria-hidden="true"></i></a></li>
-                    <li><a class="fb" href="https://facebook.com" target="_blank"><i class="redes__icon fab fa-facebook"
-                                aria-hidden="true"></i></a>
-                    </li>
-                    <li><a class="is" href="https://instagram.com" target="_blank"><i
-                                class="redes__icon fab fa-instagram" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
+
+            <div class="redes">
+
+                <div class="redes__container redes__container--padding text-center">
+                    <strong class="titulo__h3">REDES SOCIALES</strong>
+                </div>
+
+                <div class="lista__footer redes__container--padding">
+                    <ul class="redes__lista">
+                        <li><a class="wsp" href="https://wa.me/51986307201" target="_blank"><i
+                            class="redes__icon fab fa-whatsapp"></i></a>
+                        </li>
+                        <li><a class="fb" href="https://facebook.com" target="_blank"><i class="redes__icon fab fa-facebook"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li><a class="msg" href="https://messenger.com" target="_blank"><i
+                                    class="redes__icon fab fa-facebook-messenger" aria-hidden="true"></i></a></li>
+                        <li><a class="is" href="https://instagram.com" target="_blank"><i
+                                    class="redes__icon fab fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
         </div>
+
         <div class="marca row">
             <div class="marca__contenedor--padding col-xs-12 col-md-12 col-lg-12">
                 <strong class="marca__titulo marca__titulo--gradient">
@@ -248,6 +298,7 @@
                 </strong>
             </div>
         </div>
+
     </footer>
 
     <!-- cierre de footer -->

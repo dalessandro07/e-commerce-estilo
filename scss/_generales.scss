@@ -41,6 +41,7 @@ body {
         justify-content: space-between;
         background-color: $blanco-f;
         position: sticky;
+        height: 82px;
         z-index: 100;
         top: 0;
         right: 0;
@@ -52,8 +53,8 @@ body {
         }
 
         .cabecera__logo {
-            width: 85px;
-            height: 85px;
+            width: 95px;
+            height: 95px;
         }
 
         .cabecera__logo:hover {
@@ -92,7 +93,6 @@ body {
 
         .lista__item a {
             color: #000000;
-            opacity: .55;
             padding: 5px;
             font-size: 1.25rem;
             font-weight: 600;
@@ -101,6 +101,7 @@ body {
         }
 
         .lista__item a:hover {
+            color: $negro;
             opacity: 1;
             border-bottom: 1.6px solid $negro;
         }
@@ -138,15 +139,68 @@ body {
 
     /* ESTILOS GENERALES FOOTER */
 
-    .redes {
+    .footer__principal {
+        display: flex;
+        justify-content: space-around;
         margin-top: 10rem;
+        background: linear-gradient(to right,  $verde-2, $verde-3);
+        border-top: 3px solid $negro;
 
+        .info__page {
+            display: flex;
+
+            .info__titulo {
+                color: $blanco;
+                font-size: 2rem;
+                text-decoration: underline;
+            }
+
+            .info__productos {
+                margin: 1rem 2rem;
+                font-family: 'poppins';
+
+                .productos__lista {
+                    list-style-type: none;
+                    .lista__item a {
+                        color: $celeste-2;
+                        text-decoration: none;
+                        font-size: 1.45rem;
+                    }
+                    .lista__item a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .info__servicios {
+                margin: 1rem 2rem;
+                font-family: 'poppins';
+
+                .servicios__lista {
+                    list-style-type: none;
+                    .lista__item a {
+                        color: $celeste-2;
+                        text-decoration: none;
+                        font-size: 1.45rem;
+                    }
+                    .lista__item a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .redes {
+        width: 40%;
+        margin: 1rem;
         .redes__container--padding {
             padding: 0;
 
             .titulo__h3 {
+                font-family: 'poppins';
                 margin: 0 3rem;
-                color: $verde-2;
+                color: $blanco;
                 font-size: 1.65rem;
                 text-decoration: underline;
             }
@@ -156,7 +210,6 @@ body {
             display: flex;
             justify-content: space-evenly;
             margin-top: 1rem;
-            margin-bottom: 4rem;
 
             $redes: (wsp: #00bb2d,
                     fb: #3b5998,
@@ -174,7 +227,7 @@ body {
             .redes__icon {
                 transition: 1s;
                 margin: 2rem 1rem 0 1rem;
-                color: $negro;
+                color: $blanco;
                 font-size: 3.5rem;
                 text-decoration: none;
             }
@@ -195,7 +248,7 @@ body {
         }
 
         .marca__titulo--gradient {
-            background: linear-gradient(to right, #093028, #237a57);
+            background: linear-gradient(to right,  $verde-2, $verde-3);
         }
 
         .marca__titulo {
@@ -203,11 +256,9 @@ body {
             text-align: center;
             font-family: 'ONEDAY';
             font-size: 1.8rem;
-            padding: 12px 0 15px 0;
+            padding-bottom: 1.5rem;
             margin: 0;
-            color: #e7e7e7;
-            background-color: #2b5f44;
-            border-top: 3px solid #000;
+            color: $blanco;
             word-spacing: 5px;
 
             .marca__enlace {

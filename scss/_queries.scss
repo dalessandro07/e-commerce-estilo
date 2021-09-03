@@ -6,7 +6,6 @@
             width: 80%;
         }
     }
-
     body {
         .cabecera {
             .nav__lista {
@@ -15,8 +14,13 @@
                 flex-direction: row;
             }
         }
+        
     }
-    
+    .contacto {
+        .formulario {
+            margin-top: 2rem;
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -134,11 +138,16 @@
     .container__formulario {
         margin: 3rem;
         width: 85%;
+
+        #invalidCheck {
+            width: 80px;
+            height: 16px;
+        }
         #boton__enviar {
             font-size: 1.4rem;
         }
         label, input, select, textarea, option {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
     }
     .asesoria__formulario {

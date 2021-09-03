@@ -72,105 +72,165 @@
     <!-- cierre header + nav -->
     <!-- inicio contenido -->
 
-    <section class="container-fluid">
-        <article class="titulo">
-            <h1 class="titulo__h1">CONTÁCTANOS</h1>
-        </article>
-    </section>
+    <div class="container">
 
-    <section class="container-fluid">
-        <!-- inicio de formulario -->
+        <section class="container-fluid">
+            <article class="titulo">
+                <h1 class="titulo__h1">CONTÁCTANOS</h1>
+            </article>
+        </section>
+    
+        <section class="row contacto container-fluid">
 
-        <div class="titulo__formulario">
-            <h2 class="titulo__h2--style">RECIBA OFERTAS Y PROMOCIONES</h2>
-        </div>
+            <!-- inicio texto de formulario -->
+            <div class="formulario__info container-fluid col-xs-12 col-md-12 col-lg-6">
+                <div class="formulario__texto">
+                    <h4 class="texto__titulo">Envíanos un e-mail o mensaje</h4>
+                    <p class="texto__parrafo">Si quieres asesoría para el <a class="texto__enlace" href="servicios.html#asesoria">cuidado de tus plantas</a>, <a class="texto__enlace" href="servicios.html#delivery">información sobre el delivery</a>, tienes consultas sobre los <a class="texto__enlace" href="productos.html">productos</a> y demás preguntas o inquietudes, no lo dudes y contáctanos, un especialista se pondrá en contacto contigo lo más breve posible, atendemos en horario laboral 08:00 - 06:00 pm (GMT-5). </p>
+                    <div class="texto__contacto">
+                        <div class="correo">
+                            <a href="https://gmail.com" target="_blank" class="correo__enlace">Correo: lacasadelasplantas01@gmail.com</a>
+                        </div>
+                        <div class="numero">
+                            <a href="https://wa.me/51986307201" target="_blank" class="numero__enlace">Número: +51986307201 | +51987654321</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="formulario__imagen container-fluid">
+                    <img class="img-fluid" src="../assets/img/banner-principal.jpg" alt="banner">
+                </div>
+            </div>
+            <!-- cierre texto de formulario -->
 
-        <div class="container__formulario container-form container">
-            <form class="needs-validation" novalidate>
-                <div class="form-row">
-                    <div class="col-md-6 mb-3">
-                        <label for="validationCustom01">Nombres Completos o Empresa</label>
-                        <input type="text" class="form-control" id="validationCustom01" required>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="validationCustom02">DNI o RUC</label>
-                        <input type="number" class="form-control" id="validationCustom02" required>
-                    </div>
+            <!-- inicio de formulario -->
+            <div class="formulario container-fluid col-xs-12 col-md-12 col-lg-6">
+
+                <div class="formulario__titulo">
+                    <h2 class="titulo__h2--style">RECIBA OFERTAS Y PROMOCIONES</h2>
                 </div>
-                <div class="form-row">
-                    <div class="col-md-6 mb-3">
-                        <label for="validationCustom03">Ciudad</label>
-                        <input type="text" class="form-control" id="validationCustom03" required>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="validationCustom04">Distrito</label>
-                        <select class="custom-select" id="validationCustom04" required>
-                            <option selected disabled value="">Escoger...</option>
-                            <option>San Miguel</option>
-                            <option>Magdalena</option>
-                            <option>Pueblo Libre</option>
-                            <option>Jesús María</option>
-                            <option>Barranco</option>
-                            <option>Cercado de Lima</option>
-                            <option>Surco</option>
-                            <option>Breña</option>
-                            <option>Chorrillos</option>
-                            <option>San Martín de Porres</option>
-                            <option>San Juan de Lurigancho</option>
-                            <option>Chosica</option>
-                            <option>Chaclacayo</option>
-                            <option>La Molina</option>
-                            <option>Ate</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="validationCustom05">Código Postal</label>
-                        <input type="text" class="form-control" id="validationCustom05" required>
-                    </div>
+        
+                <div class="container__formulario container-form container">
+
+                    <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom01">Nombres o Razón Social</label>
+                                <input type="text" class="form-control" id="validationCustom01" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom02">DNI o RUC</label>
+                                <input type="number" class="form-control" id="validationCustom02" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Ciudad</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom04">Distrito</label>
+                                <select class="custom-select" id="validationCustom04" required>
+                                    <option selected disabled value="">Escoger...</option>
+                                    <option>San Miguel</option>
+                                    <option>Magdalena</option>
+                                    <option>Pueblo Libre</option>
+                                    <option>Jesús María</option>
+                                    <option>Barranco</option>
+                                    <option>Cercado de Lima</option>
+                                    <option>Surco</option>
+                                    <option>Breña</option>
+                                    <option>Chorrillos</option>
+                                    <option>San Martín de Porres</option>
+                                    <option>San Juan de Lurigancho</option>
+                                    <option>Chosica</option>
+                                    <option>Chaclacayo</option>
+                                    <option>La Molina</option>
+                                    <option>Ate</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom05">Código Postal</label>
+                                <input type="text" class="form-control" id="validationCustom05" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Acepto los términos y condiciones
+                                </label>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" id="boton__limpiar" type="reset">Limpiar</button>
+                        <button class="btn btn-primary" id="boton__enviar" type="submit">Enviar</button>
+                    </form>
+
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Mensaje</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
-                            Acepto los términos y condiciones
-                        </label>
-                    </div>
-                </div>
-                <button class="btn btn-primary" id="boton__enviar" type="submit">Enviar</button>
-            </form>
-        </div>
-        <!-- cierre de formulario -->
-    </section>
+
+            </div>
+            <!-- cierre de formulario -->
+
+        </section>
+    </div>
 
     <!-- cierre contenido -->
 
     <!-- inicio de footer -->
 
     <footer class="container-fluid">
-        <div class="redes row">
-            <div class="col-xs-12 col-md-12 col-lg-12 redes__container--padding">
-                <strong class="titulo__h3">REDES SOCIALES</strong>
+        
+        <div class="footer__principal">
+
+            <div class="info__page">
+                <div class="info__productos">
+                    <h4 class="info__titulo">Productos</h4>
+                    <ul class="productos__lista">
+                        <li class="lista__item"><a href="productos.html">Tierras y Sustratos</a></li>
+                        <li class="lista__item"><a href="productos.html">Plantas ornamentales</a></li>
+                        <li class="lista__item"><a href="productos.html">Hortalizas</a></li>
+                        <li class="lista__item"><a href="productos.html">Macetas</a></li>
+                        <li class="lista__item"><a href="productos.html">Decoraciones para jardín</a></li>
+                    </ul>
+                </div>
+                <div class="info__servicios">
+                    <h4 class="info__titulo">Servicios</h4>
+                    <ul class="servicios__lista">
+                        <li class="lista__item"><a href="servicios.html#delivery">Delivery</a></li>
+                        <li class="lista__item"><a href="servicios.html#asesoria">Asesoría personalizada</a></li>
+                        <li class="lista__item"><a href="servicios.html#design">Diseño de jardines e interiores</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-xs-12 col-md-12 col-lg-12 redes__container--padding">
-                <ul class="redes__lista">
-                    <li><a class="wsp" href="https://wa.me/51986307201" target="_blank"><i
-                                class="redes__icon fab fa-whatsapp"></i></a>
-                    </li>
-                    <li><a class="msg" href="https://messenger.com" target="_blank"><i
-                                class="redes__icon fab fa-facebook-messenger" aria-hidden="true"></i></a></li>
-                    <li><a class="fb" href="https://facebook.com" target="_blank"><i class="redes__icon fab fa-facebook"
-                                aria-hidden="true"></i></a>
-                    </li>
-                    <li><a class="is" href="https://instagram.com" target="_blank"><i
-                                class="redes__icon fab fa-instagram" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
+
+            <div class="redes">
+
+                <div class="redes__container redes__container--padding text-center">
+                    <strong class="titulo__h3">REDES SOCIALES</strong>
+                </div>
+
+                <div class="lista__footer redes__container--padding">
+                    <ul class="redes__lista">
+                        <li><a class="wsp" href="https://wa.me/51986307201" target="_blank"><i
+                            class="redes__icon fab fa-whatsapp"></i></a>
+                        </li>
+                        <li><a class="fb" href="https://facebook.com" target="_blank"><i class="redes__icon fab fa-facebook"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li><a class="msg" href="https://messenger.com" target="_blank"><i
+                                    class="redes__icon fab fa-facebook-messenger" aria-hidden="true"></i></a></li>
+                        <li><a class="is" href="https://instagram.com" target="_blank"><i
+                                    class="redes__icon fab fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
         </div>
+
         <div class="marca row">
             <div class="marca__contenedor--padding col-xs-12 col-md-12 col-lg-12">
                 <strong class="marca__titulo marca__titulo--gradient">
@@ -179,8 +239,9 @@
                 </strong>
             </div>
         </div>
-    </footer>
 
+    </footer>
+    
     <!-- cierre de footer -->
 
     <!-- JAVASCRIPT -->
