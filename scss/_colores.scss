@@ -14,6 +14,7 @@ $colores: (
     verde-3: #113a26,
     verde-4: #6e9607,
     verde-claro: #D4ECDD,
+    verde-gris: #949A88, 
     celeste: #87A8A4,
     celeste-2: rgb(181, 212, 209)
 ); 
@@ -31,5 +32,6 @@ $verde-2: map-get($colores, verde-2);
 $verde-3: map-get($colores, verde-3);
 $verde-4: map-get($colores, verde-4);
 $verde-claro: map-get($colores, verde-claro);
+$verde-gris: map-get($colores, verde-gris);
 $celeste: map-get($colores, celeste);
 $celeste-2: map-get($colores, celeste-2);

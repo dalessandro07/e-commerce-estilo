@@ -286,8 +286,8 @@ body .footer__principal {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 10rem;
-  background: -webkit-gradient(linear, left top, right top, from(#225239), to(#113a26));
-  background: linear-gradient(to right, #225239, #113a26);
+  background: -webkit-gradient(linear, left top, right top, from(#949A88), to(#949A88));
+  background: linear-gradient(to right, #949A88, #949A88);
   border-top: 3px solid #000000;
 }
 
@@ -298,7 +298,7 @@ body .footer__principal .info__page {
 }
 
 body .footer__principal .info__page .info__titulo {
-  color: #e7e7e7;
+  color: #000000;
   font-size: 2rem;
   text-decoration: underline;
 }
@@ -313,13 +313,14 @@ body .footer__principal .info__page .info__productos .productos__lista {
 }
 
 body .footer__principal .info__page .info__productos .productos__lista .lista__item a {
-  color: #b5d4d1;
+  color: #000000;
+  opacity: .55;
   text-decoration: none;
   font-size: 1.45rem;
 }
 
 body .footer__principal .info__page .info__productos .productos__lista .lista__item a:hover {
-  text-decoration: underline;
+  opacity: 1;
 }
 
 body .footer__principal .info__page .info__servicios {
@@ -332,13 +333,14 @@ body .footer__principal .info__page .info__servicios .servicios__lista {
 }
 
 body .footer__principal .info__page .info__servicios .servicios__lista .lista__item a {
-  color: #b5d4d1;
+  color: #000000;
+  opacity: .55;
   text-decoration: none;
   font-size: 1.45rem;
 }
 
 body .footer__principal .info__page .info__servicios .servicios__lista .lista__item a:hover {
-  text-decoration: underline;
+  opacity: 1;
 }
 
 body .redes {
@@ -353,7 +355,7 @@ body .redes .redes__container--padding {
 body .redes .redes__container--padding .titulo__h3 {
   font-family: 'poppins';
   margin: 0 3rem;
-  color: #e7e7e7;
+  color: #000000;
   font-size: 1.65rem;
   text-decoration: underline;
 }
@@ -388,7 +390,7 @@ body .redes .redes__lista .redes__icon {
   -webkit-transition: 1s;
   transition: 1s;
   margin: 2rem 1rem 0 1rem;
-  color: #e7e7e7;
+  color: #000000;
   font-size: 3.5rem;
   text-decoration: none;
 }
@@ -408,8 +410,8 @@ body .marca .marca__contenedor--padding {
 }
 
 body .marca .marca__titulo--gradient {
-  background: -webkit-gradient(linear, left top, right top, from(#225239), to(#113a26));
-  background: linear-gradient(to right, #225239, #113a26);
+  background: -webkit-gradient(linear, left top, right top, from(#949A88), to(#949A88));
+  background: linear-gradient(to right, #949A88, #949A88);
 }
 
 body .marca .marca__titulo {
@@ -419,14 +421,14 @@ body .marca .marca__titulo {
   font-size: 1.8rem;
   padding-bottom: 1.5rem;
   margin: 0;
-  color: #e7e7e7;
+  color: #000000;
   word-spacing: 5px;
 }
 
 body .marca .marca__titulo .marca__enlace {
   font-family: 'ailerons';
   font-size: 2.6rem;
-  color: #e7e7e7;
+  color: #000000;
   padding: 0;
   opacity: .5;
 }
@@ -478,6 +480,7 @@ body .marca .marca__titulo .marca__copy {
 
 .carousel {
   width: 100%;
+  height: 100%;
   margin-bottom: 3rem;
   font-family: 'poppins';
 }
@@ -493,7 +496,11 @@ body .marca .marca__titulo .marca__copy {
      object-fit: contain;
 }
 
-.carousel .carousel__titulo {
+.carousel .carousel__texto {
+  padding: 1rem 3rem 2rem 1rem;
+}
+
+.carousel .carousel__texto .carousel__titulo {
   font-size: 2.8rem;
   color: #225239;
   padding: 0.5rem 0 2rem 0;
@@ -501,13 +508,13 @@ body .marca .marca__titulo .marca__copy {
   text-align: center;
 }
 
-.carousel .envio {
+.carousel .carousel__texto .envio {
   text-align: center;
   padding: 0 1.5rem;
   margin: 1rem 0;
 }
 
-.carousel .envio .envio__a {
+.carousel .carousel__texto .envio .envio__a {
   font-size: 2rem;
   background-color: #225239;
   color: #e7e7e7;
@@ -515,14 +522,14 @@ body .marca .marca__titulo .marca__copy {
   border-radius: 4px 4px 4px;
 }
 
-.carousel .envio .envio__b {
+.carousel .carousel__texto .envio .envio__b {
   padding: 0.5rem;
   color: #6e9607;
   font-size: 1.8rem;
   border-radius: 4px 4px 4px;
 }
 
-.carousel .carousel__parrafo {
+.carousel .carousel__texto .carousel__parrafo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,23 +540,24 @@ body .marca .marca__titulo .marca__copy {
   margin-top: 2rem;
 }
 
-.carousel .carousel__parrafo .carousel__p {
+.carousel .carousel__texto .carousel__parrafo .carousel__p {
+  text-align: justify;
   padding: 0 2rem 1rem 2rem;
   font-size: 1.6rem;
 }
 
-.carousel .carousel__parrafo .carousel__p .carousel__enlace {
+.carousel .carousel__texto .carousel__parrafo .carousel__p .carousel__enlace {
   font-size: 1.55rem;
   font-weight: 600;
   text-decoration: none;
   color: #6e9607;
 }
 
-.carousel .carousel__parrafo .carousel__p .carousel__enlace:hover {
+.carousel .carousel__texto .carousel__parrafo .carousel__p .carousel__enlace:hover {
   text-decoration: underline;
 }
 
-.carousel .carousel__parrafo .carousel__p .compra-ya {
+.carousel .carousel__texto .carousel__parrafo .carousel__p .compra-ya {
   color: #e7e7e7;
   background-color: #225239;
   font-size: 1.45rem;
@@ -558,12 +566,12 @@ body .marca .marca__titulo .marca__copy {
   border-radius: 4px 4px 4px;
 }
 
-.carousel .carousel__parrafo .carousel__p .tyc {
+.carousel .carousel__texto .carousel__parrafo .carousel__p .tyc {
   font-size: 1rem;
   color: #0009;
 }
 
-.carousel .carousel__parrafo .btn {
+.carousel .carousel__texto .carousel__parrafo .btn {
   background-color: #6e9607;
   border: none;
   -ms-flex-item-align: center;
@@ -572,20 +580,20 @@ body .marca .marca__titulo .marca__copy {
   width: 135px;
 }
 
-.carousel .carousel__parrafo .btn a {
+.carousel .carousel__texto .carousel__parrafo .btn a {
   text-decoration: none;
   font-size: 1.5rem;
   color: #e7e7e7;
 }
 
-.carousel .carousel__parrafo .btn:hover {
+.carousel .carousel__texto .carousel__parrafo .btn:hover {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
-.carousel .carousel__parrafo .btn:active {
+.carousel .carousel__texto .carousel__parrafo .btn:active {
   background-color: #225239;
 }
 
@@ -1268,7 +1276,7 @@ body .marca .marca__titulo .marca__copy {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (min-width: 520px) and (max-width: 990px) {
+@media only screen and (min-width: 768px) and (max-width: 990px) {
   .asesoria__formulario #formulario {
     width: 80%;
   }
@@ -1284,6 +1292,30 @@ body .marca .marca__titulo .marca__copy {
   }
   .contacto .formulario {
     margin-top: 2rem;
+  }
+  .carousel .carousel__texto {
+    padding: 3.5rem 2.5rem 0 1rem;
+  }
+  .carousel .carousel__texto .carousel__titulo {
+    font-size: 2.2rem;
+  }
+  .carousel .carousel__texto .envio .envio__a {
+    font-size: 1.4rem;
+  }
+  .carousel .carousel__texto .envio .envio__b {
+    font-size: 1.3rem;
+  }
+  .carousel .carousel__texto .carousel__parrafo .carousel__p {
+    font-size: 1.35rem;
+  }
+  .carousel .carousel__texto .carousel__parrafo .carousel__p .carousel__enlace {
+    font-size: 1.15rem;
+  }
+  .carousel .carousel__texto .carousel__parrafo .carousel__p .compra-ya {
+    font-size: 1.15rem;
+  }
+  .carousel .carousel__texto .carousel__parrafo .carousel__p .tyc {
+    font-size: 0.8rem;
   }
 }
 

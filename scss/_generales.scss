@@ -143,14 +143,14 @@ body {
         display: flex;
         justify-content: space-around;
         margin-top: 10rem;
-        background: linear-gradient(to right,  $verde-2, $verde-3);
+        background: linear-gradient(to right,  $verde-gris, $verde-gris);
         border-top: 3px solid $negro;
 
         .info__page {
             display: flex;
 
             .info__titulo {
-                color: $blanco;
+                color: $negro;
                 font-size: 2rem;
                 text-decoration: underline;
             }
@@ -162,12 +162,13 @@ body {
                 .productos__lista {
                     list-style-type: none;
                     .lista__item a {
-                        color: $celeste-2;
+                        color: $negro;
+                        opacity: .55;
                         text-decoration: none;
                         font-size: 1.45rem;
                     }
                     .lista__item a:hover {
-                        text-decoration: underline;
+                        opacity: 1;
                     }
                 }
             }
@@ -179,12 +180,13 @@ body {
                 .servicios__lista {
                     list-style-type: none;
                     .lista__item a {
-                        color: $celeste-2;
+                        color: $negro;
+                        opacity: .55;
                         text-decoration: none;
                         font-size: 1.45rem;
                     }
                     .lista__item a:hover {
-                        text-decoration: underline;
+                        opacity: 1;
                     }
                 }
             }
@@ -200,7 +202,7 @@ body {
             .titulo__h3 {
                 font-family: 'poppins';
                 margin: 0 3rem;
-                color: $blanco;
+                color: $negro;
                 font-size: 1.65rem;
                 text-decoration: underline;
             }
@@ -227,7 +229,7 @@ body {
             .redes__icon {
                 transition: 1s;
                 margin: 2rem 1rem 0 1rem;
-                color: $blanco;
+                color: $negro;
                 font-size: 3.5rem;
                 text-decoration: none;
             }
@@ -248,7 +250,7 @@ body {
         }
 
         .marca__titulo--gradient {
-            background: linear-gradient(to right,  $verde-2, $verde-3);
+            background: linear-gradient(to right,  $verde-gris, $verde-gris);
         }
 
         .marca__titulo {
@@ -258,13 +260,13 @@ body {
             font-size: 1.8rem;
             padding-bottom: 1.5rem;
             margin: 0;
-            color: $blanco;
+            color: $negro;
             word-spacing: 5px;
 
             .marca__enlace {
                 font-family: 'ailerons';
                 font-size: 2.6rem;
-                color: #e7e7e7;
+                color: $negro;
                 padding: 0;
                 opacity: .5;
             }

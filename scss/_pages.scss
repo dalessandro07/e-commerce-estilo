@@ -30,6 +30,7 @@
 
 .carousel {
     width: 100%;
+    height: 100%;
     margin-bottom: 3rem;
     font-family: 'poppins';
 
@@ -43,91 +44,96 @@
         }
     }
 
-    .carousel__titulo {
-        font-size: 2.8rem;
-        color: $verde-2;
-        padding: 0.5rem 0 2rem 0;
-        width: 100%;
-        text-align: center;
-    }
+    .carousel__texto {
+        padding: 1rem 3rem 2rem 1rem;
 
-    .envio {
-        text-align: center;
-        padding: 0 1.5rem;
-        margin: 1rem 0;
-        .envio__a {
-            font-size: 2rem;
-            background-color: $verde-2;
-            color: $blanco;
-            padding: 0 .5rem;
-            border-radius: 4px 4px 4px;
+        .carousel__titulo {
+            font-size: 2.8rem;
+            color: $verde-2;
+            padding: 0.5rem 0 2rem 0;
+            width: 100%;
+            text-align: center;
         }
-        .envio__b {
-            padding: 0.5rem;
-            color: $verde-4;
-            font-size: 1.8rem;
-            border-radius: 4px 4px 4px;
-        }
-    }
-
-    .carousel__parrafo {
-        display: flex;
-        flex-direction: column;
-        margin-top: 2rem;
-
-        .carousel__p {
-            padding: 0 2rem 1rem 2rem;
-            font-size: 1.6rem;
-
-            .carousel__enlace {
-                font-size: 1.55rem;
-                font-weight: 600;
-                text-decoration: none;
-                color: $verde-4;
-            }
-
-            .carousel__enlace:hover {
-                text-decoration: underline;
-            }
-
-            .compra-ya {
-                color: $blanco;
+    
+        .envio {
+            text-align: center;
+            padding: 0 1.5rem;
+            margin: 1rem 0;
+            .envio__a {
+                font-size: 2rem;
                 background-color: $verde-2;
-                font-size: 1.45rem;
-                margin: 0 .5rem;
+                color: $blanco;
                 padding: 0 .5rem;
                 border-radius: 4px 4px 4px;
             }
-
-            .tyc {
-                font-size: 1rem;
-                color: $gris;
+            .envio__b {
+                padding: 0.5rem;
+                color: $verde-4;
+                font-size: 1.8rem;
+                border-radius: 4px 4px 4px;
             }
         }
-
-        .btn {
-            background-color: $verde-4;
-            border: none;
-            align-self: center;
-            width: 135px;
-
-            a {
-                text-decoration: none;
-                font-size: 1.5rem;
-                color: $blanco;
+    
+        .carousel__parrafo {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+    
+            .carousel__p {
+                text-align: justify;
+                padding: 0 2rem 1rem 2rem;
+                font-size: 1.6rem;
+    
+                .carousel__enlace {
+                    font-size: 1.55rem;
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: $verde-4;
+                }
+    
+                .carousel__enlace:hover {
+                    text-decoration: underline;
+                }
+    
+                .compra-ya {
+                    color: $blanco;
+                    background-color: $verde-2;
+                    font-size: 1.45rem;
+                    margin: 0 .5rem;
+                    padding: 0 .5rem;
+                    border-radius: 4px 4px 4px;
+                }
+    
+                .tyc {
+                    font-size: 1rem;
+                    color: $gris;
+                }
             }
-        }
-
-        .btn:hover {
-            transform: scale(1.1, 1.1);
-            transition: all .2s;
-        }
-
-        .btn:active {
-            background-color: $verde-2;
+    
+            .btn {
+                background-color: $verde-4;
+                border: none;
+                align-self: center;
+                width: 135px;
+    
+                a {
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    color: $blanco;
+                }
+            }
+    
+            .btn:hover {
+                transform: scale(1.1, 1.1);
+                transition: all .2s;
+            }
+    
+            .btn:active {
+                background-color: $verde-2;
+            }
         }
     }
-}
+    }
 
 .titulo {
     display: flex;

@@ -1,6 +1,6 @@
 /* MEDIA QUERIES */
 
-@media only screen and (min-width: 520px) and (max-width: 990px) {
+@media only screen and (min-width: 768px) and (max-width: 990px) {
     .asesoria__formulario {
         #formulario {
             width: 80%;
@@ -19,6 +19,40 @@
     .contacto {
         .formulario {
             margin-top: 2rem;
+        }
+    }
+    .carousel {
+        .carousel__texto {
+            padding: 3.5rem 2.5rem 0 1rem;
+
+            .carousel__titulo {
+                font-size: 2.2rem;
+            }
+
+            .envio {
+                .envio__a {
+                    font-size: 1.4rem;
+                }
+
+                .envio__b {
+                    font-size: 1.3rem;
+                }
+            }
+            .carousel__parrafo {
+                .carousel__p {
+                    font-size: 1.35rem;
+                    .carousel__enlace {
+                        font-size: 1.15rem;
+                    }
+                    .compra-ya {
+                        font-size: 1.15rem;
+                    }
+                    .tyc {
+                        font-size: 0.8rem;
+                    }
+                }
+                
+            }
         }
     }
 }
