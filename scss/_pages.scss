@@ -279,17 +279,12 @@
 
 /* ESTILOS PRODUCTOS */
 
-.titulo__h1--padding {
-    padding-top: 4rem;
-}
-
 .btn-group {
     display: block;
 }
 
-.btn-secondary:hover {
-    background-color: $verde-1;
-    border: none;
+.titulo__h1--padding {
+    padding-top: 4rem;
 }
 
 .filtros {
@@ -345,8 +340,20 @@
             margin: 0 .5rem 0 0;
             color: $blanco;
         }
+        
+        .btn-secondary {
+            background-color: transparent;
+            border: none;
+            font-size: 1.4rem;
+        }
+        
+        .btn-secondary:hover {
+            background-color: $verde-1;
+            border: none;
+        }
 
     }
+
 }
 
 .producto__container {
@@ -582,9 +589,11 @@
     margin: 6rem 0;
     padding: .8rem;
     font-size: 2.3rem;
+    font-weight: 600;
     text-align: center;
-    background-color: $verde-2;
-    color: $blanco;
+    background-color: $terracota;
+    color: $negro;
+    border-radius: 3px 3px 3px;
 }
 
 .contacto {
@@ -594,7 +603,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        outline: 3px solid $verde-2;
+        outline: 3px solid $terracota;
 
         .formulario__texto {
             display: flex;
@@ -651,7 +660,6 @@
 
     .formulario {
         padding: 0 2rem;
-        outline: 3px solid $verde-2;
         padding: 0 4rem 1rem 4rem;
 
         .container__formulario {
@@ -663,14 +671,19 @@
             .needs-validation {
                 #boton__enviar {
                     margin: 0 1rem;
-                    background-color: $verde-2;
-                    color: $blanco;
+                    background-color: $terracota;
+                    color: $negro;
                     font-size: 1.65rem;
+                    font-weight: 600;
                     border: 3px solid $gris;
+                }
+
+                #boton__enviar:hover, #boton__limpiar:hover {
+                    opacity: .75;
                 }
     
                 #boton__enviar:active {
-                    background-color: $verde-2;
+                    background-color: $terracota;
                     border: 3px solid $gris;
                     box-shadow: none;
                     transform: translateY(6px);
@@ -679,14 +692,15 @@
     
                 #boton__limpiar {
                     margin: 0 1rem;
-                    background-color: $verde-2;
-                    color: $blanco;
+                    background-color: $terracota;
+                    color: $negro;
                     font-size: 1.65rem;
+                    font-weight: 600;
                     border: 3px solid $gris;
                 }
     
                 #boton__limpiar:active {
-                    background-color: $verde-2;
+                    background-color: $terracota;
                     border: 3px solid $gris;
                     box-shadow: none;
                     transform: translateY(6px);
@@ -698,7 +712,7 @@
             input,
             select,
             textarea {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
     
             option {

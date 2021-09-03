@@ -218,6 +218,47 @@ body .nav__lista {
           align-items: center;
 }
 
+body .nav__lista .dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .nav__lista .dropdown .servicios--style {
+  color: #0009;
+  padding: 5px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+body .nav__lista .dropdown .servicios--style:hover {
+  color: #000000;
+}
+
+body .nav__lista .dropdown .btn-secondary {
+  background: none;
+  border: none;
+  color: #000000;
+  opacity: .55;
+  padding: 0 .4rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+body .nav__lista .dropdown .btn-secondary:hover {
+  background-color: #0009;
+  color: #000000;
+}
+
+body .nav__lista .dropdown-item {
+  font-size: 1.45rem;
+}
+
 body .nav__lista .lista__item {
   list-style-type: none;
   margin: 0 1.6rem;
@@ -235,7 +276,7 @@ body .nav__lista .lista__item:active {
 }
 
 body .nav__lista .lista__item a {
-  color: #000000;
+  color: #0009;
   padding: 5px;
   font-size: 1.25rem;
   font-weight: 600;
@@ -244,39 +285,13 @@ body .nav__lista .lista__item a {
 }
 
 body .nav__lista .lista__item a:hover {
-  color: #000000;
-  opacity: 1;
+  color: #000000 !important;
   border-bottom: 1.6px solid #000000;
 }
 
 body .nav__lista #seccionActiva {
   color: #000000;
   opacity: 1;
-}
-
-body .servicios--style {
-  color: #000000;
-  padding: 5px;
-  font-size: 1.25rem;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-body .btn-secondary {
-  background: none;
-  border: none;
-  color: #000000;
-  opacity: .55;
-  padding: 5px;
-  font-size: 1.3rem;
-  font-weight: 500;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-body .dropdown-item {
-  font-size: 1.5rem;
 }
 
 body .footer__principal {
@@ -779,17 +794,12 @@ body .marca .marca__titulo .marca__copy {
 }
 
 /* ESTILOS PRODUCTOS */
-.titulo__h1--padding {
-  padding-top: 4rem;
-}
-
 .btn-group {
   display: block;
 }
 
-.btn-secondary:hover {
-  background-color: #356b4f;
-  border: none;
+.titulo__h1--padding {
+  padding-top: 4rem;
 }
 
 .filtros {
@@ -857,6 +867,17 @@ body .marca .marca__titulo .marca__copy {
 .filtros__container .total--color {
   margin: 0 .5rem 0 0;
   color: #e7e7e7;
+}
+
+.filtros__container .btn-secondary {
+  background-color: transparent;
+  border: none;
+  font-size: 1.4rem;
+}
+
+.filtros__container .btn-secondary:hover {
+  background-color: #356b4f;
+  border: none;
 }
 
 .producto__container {
@@ -1112,9 +1133,11 @@ body .marca .marca__titulo .marca__copy {
   margin: 6rem 0;
   padding: .8rem;
   font-size: 2.3rem;
+  font-weight: 600;
   text-align: center;
-  background-color: #225239;
-  color: #e7e7e7;
+  background-color: #df9b71;
+  color: #000000;
+  border-radius: 3px 3px 3px;
 }
 
 .contacto {
@@ -1134,7 +1157,7 @@ body .marca .marca__titulo .marca__copy {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  outline: 3px solid #225239;
+  outline: 3px solid #df9b71;
 }
 
 .contacto .formulario__info .formulario__texto {
@@ -1207,7 +1230,6 @@ body .marca .marca__titulo .marca__copy {
 
 .contacto .formulario {
   padding: 0 2rem;
-  outline: 3px solid #225239;
   padding: 0 4rem 1rem 4rem;
 }
 
@@ -1220,14 +1242,19 @@ body .marca .marca__titulo .marca__copy {
 
 .contacto .formulario .container__formulario .needs-validation #boton__enviar {
   margin: 0 1rem;
-  background-color: #225239;
-  color: #e7e7e7;
+  background-color: #df9b71;
+  color: #000000;
   font-size: 1.65rem;
+  font-weight: 600;
   border: 3px solid #0009;
 }
 
+.contacto .formulario .container__formulario .needs-validation #boton__enviar:hover, .contacto .formulario .container__formulario .needs-validation #boton__limpiar:hover {
+  opacity: .75;
+}
+
 .contacto .formulario .container__formulario .needs-validation #boton__enviar:active {
-  background-color: #225239;
+  background-color: #df9b71;
   border: 3px solid #0009;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1239,14 +1266,15 @@ body .marca .marca__titulo .marca__copy {
 
 .contacto .formulario .container__formulario .needs-validation #boton__limpiar {
   margin: 0 1rem;
-  background-color: #225239;
-  color: #e7e7e7;
+  background-color: #df9b71;
+  color: #000000;
   font-size: 1.65rem;
+  font-weight: 600;
   border: 3px solid #0009;
 }
 
 .contacto .formulario .container__formulario .needs-validation #boton__limpiar:active {
-  background-color: #225239;
+  background-color: #df9b71;
   border: 3px solid #0009;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1260,7 +1288,7 @@ body .marca .marca__titulo .marca__copy {
 .contacto .formulario .container__formulario input,
 .contacto .formulario .container__formulario select,
 .contacto .formulario .container__formulario textarea {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .contacto .formulario .container__formulario option {
