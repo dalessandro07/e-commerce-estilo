@@ -42,7 +42,8 @@
             <!-- inicio menú de navegación -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav__lista navbar-nav">
-                    <li class="nav-item lista__item lista__item--margin"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item lista__item lista__item--margin"><a class="nav-link"
+                            href="../index.html">Inicio</a></li>
                     <li class="nav-item lista__item"><a class="nav-link" href="productos.html">Productos</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -63,8 +64,10 @@
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item lista__item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                    <li class="nav-item lista__item lista__item--margin"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item lista__item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item lista__item lista__item--margin"><a class="nav-link"
+                            href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
             <!-- cierre menú de navegación -->
@@ -84,7 +87,7 @@
     <section class="container">
 
         <div class="servicios row">
-            
+
             <div data-aos="zoom-in" class="servicios__container col-xs-12 col-md-6 col-lg-4">
                 <article class="servicios__subtitulo">
                     <h3 class="subtitulo__h3 text-center">
@@ -115,23 +118,89 @@
                     <a href="#design"><img class="imagen--style" src="../assets/img/diseño-organizacion.jpg" alt=""></a>
                 </article>
             </div>
-            
+
         </div>
 
         <div class="servicios__2">
 
-            <div class="mapa" id="mapa">
-                <div class="mapa__titulo">
-                    <h3 class="titulo__h3--style">Cotiza un DELIVERY</h3>
+            <div class="mapa__id" id="mapa"></div>
+            <div class="mapa row">
+
+                <div class="mapa__datos col-xs-12 col-md-12 col-lg-6">
+                    <div class="mapa__titulo">
+                        <h3 class="titulo__h3--style">Cotiza un DELIVERY</h3>
+                    </div>
+                    <div class="mapa__form">
+                        <form>
+                            <div class="row">
+                                <div class="columna__form col-xs-12 col-md-6 col-lg-6">
+                                    <input type="text" class="form-control" placeholder="Departamento" required>
+                                </div>
+                                <div class="columna__form col-xs-12 col-md-6 col-lg-6">
+                                    <input type="text" class="form-control" placeholder="Provincia" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="columna__form col-xs-12 col-md-6 col-lg-6">
+                                    <select class="custom-select" id="validationCustom04" required>
+                                        <option selected disabled value="">Distrito</option>
+                                        <option>San Miguel</option>
+                                        <option>Magdalena</option>
+                                        <option>Pueblo Libre</option>
+                                        <option>Jesús María</option>
+                                        <option>Barranco</option>
+                                        <option>Cercado de Lima</option>
+                                        <option>Surco</option>
+                                        <option>Breña</option>
+                                        <option>Chorrillos</option>
+                                        <option>San Martín de Porres</option>
+                                        <option>San Juan de Lurigancho</option>
+                                        <option>Chosica</option>
+                                        <option>Chaclacayo</option>
+                                        <option>La Molina</option>
+                                        <option>Ate</option>
+                                    </select>
+                                </div>
+                                <div class="columna__form col-xs-12 col-md-6 col-lg-6">
+                                    <input type="number" class="form-control" placeholder="Código Postal" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="columna__form col-xs-12 col-md-6 col-lg-6">
+                                    <input type="text" class="form-control" placeholder="Calle">
+                                </div>
+                                <div class="columna__form col-xs-12 col-md-6 col-lg-6">
+                                    <input type="number" class="form-control" placeholder="Casa o N° de Piso">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="columna__form col-xs-12 col-md-12 col-lg-12 margin">
+                                    <label>Fecha de Envío</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                                <div class="columna__form col-xs-12 col-md-12 col-lg-12 margin">
+                                    <label>Hora de Envío</label>
+                                    <input type="time" class="form-control" placeholder="N° Casa o Piso" required>
+                                </div>
+                            </div>
+                            <div class="botones">
+                                <button class="btn btn-primary" type="submit">Cotizar</button>
+                                <button class="btn btn-primary" type="reset">Limpiar</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div data-aos="zoom-in-up" class="mapa__iframe">
+
+                <div data-aos="zoom-in-up" class="mapa__iframe col-xs-12 col-md-12 col-lg-6">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15606.043073718743!2d-77.09098035!3d-12.0771453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1630081182931!5m2!1ses-419!2spe"
                         width="100%" height="430" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
+
             </div>
 
-            <div class="asesoria" id="asesoria">
+            <div class="asesoria__id" id="asesoria"></div>
+            <div class="asesoria">
                 <div class="asesoria__titulo">
                     <h3 class="titulo__h3--style">¡Solicita Asesoría Personalizada Online!</h3>
                 </div>
@@ -178,13 +247,14 @@
                             </div>
                         </div>
                         <div class="boton__solicitar">
-                            <button class="btn btn-primary" id="boton__enviar" type="submit">SOLICITAR ASESORÍA</button>
+                            <button class="btn btn-primary" id="boton__enviar" type="submit">Solicitar Asesoría</button>
                         </div>
                     </form>
                 </div>
             </div>
 
-            <div class="design" id="design">
+            <div class="design__id" id="design"></div>
+            <div class="design">
                 <div class="design__titulo">
                     <h3 class="titulo__h3--style">¡Diseños para salas, dormitorios, oficinas y más!</h3>
                 </div>
@@ -248,8 +318,8 @@
 
     <!-- inicio de footer -->
 
-    <footer class="container-fluid">
-        
+    <footer class="container-fluid footer__main">
+
         <div class="footer__principal row">
 
             <div class="info__page col-xs-12">
@@ -266,7 +336,7 @@
                 <div class="info__servicios col-xs-12">
                     <h4 class="info__titulo">Servicios</h4>
                     <ul class="servicios__lista">
-                        <li class="lista__item"><a href="servicios.html#delivery">Delivery</a></li>
+                        <li class="lista__item"><a href="servicios.html#mapa">Delivery</a></li>
                         <li class="lista__item"><a href="servicios.html#asesoria">Asesoría personalizada</a></li>
                         <li class="lista__item"><a href="servicios.html#design">Diseño de jardines e interiores</a></li>
                     </ul>
@@ -282,10 +352,10 @@
                 <div class="lista__footer redes__container--padding">
                     <ul class="redes__lista">
                         <li><a class="wsp" href="https://wa.me/51986307201" target="_blank"><i
-                            class="redes__icon fab fa-whatsapp"></i></a>
+                                    class="redes__icon fab fa-whatsapp"></i></a>
                         </li>
-                        <li><a class="fb" href="https://facebook.com" target="_blank"><i class="redes__icon fab fa-facebook"
-                                    aria-hidden="true"></i></a>
+                        <li><a class="fb" href="https://facebook.com" target="_blank"><i
+                                    class="redes__icon fab fa-facebook" aria-hidden="true"></i></a>
                         </li>
                         <li><a class="msg" href="https://messenger.com" target="_blank"><i
                                     class="redes__icon fab fa-facebook-messenger" aria-hidden="true"></i></a></li>
@@ -299,7 +369,11 @@
         </div>
 
         <div class="marca row">
-            <div class="marca__contenedor--padding col-xs-12 col-md-12 col-lg-12">
+            <div class="copy col-xs-12 col-md-6 col-lg-6">
+                <strong class="copy__titulo">Todos los derechos reservados <b
+                        class="marca__copy">&copy</b></strong><strong class="copy__titulo">2021</strong>
+            </div>
+            <div class="marca__contenedor--padding col-xs-12 col-md-6 col-lg-6">
                 <strong class="marca__titulo marca__titulo--gradient">
                     Powered by <a href="../index.html" class="marca__enlace">Alessandro</a> <b
                         class="marca__copy">&copy</b>

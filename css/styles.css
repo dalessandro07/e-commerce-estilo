@@ -132,6 +132,10 @@
   font-size: 62.5%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "lato";
   background-color: #e7e7e7;
@@ -296,80 +300,83 @@ body .nav__lista #seccionActiva {
   opacity: 1;
 }
 
-body .footer__principal {
+body .footer__main {
+  background: -webkit-gradient(linear, left bottom, left top, from(#225239), to(#225239));
+  background: linear-gradient(to top, #225239, #225239);
+}
+
+body .footer__main .footer__principal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 10rem;
-  background: -webkit-gradient(linear, left top, right top, from(#949A88), to(#949A88));
-  background: linear-gradient(to right, #949A88, #949A88);
   border-top: 3px solid #000000;
 }
 
-body .footer__principal .info__page {
+body .footer__main .footer__principal .info__page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .footer__principal .info__page .info__titulo {
-  color: #000000;
+body .footer__main .footer__principal .info__page .info__titulo {
+  color: #e7e7e7;
   font-size: 2rem;
   text-decoration: underline;
 }
 
-body .footer__principal .info__page .info__productos {
+body .footer__main .footer__principal .info__page .info__productos {
   margin: 1rem 2rem;
   font-family: 'poppins';
 }
 
-body .footer__principal .info__page .info__productos .productos__lista {
+body .footer__main .footer__principal .info__page .info__productos .productos__lista {
   list-style-type: none;
 }
 
-body .footer__principal .info__page .info__productos .productos__lista .lista__item a {
-  color: #000000;
+body .footer__main .footer__principal .info__page .info__productos .productos__lista .lista__item a {
+  color: #e7e7e7;
   opacity: .55;
   text-decoration: none;
   font-size: 1.45rem;
 }
 
-body .footer__principal .info__page .info__productos .productos__lista .lista__item a:hover {
+body .footer__main .footer__principal .info__page .info__productos .productos__lista .lista__item a:hover {
   opacity: 1;
 }
 
-body .footer__principal .info__page .info__servicios {
+body .footer__main .footer__principal .info__page .info__servicios {
   margin: 1rem 2rem;
   font-family: 'poppins';
 }
 
-body .footer__principal .info__page .info__servicios .servicios__lista {
+body .footer__main .footer__principal .info__page .info__servicios .servicios__lista {
   list-style-type: none;
 }
 
-body .footer__principal .info__page .info__servicios .servicios__lista .lista__item a {
-  color: #000000;
+body .footer__main .footer__principal .info__page .info__servicios .servicios__lista .lista__item a {
+  color: #e7e7e7;
   opacity: .55;
   text-decoration: none;
   font-size: 1.45rem;
 }
 
-body .footer__principal .info__page .info__servicios .servicios__lista .lista__item a:hover {
+body .footer__main .footer__principal .info__page .info__servicios .servicios__lista .lista__item a:hover {
   opacity: 1;
 }
 
-body .redes {
+body .footer__main .redes {
   width: 40%;
   margin: 1rem;
 }
 
-body .redes .redes__container--padding {
+body .footer__main .redes .redes__container--padding {
   padding: 0;
 }
 
-body .redes .redes__container--padding .titulo__h3 {
+body .footer__main .redes .redes__container--padding .titulo__h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,12 +385,12 @@ body .redes .redes__container--padding .titulo__h3 {
           justify-content: center;
   font-family: 'poppins';
   margin: 0 3rem;
-  color: #000000;
+  color: #e7e7e7;
   font-size: 1.65rem;
   text-decoration: underline;
 }
 
-body .redes .redes__lista {
+body .footer__main .redes .redes__lista {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,74 +400,100 @@ body .redes .redes__lista {
   margin-top: 1rem;
 }
 
-body .redes .redes__lista .wsp i:hover {
+body .footer__main .redes .redes__lista .wsp i:hover {
   color: #00bb2d;
+  opacity: 1;
 }
 
-body .redes .redes__lista .fb i:hover {
+body .footer__main .redes .redes__lista .fb i:hover {
   color: #3b5998;
+  opacity: 1;
 }
 
-body .redes .redes__lista .is i:hover {
+body .footer__main .redes .redes__lista .is i:hover {
   color: #c13584;
+  opacity: 1;
 }
 
-body .redes .redes__lista .msg i:hover {
+body .footer__main .redes .redes__lista .msg i:hover {
   color: #0078ff;
+  opacity: 1;
 }
 
-body .redes .redes__lista .redes__icon {
+body .footer__main .redes .redes__lista .redes__icon {
   -webkit-transition: 1s;
   transition: 1s;
   margin: 2rem 1rem 0 1rem;
-  color: #000000;
+  color: #e7e7e7;
+  opacity: .75;
   font-size: 3.5rem;
   text-decoration: none;
 }
 
-body .redes .redes__lista .redes__icon:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+body .footer__main .redes .redes__lista .redes__icon:hover {
+  -webkit-transform: scale(1.2, 1.2) rotate(360deg);
+          transform: scale(1.2, 1.2) rotate(360deg);
 }
 
-body .marca {
+body .footer__main .marca {
   margin: 0;
   padding: 0;
 }
 
-body .marca .marca__contenedor--padding {
+body .footer__main .marca .marca__contenedor--padding {
   padding: 0;
 }
 
-body .marca .marca__titulo--gradient {
-  background: -webkit-gradient(linear, left top, right top, from(#949A88), to(#949A88));
-  background: linear-gradient(to right, #949A88, #949A88);
+body .footer__main .marca .copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body .marca .marca__titulo {
+body .footer__main .marca .copy .copy__titulo {
+  text-align: center;
+  margin: 0 .65rem;
+  color: #e7e7e7;
+  font-size: 1.6rem;
+  font-family: 'poppins';
+  font-weight: 500;
+}
+
+body .footer__main .marca .copy .marca__copy {
+  position: absolute;
+  top: 1.6rem;
+}
+
+body .footer__main .marca .marca__titulo {
   display: block;
   text-align: center;
   font-family: 'ONEDAY';
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding-bottom: 1.5rem;
   margin: 0;
-  color: #000000;
+  color: #e7e7e7;
   word-spacing: 5px;
 }
 
-body .marca .marca__titulo .marca__enlace {
+body .footer__main .marca .marca__titulo .marca__enlace {
   font-family: 'ailerons';
-  font-size: 2.6rem;
-  color: #000000;
+  font-size: 2.4rem;
+  color: #e7e7e7;
   padding: 0;
   opacity: .5;
 }
 
-body .marca .marca__titulo .marca__enlace:hover {
+body .footer__main .marca .marca__titulo .marca__enlace:hover {
   opacity: 1;
 }
 
-body .marca .marca__titulo .marca__copy {
+body .footer__main .marca .marca__titulo .marca__copy {
   position: absolute;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 1.6rem;
@@ -633,7 +666,7 @@ body .marca .marca__titulo .marca__copy {
 
 .titulo .titulo__h1,
 .titulo .titulo__h2 {
-  font-size: 3.6rem;
+  font-size: 3rem;
   font-family: 'poppins';
   color: #000000;
   font-weight: 600;
@@ -657,7 +690,7 @@ body .marca .marca__titulo .marca__copy {
 }
 
 .subtitulo .titulo__h3 {
-  font-size: 3.6rem;
+  font-size: 2.5rem;
   font-family: 'poppins';
   font-weight: 900;
   letter-spacing: .35rem;
@@ -982,7 +1015,8 @@ body .marca .marca__titulo .marca__copy {
 }
 
 .servicios__subtitulo .subtitulo__h3 {
-  font-size: 2.2rem;
+  font-family: 'poppins';
+  font-size: 2rem;
 }
 
 .imagen--style {
@@ -990,11 +1024,11 @@ body .marca .marca__titulo .marca__copy {
   height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
-  outline: 3.5px solid #df9b71;
+  outline: 3.5px solid #225239;
 }
 
 .imagen--style:hover {
-  outline: 3.5px solid #7d1c0d;
+  outline: 3.5px solid #6e9607;
   opacity: .8;
   -webkit-transition: all .4s;
   transition: all .4s;
@@ -1011,13 +1045,69 @@ body .marca .marca__titulo .marca__copy {
   margin: 2rem;
 }
 
+.servicios__2 #mapa {
+  height: 50px;
+}
+
+.servicios__2 #asesoria, .servicios__2 #design {
+  height: 40px;
+}
+
+.servicios__2 .mapa .mapa__datos .mapa__form .columna__form {
+  padding: 1rem 2rem;
+}
+
+.servicios__2 .mapa .mapa__datos .mapa__form .columna__form input, .servicios__2 .mapa .mapa__datos .mapa__form .columna__form select {
+  font-family: 'poppins';
+  font-size: 1.45rem;
+}
+
+.servicios__2 .mapa .mapa__datos .mapa__form .columna__form option {
+  font-size: 1.25rem;
+}
+
+.servicios__2 .mapa .mapa__datos .mapa__form .columna__form label {
+  font-size: 1.45rem;
+}
+
+.servicios__2 .mapa .mapa__datos .mapa__form .margin {
+  margin: 0 0.5rem 2rem 0.5rem;
+}
+
+.servicios__2 .mapa .mapa__datos .mapa__form .botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0;
+}
+
+.servicios__2 .mapa .mapa__datos .mapa__form .botones .btn {
+  margin: 0 2rem;
+  font-size: 1.45rem;
+  background-color: #225239;
+  border: none;
+}
+
+.servicios__2 .mapa .mapa__datos .mapa__form .botones .btn:hover {
+  opacity: .9;
+  -webkit-transform: scale(1.15, 1.15);
+          transform: scale(1.15, 1.15);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
 .servicios__2 .mapa .mapa__iframe {
   border: 3px solid #225239;
+  margin-top: 4rem;
 }
 
 .servicios__2 .titulo__h3--style {
   font-size: 2.4rem;
-  margin: 4rem 0;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
   padding: .7rem;
   background-color: #225239;
   color: #e7e7e7;
@@ -1038,7 +1128,7 @@ body .marca .marca__titulo .marca__copy {
 .servicios__2 .asesoria__formulario .formulario select,
 .servicios__2 .asesoria__formulario .formulario option,
 .servicios__2 .asesoria__formulario .formulario input {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: .6rem;
 }
 
@@ -1059,7 +1149,7 @@ body .marca .marca__titulo .marca__copy {
 .servicios__2 .asesoria__formulario .formulario .boton__solicitar #boton__enviar {
   background-color: #e7e7e7;
   color: #000000;
-  font-size: 1.65rem;
+  font-size: 1.5rem;
   border: 3px solid #225239;
 }
 
@@ -1088,7 +1178,7 @@ body .marca .marca__titulo .marca__copy {
 
 .servicios__2 .design__gallery .gallery__item img:hover {
   cursor: pointer;
-  outline: 4px solid #df9b71;
+  outline: 4px solid #6e9607;
   opacity: .8;
   -webkit-transform: scale(1.04, 1.04);
           transform: scale(1.04, 1.04);
@@ -1121,13 +1211,13 @@ body .marca .marca__titulo .marca__copy {
 
 .accordion .card-body {
   font-family: 'poppins';
-  font-size: 1.8rem;
+  font-size: 1.55rem;
 }
 
 .accordion .btn {
   color: #df9b71;
   font-family: 'poppins';
-  font-size: 2.2rem;
+  font-size: 1.85rem;
 }
 
 /* ESTILOS CONTACTO */

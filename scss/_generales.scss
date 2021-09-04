@@ -9,6 +9,10 @@
     font-size: 62.5%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: $fuente-lato;
     background-color: $blanco;
@@ -149,148 +153,169 @@ body {
 
     /* ESTILOS GENERALES FOOTER */
 
-    .footer__principal {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 10rem;
-        background: linear-gradient(to right,  $verde-gris, $verde-gris);
-        border-top: 3px solid $negro;
+    .footer__main {
+        background: linear-gradient(to top,  $verde-2, $verde-2);
 
-        .info__page {
+        .footer__principal {
             display: flex;
-
-            .info__titulo {
-                color: $negro;
-                font-size: 2rem;
-                text-decoration: underline;
-            }
-
-            .info__productos {
-                margin: 1rem 2rem;
-                font-family: 'poppins';
-
-                .productos__lista {
-                    list-style-type: none;
-                    .lista__item a {
-                        color: $negro;
-                        opacity: .55;
-                        text-decoration: none;
-                        font-size: 1.45rem;
-                    }
-                    .lista__item a:hover {
-                        opacity: 1;
+            justify-content: space-around;
+            margin-top: 10rem;
+            border-top: 3px solid $negro;
+    
+            .info__page {
+                display: flex;
+    
+                .info__titulo {
+                    color: $blanco;
+                    font-size: 2rem;
+                    text-decoration: underline;
+                }
+    
+                .info__productos {
+                    margin: 1rem 2rem;
+                    font-family: 'poppins';
+    
+                    .productos__lista {
+                        list-style-type: none;
+                        .lista__item a {
+                            color: $blanco;
+                            opacity: .55;
+                            text-decoration: none;
+                            font-size: 1.45rem;
+                        }
+                        .lista__item a:hover {
+                            opacity: 1;
+                        }
                     }
                 }
-            }
-
-            .info__servicios {
-                margin: 1rem 2rem;
-                font-family: 'poppins';
-
-                .servicios__lista {
-                    list-style-type: none;
-                    .lista__item a {
-                        color: $negro;
-                        opacity: .55;
-                        text-decoration: none;
-                        font-size: 1.45rem;
-                    }
-                    .lista__item a:hover {
-                        opacity: 1;
+    
+                .info__servicios {
+                    margin: 1rem 2rem;
+                    font-family: 'poppins';
+    
+                    .servicios__lista {
+                        list-style-type: none;
+                        .lista__item a {
+                            color: $blanco;
+                            opacity: .55;
+                            text-decoration: none;
+                            font-size: 1.45rem;
+                        }
+                        .lista__item a:hover {
+                            opacity: 1;
+                        }
                     }
                 }
             }
         }
-    }
-
-    .redes {
-        width: 40%;
-        margin: 1rem;
-        .redes__container--padding {
+    
+        .redes {
+            width: 40%;
+            margin: 1rem;
+            .redes__container--padding {
+                padding: 0;
+    
+                .titulo__h3 {
+                    display: flex;
+                    justify-content: center;
+                    font-family: 'poppins';
+                    margin: 0 3rem;
+                    color: $blanco;
+                    font-size: 1.65rem;
+                    text-decoration: underline;
+                }
+            }
+    
+            .redes__lista {
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 1rem;
+    
+                $redes: (wsp: #00bb2d,
+                        fb: #3b5998,
+                        is: #c13584,
+                        msg: #0078ff,
+                    );
+    
+                @each $site,
+                $color in $redes {
+                    .#{$site} i:hover {
+                        color: $color;
+                        opacity: 1;
+                    }
+                }
+    
+                .redes__icon {
+                    transition: 1s;
+                    margin: 2rem 1rem 0 1rem;
+                    color: $blanco;
+                    opacity: .75;
+                    font-size: 3.5rem;
+                    text-decoration: none;
+                }
+    
+                .redes__icon:hover {
+                    transform: scale(1.2, 1.2) rotate(360deg);
+                }
+            }
+    
+        }
+    
+        .marca {
+            margin: 0;
             padding: 0;
+    
+            .marca__contenedor--padding {
+                padding: 0;
+            }
 
-            .titulo__h3 {
+            .copy {
                 display: flex;
                 justify-content: center;
-                font-family: 'poppins';
-                margin: 0 3rem;
-                color: $negro;
-                font-size: 1.65rem;
-                text-decoration: underline;
-            }
-        }
+                align-items: center;
 
-        .redes__lista {
-            display: flex;
-            justify-content: space-evenly;
-            margin-top: 1rem;
+                .copy__titulo {
+                    text-align: center;
+                    margin: 0 .65rem;
+                    color: $blanco;
+                    font-size: 1.6rem;
+                    font-family: 'poppins';
+                    font-weight: 500;
+                }
 
-            $redes: (wsp: #00bb2d,
-                    fb: #3b5998,
-                    is: #c13584,
-                    msg: #0078ff,
-                );
-
-            @each $site,
-            $color in $redes {
-                .#{$site} i:hover {
-                    color: $color;
+                .marca__copy {
+                    position: absolute;
+                    top: 1.6rem;
                 }
             }
-
-            .redes__icon {
-                transition: 1s;
-                margin: 2rem 1rem 0 1rem;
-                color: $negro;
-                font-size: 3.5rem;
-                text-decoration: none;
-            }
-
-            .redes__icon:hover {
-                transform: rotate(360deg);
-            }
-        }
-
-    }
-
-    .marca {
-        margin: 0;
-        padding: 0;
-
-        .marca__contenedor--padding {
-            padding: 0;
-        }
-
-        .marca__titulo--gradient {
-            background: linear-gradient(to right,  $verde-gris, $verde-gris);
-        }
-
-        .marca__titulo {
-            display: block;
-            text-align: center;
-            font-family: 'ONEDAY';
-            font-size: 1.8rem;
-            padding-bottom: 1.5rem;
-            margin: 0;
-            color: $negro;
-            word-spacing: 5px;
-
-            .marca__enlace {
-                font-family: 'ailerons';
-                font-size: 2.6rem;
-                color: $negro;
-                padding: 0;
-                opacity: .5;
-            }
-
-            .marca__enlace:hover {
-                opacity: 1;
-            }
-
-            .marca__copy {
-                position: absolute;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+            .marca__titulo {
+                display: block;
+                text-align: center;
+                font-family: 'ONEDAY';
                 font-size: 1.6rem;
+                padding-bottom: 1.5rem;
+                margin: 0;
+                color: $blanco;
+                word-spacing: 5px;
+    
+                .marca__enlace {
+                    font-family: 'ailerons';
+                    font-size: 2.4rem;
+                    color: $blanco;
+                    padding: 0;
+                    opacity: .5;
+                }
+    
+                .marca__enlace:hover {
+                    opacity: 1;
+                }
+    
+                .marca__copy {
+                    position: absolute;
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    font-size: 1.6rem;
+                }
             }
         }
     }

@@ -143,7 +143,7 @@
 
     .titulo__h1,
     .titulo__h2 {
-        font-size: 3.6rem;
+        font-size: 3rem;
         font-family: 'poppins';
         color: $negro;
         font-weight: 600;
@@ -163,7 +163,7 @@
     margin-left: 0;
 
     .titulo__h3 {
-        font-size: 3.6rem;
+        font-size: 2.5rem;
         font-family: 'poppins';
         font-weight: 900;
         letter-spacing: .35rem;
@@ -437,7 +437,8 @@
     margin: 3rem;
 
     .subtitulo__h3 {
-        font-size: 2.2rem;
+        font-family: 'poppins';
+        font-size: 2rem;
     }
 }
 
@@ -445,10 +446,10 @@
     width: $completo;
     height: $h-250 + 100px;
     object-fit: cover;
-    outline: 3.5px solid $terracota;
+    outline: 3.5px solid $verde-2;
 
     &:hover {
-        outline: 3.5px solid $rojo-oscuro;
+        outline: 3.5px solid $verde-4;
         opacity: .8;
         transition: all .4s;
     }
@@ -461,17 +462,63 @@
 
 .servicios__2 {
     margin: 2rem;
+    #mapa {
+        height: 50px;
+    }
+    #asesoria, #design {
+        height: 40px;
+    }
 
     .mapa {
 
+        .mapa__datos {
+            .mapa__form {
+                .columna__form {
+                    padding: 1rem 2rem;
+
+                    input, select {
+                        font-family: 'poppins';
+                        font-size: 1.45rem;
+                    }
+                    option {font-size: 1.25rem;}
+                    label {
+                        font-size: 1.45rem;
+                    }
+                }
+                .margin {
+                    margin: 0 0.5rem 2rem 0.5rem;
+                }
+                .botones {
+                    display: flex;
+                    justify-content: center;
+                    margin: 1rem 0;
+
+                    .btn {
+                        margin: 0 2rem;
+                        font-size: 1.45rem;
+                        background-color: $verde-2;
+                        border: none;
+                    }
+
+                    .btn:hover {
+                        opacity: .9;
+                        transform: scale(1.15, 1.15);
+                        transition: all .5s;
+                    }
+                }
+            }
+        }
+
         .mapa__iframe {
             border: 3px solid $verde-2;
+            margin-top: 4rem;
         }
     }
 
     .titulo__h3--style {
         font-size: 2.4rem;
-        margin: 4rem 0;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
         padding: .7rem;
         background-color: $verde-2;
         color: $blanco;
@@ -492,7 +539,7 @@
             select,
             option,
             input {
-                font-size: 1.8rem;
+                font-size: 1.5rem;
                 padding: .6rem;
             }
 
@@ -512,7 +559,7 @@
                 #boton__enviar {
                     background-color: $blanco;
                     color: $negro;
-                    font-size: 1.65rem;
+                    font-size: 1.5rem;
                     border: 3px solid $verde-2;
                 }
 
@@ -540,7 +587,7 @@
 
             img:hover {
                 cursor: pointer;
-                outline: 4px solid $terracota;
+                outline: 4px solid $verde-4;
                 opacity: .8;
                 transform: scale(1.04, 1.04);
                 transition: opacity .45s, transform .55s;
@@ -572,13 +619,13 @@
 
     .card-body {
         font-family: 'poppins';
-        font-size: 1.8rem;
+        font-size: 1.55rem;
     }
 
     .btn {
         color: $terracota;
         font-family: 'poppins';
-        font-size: 2.2rem;
+        font-size: 1.85rem;
     }
 
 }
