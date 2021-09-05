@@ -535,15 +535,19 @@ body .footer__main .marca .marca__titulo .marca__copy {
 }
 
 .carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  height: 100%;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
   font-family: 'poppins';
 }
 
 .carousel .carousel-item {
   width: 100%;
-  height: 70vh;
 }
 
 .carousel .carousel-item img {
@@ -1119,7 +1123,7 @@ body .footer__main .marca .marca__titulo .marca__copy {
   background: linear-gradient(to right, #093028, #237a57);
   color: #e7e7e7;
   border: 3px solid #000000;
-  width: 40%;
+  width: 65%;
   margin: auto;
   padding: 2rem;
 }
@@ -1445,7 +1449,7 @@ body .footer__main .marca .marca__titulo .marca__copy {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 560px) and (max-width: 768px) {
   #noticias {
     padding: 0 5rem;
   }
@@ -1454,6 +1458,16 @@ body .footer__main .marca .marca__titulo .marca__copy {
   }
   #noticias .seccion__imagen .seccion__imagen--style {
     width: 70vw;
+  }
+  .asesoria__formulario #formulario {
+    width: 80%;
+  }
+  body .footer__main .marca .copy {
+    display: block;
+    text-align: center;
+  }
+  body .footer__main .marca .copy .marca__copy {
+    top: 0;
   }
 }
 
@@ -1506,9 +1520,16 @@ body .footer__main .marca .marca__titulo .marca__copy {
     font-size: 4rem;
     color: #e7e7e7;
   }
+  body .footer__main .marca .copy {
+    display: block;
+    text-align: center;
+  }
+  body .footer__main .marca .copy .marca__copy {
+    top: 0;
+  }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (min-width: 396px) and (max-width: 430px) {
   #noticias .seccion__texto .seccion__parrafo {
     font-size: 1.55rem;
   }
@@ -1564,6 +1585,13 @@ body .footer__main .marca .marca__titulo .marca__copy {
     font-size: 3rem;
     color: #e7e7e7;
   }
+  body .footer__main .marca .copy {
+    display: block;
+    text-align: center;
+  }
+  body .footer__main .marca .copy .marca__copy {
+    top: 0;
+  }
 }
 
 @media only screen and (max-width: 396px) {
@@ -1574,6 +1602,13 @@ body .footer__main .marca .marca__titulo .marca__copy {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  body .footer__main .marca .copy {
+    display: block;
+    text-align: center;
+  }
+  body .footer__main .marca .copy .marca__copy {
+    top: 0;
   }
   #noticias .seccion__parrafo {
     display: none;
