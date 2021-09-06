@@ -26,24 +26,25 @@
 </head>
 
 <body>
+
     <!-- inicio header + nav -->
 
     <header class="row cabecera">
-        <div class="col-xs-6 col-md-4 col-lg-4">
-            <!-- inicio logo -->
-            <a href="../index.html"><img class="cabecera__logo" src="../assets/img/logo.png" alt="logo"></a>
-            <!-- cierre logo -->
-        </div>
-        <nav class="col-xs-6 col-md-8 col-lg-8 cabecera__nav navbar navbar-expand-md navbar-light">
+
+        <!-- inicio menu de navegacion -->
+
+        <nav class="cabecera__nav navbar navbar-expand-md navbar-light">
+            <div class="navbar-brand logo">
+                <a href="../index.html"><img class="cabecera__logo" src="../assets/img/logo.png" alt="logo"></a>
+            </div>    
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- inicio menú de navegación -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav__lista navbar-nav">
-                    <li class="nav-item lista__item lista__item--margin"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li class="nav-item lista__item"><a class="nav-link" href="productos.html" id="seccionActiva">Productos</a>
+                    <li class="nav-item lista__item"><a class="nav-link" href="productos.html"
+                            id="seccionActiva">Productos</a>
                     </li>
                     <li class="nav-item dropdown">
                         <div class="dropdown">
@@ -52,7 +53,6 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="servicios.html">Nuestros servicios</a>
                                 <a class="dropdown-item" href="servicios.html#mapa">Delivery</a>
                                 <a class="dropdown-item" href="servicios.html#asesoria">Asesoría para el cuidado
                                     de sus
@@ -63,12 +63,16 @@
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item lista__item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                    <li class="nav-item lista__item lista__item--margin"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item lista__item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item lista__item lista__item--margin"><a class="nav-link"
+                            href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
-            <!-- cierre menú de navegación -->
         </nav>
+
+        <!-- cierre menu de navegacion -->
+
     </header>
 
     <!-- cierre header + nav -->
@@ -76,9 +80,10 @@
     <!-- inicio contenido -->
 
     <div class="container">
+
         <div class="container-fluid">
             <section class="row">
-                <article class="titulo col-xs-12 col-md-12 col-lg-12">
+                <article class="titulo col-12 col-md-12 col-lg-12">
                     <h1 class="titulo__h1 titulo__h1--padding">NUESTROS PRODUCTOS</h1>
                 </article>
             </section>
@@ -86,7 +91,7 @@
 
         <div class="container-fluid btn-group" role="group" aria-label="Button group with nested dropdown">
             <div class="row filtros">
-                <div class="filtros__container col-xs-12 col-md-12 col-lg-12">
+                <div class="filtros__container col-12 col-md-12 col-lg-12">
                     <div class="filtros__dropdown btn-group" role="group">
                         <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -122,9 +127,11 @@
             </div>
         </div>
 
+        <!-- inicio seccion de productos -->
+
         <div class="row producto__container">
 
-            <div class="producto col-xs-12 col-md-6 col-lg-3">
+            <div class="producto col-12 col-sm-6 col-md-6 col-lg-3">
                 <div data-aos="flip-right" class="card text-center">
                     <img src="../assets/img/tierras.jpeg" class="producto__imagen card-img-top" alt="tierras" />
                     <div class="card-body producto__inferior">
@@ -140,7 +147,7 @@
                 </div>
             </div>
 
-            <div class="producto col-xs-12 col-md-6 col-lg-3">
+            <div class="producto col-12 col-sm-6 col-md-6 col-lg-3">
                 <div data-aos="flip-right" class="card text-center">
                     <img src="../assets/img/macetas.jpeg" class="producto__imagen card-img-top"
                         alt="macetas de plástico" />
@@ -157,7 +164,7 @@
                 </div>
             </div>
 
-            <div class="producto col-xs-12 col-md-6 col-lg-3">
+            <div class="producto col-12 col-sm-6 col-md-6 col-lg-3">
                 <div data-aos="flip-right" class="card text-center">
                     <img src="../assets/img/fibra-coco.jpg" class="producto__imagen card-img-top"
                         alt="macetas de plástico" />
@@ -174,8 +181,7 @@
                 </div>
             </div>
 
-
-            <div class="producto col-xs-12 col-md-6 col-lg-3">
+            <div class="producto col-12 col-sm-6 col-md-6 col-lg-3">
                 <div data-aos="flip-right" class="card text-center">
                     <img src="../assets/img/ceramica.jpg" class="producto__imagen card-img-top"
                         alt="macetas de plástico" />
@@ -196,9 +202,9 @@
 
         <div class="row producto__container">
 
-            <div class="producto col-xs-12 col-md-6 col-lg-3">
+            <div class="producto col-12 col-md-6 col-lg-3">
                 <div data-aos="flip-left" class="card text-center">
-                    <img src="../assets/img/macetas-plástico.jpg" class="producto__imagen card-img-top" alt="macetas" />
+                    <img src="../assets/img/hortalizas.jpg" class="producto__imagen card-img-top" alt="macetas" />
                     <div class="card-body producto__inferior">
                         <div class="titulo">
                             <h5 class="producto__titulo card-title">Hortalizas</h5>
@@ -212,7 +218,7 @@
                 </div>
             </div>
 
-            <div class="producto col-xs-12 col-md-6 col-lg-3">
+            <div class="producto col-12 col-md-6 col-lg-3">
                 <div data-aos="flip-left" class="card text-center">
                     <img src="../assets/img/ornamentales.jpg" class="producto__imagen card-img-top" alt="tierras" />
                     <div class="card-body producto__inferior">
@@ -228,7 +234,7 @@
                 </div>
             </div>
 
-            <div class="producto col-xs-12 col-md-6 col-lg-3">
+            <div class="producto col-12 col-md-6 col-lg-3">
                 <div data-aos="flip-left" class="card text-center">
                     <img src="../assets/img/orquideas.jpg" class="producto__imagen card-img-top" alt="tierras" />
                     <div class="card-body producto__inferior">
@@ -244,7 +250,7 @@
                 </div>
             </div>
 
-            <div class="producto col-xs-12 col-md-6 col-lg-3">
+            <div class="producto col-12 col-md-6 col-lg-3">
                 <div data-aos="flip-left" class="card text-center">
                     <img src="../assets/img/macetas-suculentas.jpg" class="producto__imagen card-img-top"
                         alt="Suculentas y Cactus" />
@@ -263,6 +269,8 @@
 
         </div>
 
+        <!-- cierre seccion de productos -->
+
     </div>
 
     <!-- cierre contenido -->
@@ -270,10 +278,10 @@
     <!-- inicio de footer -->
 
     <footer class="container-fluid footer__main">
-        
+
         <div class="footer__principal row">
 
-            <div class="info__page col-xs-12">
+            <div class="info__page col-12 col-sm-6 col-md-6 col-lg-6">
                 <div class="info__productos">
                     <h4 class="info__titulo">Productos</h4>
                     <ul class="productos__lista">
@@ -294,7 +302,7 @@
                 </div>
             </div>
 
-            <div class="redes col-xs-12">
+            <div class="redes col-12 col-sm-6 col-md-6 col-lg-6">
 
                 <div class="redes__container redes__container--padding text-center">
                     <strong class="titulo__h3">REDES SOCIALES</strong>
@@ -303,10 +311,10 @@
                 <div class="lista__footer redes__container--padding">
                     <ul class="redes__lista">
                         <li><a class="wsp" href="https://wa.me/51986307201" target="_blank"><i
-                            class="redes__icon fab fa-whatsapp"></i></a>
+                                    class="redes__icon fab fa-whatsapp"></i></a>
                         </li>
-                        <li><a class="fb" href="https://facebook.com" target="_blank"><i class="redes__icon fab fa-facebook"
-                                    aria-hidden="true"></i></a>
+                        <li><a class="fb" href="https://facebook.com" target="_blank"><i
+                                    class="redes__icon fab fa-facebook" aria-hidden="true"></i></a>
                         </li>
                         <li><a class="msg" href="https://messenger.com" target="_blank"><i
                                     class="redes__icon fab fa-facebook-messenger" aria-hidden="true"></i></a></li>
@@ -320,11 +328,11 @@
         </div>
 
         <div class="marca row">
-            <div class="copy col-xs-12 col-md-6 col-lg-6">
+            <div class="copy col-12 col-sm-12 col-md-6 col-lg-6">
                 <strong class="copy__titulo">Todos los derechos reservados <b
-                    class="marca__copy">&copy</b></strong><strong class="copy__titulo">2021</strong>
+                        class="marca__copy">&copy</b></strong><strong class="copy__titulo">2021</strong>
             </div>
-            <div class="marca__contenedor--padding col-xs-12 col-md-6 col-lg-6">
+            <div class="marca__contenedor--padding col-12 col-sm-12 col-md-6 col-lg-6">
                 <strong class="marca__titulo marca__titulo--gradient">
                     Powered by <a href="../index.html" class="marca__enlace">Alessandro</a> <b
                         class="marca__copy">&copy</b>
@@ -333,7 +341,7 @@
         </div>
 
     </footer>
-    
+
     <!-- cierre de footer -->
 
     <!-- JAVASCRIPT -->

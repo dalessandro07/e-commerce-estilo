@@ -32,20 +32,22 @@
     display: flex;
     align-items: center;
     width: $completo;
-    margin: 3rem 0;
+    margin: 2.5rem 0;
     font-family: 'poppins';
 
     .carousel-item {
         width: 100%;
 
         img {
-            height: 100%;
-            object-fit: contain;
+            border: 3px solid $verde-2;
+            width: 100%;
+            height: 70vh;
+            object-fit: cover;
         }
     }
 
     .carousel__texto {
-        padding: 1rem 3rem 2rem 1rem;
+        padding: 0 1.5rem;
 
         .carousel__titulo {
             font-size: 2.8rem;
@@ -289,6 +291,7 @@
 
 .filtros {
     margin: 0 1.6rem;
+    font-family: 'poppins';
 
     &__container {
         display: flex;
@@ -302,19 +305,19 @@
 
             #btnGroupDrop1 {
                 color: $blanco;
-                opacity: .75;
             }
 
             .dropdown-menu {
-                background-color: $verde-2
+                background-color: $verde-2;
             }
 
             .dropdown-item {
+                font-size: 1.25rem;
                 color: $blanco;
             }
 
             .dropdown-item:hover {
-                background-color: $verde-2;
+                background-color: $verde-gris;
                 opacity: .75;
             }
         }
@@ -348,7 +351,7 @@
         }
         
         .btn-secondary:hover {
-            background-color: $verde-1;
+            background-color: $verde-gris;
             border: none;
         }
 
@@ -360,6 +363,7 @@
     padding: 0 8rem;
 
     .producto {
+        font-family: 'poppins';
         margin-bottom: 2rem;
 
         .producto__imagen {
@@ -368,8 +372,9 @@
         }
 
         .producto__titulo {
+            font-family: 'poppins';
             margin-top: 1rem;
-            font-size: 2rem;
+            font-size: 1rem;
             text-decoration: underline;
             color: $verde-3;
         }
@@ -414,7 +419,7 @@
                 .producto__titulo {
                     margin: 0;
                     font-weight: bolder;
-                    font-size: 2.2rem;
+                    font-size: 1.8rem;
                 }
             }
         }
@@ -422,6 +427,7 @@
 }
 
 .texto__carrito {
+    font-family: 'poppins';
     margin-left: .5rem;
 }
 
@@ -512,6 +518,7 @@
         .mapa__iframe {
             border: 3px solid $verde-2;
             margin-top: 4rem;
+            padding: 0;
         }
     }
 
@@ -660,9 +667,9 @@
             margin: 2rem 0;
 
             .texto__titulo {
-                margin: 2rem 0;
+                margin: 2rem;
                 font-family: 'poppins';
-                font-size: 2.4rem;
+                font-size: 2.2rem;
                 border-bottom: 3px solid $terracota;
             }
 
@@ -670,13 +677,13 @@
                 margin:  2rem;
                 text-align: justify;
                 font-family: 'poppins';
-                font-size: 1.6rem;
+                font-size: 1.4rem;
                 font-weight: 100;
 
                 .texto__enlace {
                     color: $terracota;
                     text-decoration: none;
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
                 }
             }
 
@@ -687,7 +694,7 @@
                 .correo__enlace, .numero__enlace {
                     text-decoration: overline;
                     margin: 0 .5rem;
-                    font-size: 1.35rem;
+                    font-size: 1.15rem;
                 }
                 .correo__enlace:hover, .numero__enlace:hover {
                     cursor: pointer;

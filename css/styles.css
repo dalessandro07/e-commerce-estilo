@@ -150,10 +150,6 @@ body .navbar-toggler-icon {
   height: 3rem;
 }
 
-body .col-xs-6 {
-  width: auto;
-}
-
 body .container-fluid {
   padding: 0;
   margin: 0;
@@ -162,6 +158,34 @@ body .container-fluid {
 body .row {
   margin: 0;
   padding: 0;
+}
+
+body .col-12 {
+  padding: 0;
+}
+
+body .carousel-inner .carousel-boton {
+  opacity: .1;
+}
+
+body .carousel-inner .carousel-boton:hover {
+  background-color: #000000;
+  opacity: .45;
+}
+
+body .carousel-inner .carousel-boton:focus {
+  background-color: #000000;
+  opacity: .1;
+}
+
+body .badge {
+  margin: 0 .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .cabecera {
@@ -184,9 +208,10 @@ body .cabecera .cabecera__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body .cabecera .cabecera__logo {
@@ -261,8 +286,19 @@ body .nav__lista .dropdown .btn-secondary:hover {
   color: #000000;
 }
 
+body .nav__lista .dropdown-menu {
+  width: 350%;
+}
+
 body .nav__lista .dropdown-item {
-  font-size: 1.45rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: 'poppins';
+  font-size: 1.35rem;
+  opacity: .85;
 }
 
 body .nav__lista .lista__item {
@@ -369,7 +405,6 @@ body .footer__main .footer__principal .info__page .info__servicios .servicios__l
 
 body .footer__main .redes {
   width: 40%;
-  margin: 1rem;
 }
 
 body .footer__main .redes .redes__container--padding {
@@ -499,6 +534,31 @@ body .footer__main .marca .marca__titulo .marca__copy {
   font-size: 1.6rem;
 }
 
+/* ESTILOS SCROLLBAR */
+body::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #225239;
+  border-radius: 0.4rem;
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: #e7e7e7;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #e7e7e7;
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-track {
+  background: #e7e7e7;
+  border-radius: 0.4rem;
+}
+
 /* ESTILOS PAGES */
 /* ESTILOS INDEX */
 .banner {
@@ -542,7 +602,7 @@ body .footer__main .marca .marca__titulo .marca__copy {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  margin: 3rem 0;
+  margin: 2.5rem 0;
   font-family: 'poppins';
 }
 
@@ -551,13 +611,15 @@ body .footer__main .marca .marca__titulo .marca__copy {
 }
 
 .carousel .carousel-item img {
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  border: 3px solid #225239;
+  width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .carousel .carousel__texto {
-  padding: 1rem 3rem 2rem 1rem;
+  padding: 0 1.5rem;
 }
 
 .carousel .carousel__texto .carousel__titulo {
@@ -843,6 +905,7 @@ body .footer__main .marca .marca__titulo .marca__copy {
 
 .filtros {
   margin: 0 1.6rem;
+  font-family: 'poppins';
 }
 
 .filtros__container {
@@ -861,7 +924,6 @@ body .footer__main .marca .marca__titulo .marca__copy {
 
 .filtros__container .filtros__dropdown #btnGroupDrop1 {
   color: #e7e7e7;
-  opacity: .75;
 }
 
 .filtros__container .filtros__dropdown .dropdown-menu {
@@ -869,11 +931,12 @@ body .footer__main .marca .marca__titulo .marca__copy {
 }
 
 .filtros__container .filtros__dropdown .dropdown-item {
+  font-size: 1.25rem;
   color: #e7e7e7;
 }
 
 .filtros__container .filtros__dropdown .dropdown-item:hover {
-  background-color: #225239;
+  background-color: #949A88;
   opacity: .75;
 }
 
@@ -915,7 +978,7 @@ body .footer__main .marca .marca__titulo .marca__copy {
 }
 
 .filtros__container .btn-secondary:hover {
-  background-color: #356b4f;
+  background-color: #949A88;
   border: none;
 }
 
@@ -924,6 +987,7 @@ body .footer__main .marca .marca__titulo .marca__copy {
 }
 
 .producto__container .producto {
+  font-family: 'poppins';
   margin-bottom: 2rem;
 }
 
@@ -934,8 +998,9 @@ body .footer__main .marca .marca__titulo .marca__copy {
 }
 
 .producto__container .producto .producto__titulo {
+  font-family: 'poppins';
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 1rem;
   text-decoration: underline;
   color: #113a26;
 }
@@ -993,10 +1058,11 @@ body .footer__main .marca .marca__titulo .marca__copy {
 .producto__container .producto .producto__inferior .titulo .producto__titulo {
   margin: 0;
   font-weight: bolder;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 }
 
 .texto__carrito {
+  font-family: 'poppins';
   margin-left: .5rem;
 }
 
@@ -1106,6 +1172,7 @@ body .footer__main .marca .marca__titulo .marca__copy {
 .servicios__2 .mapa .mapa__iframe {
   border: 3px solid #225239;
   margin-top: 4rem;
+  padding: 0;
 }
 
 .servicios__2 .titulo__h3--style {
@@ -1272,9 +1339,9 @@ body .footer__main .marca .marca__titulo .marca__copy {
 }
 
 .contacto .formulario__info .formulario__texto .texto__titulo {
-  margin: 2rem 0;
+  margin: 2rem;
   font-family: 'poppins';
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   border-bottom: 3px solid #df9b71;
 }
 
@@ -1282,14 +1349,14 @@ body .footer__main .marca .marca__titulo .marca__copy {
   margin: 2rem;
   text-align: justify;
   font-family: 'poppins';
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 100;
 }
 
 .contacto .formulario__info .formulario__texto .texto__parrafo .texto__enlace {
   color: #df9b71;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .contacto .formulario__info .formulario__texto .texto__contacto {
@@ -1305,7 +1372,7 @@ body .footer__main .marca .marca__titulo .marca__copy {
 .contacto .formulario__info .formulario__texto .texto__contacto .correo__enlace, .contacto .formulario__info .formulario__texto .texto__contacto .numero__enlace {
   text-decoration: overline;
   margin: 0 .5rem;
-  font-size: 1.35rem;
+  font-size: 1.15rem;
 }
 
 .contacto .formulario__info .formulario__texto .texto__contacto .correo__enlace:hover, .contacto .formulario__info .formulario__texto .texto__contacto .numero__enlace:hover {
@@ -1412,9 +1479,6 @@ body .footer__main .marca .marca__titulo .marca__copy {
   }
   body .cabecera .nav__lista {
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1422,9 +1486,6 @@ body .footer__main .marca .marca__titulo .marca__copy {
   }
   .contacto .formulario {
     margin-top: 2rem;
-  }
-  .carousel .carousel__texto {
-    padding: 3.5rem 2.5rem 0 1rem;
   }
   .carousel .carousel__texto .carousel__titulo {
     font-size: 2.2rem;
@@ -1450,17 +1511,11 @@ body .footer__main .marca .marca__titulo .marca__copy {
 }
 
 @media only screen and (min-width: 560px) and (max-width: 768px) {
-  #noticias {
-    padding: 0 5rem;
-  }
-  #noticias .seccion__imagen {
-    width: 100%;
-  }
-  #noticias .seccion__imagen .seccion__imagen--style {
-    width: 70vw;
-  }
-  .asesoria__formulario #formulario {
-    width: 80%;
+  body .producto__container .producto .precio__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body .footer__main .marca .copy {
     display: block;
@@ -1468,6 +1523,54 @@ body .footer__main .marca .marca__titulo .marca__copy {
   }
   body .footer__main .marca .copy .marca__copy {
     top: 0;
+  }
+  #noticias {
+    padding: 0 4.5rem;
+  }
+  #noticias .seccion__imagen {
+    width: 100%;
+  }
+  #noticias .seccion__texto .seccion__titulo {
+    font-size: 2.2rem;
+  }
+  #noticias .seccion__texto .seccion__parrafo {
+    font-size: 1.4rem;
+  }
+  .asesoria__formulario #formulario {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  body .producto__container .producto .producto__inferior .titulo .producto__titulo {
+    font-family: 'poppins';
+    font-size: 2.2rem;
+  }
+  body .producto__container .producto .precio__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .producto__container .producto .precio__container .precio {
+    font-family: 'poppins';
+    font-size: 1.75rem;
+  }
+  body .texto__carrito {
+    font-family: 'poppins';
+    font-size: 1.9rem;
+  }
+  body .footer__main .redes {
+    margin-bottom: 2rem;
+  }
+  body .footer__main .marca .copy {
+    margin-bottom: 2rem;
+  }
+  #noticias {
+    padding: 0 3rem;
+  }
+  #noticias .seccion__imagen .seccion__imagen--style {
+    width: 70vw;
   }
 }
 
@@ -1520,6 +1623,12 @@ body .footer__main .marca .marca__titulo .marca__copy {
     font-size: 4rem;
     color: #e7e7e7;
   }
+  body .producto__container .producto .precio__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   body .footer__main .marca .copy {
     display: block;
     text-align: center;
@@ -1530,6 +1639,34 @@ body .footer__main .marca .marca__titulo .marca__copy {
 }
 
 @media only screen and (min-width: 396px) and (max-width: 430px) {
+  body .nav__lista .dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .nav__lista .dropdown-menu {
+    width: 100%;
+  }
+  body .nav__lista .dropdown-item {
+    font-size: 1.28rem;
+  }
+  body .producto__container .producto .precio__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .footer__main .marca .copy {
+    display: block;
+    text-align: center;
+  }
+  body .footer__main .marca .copy .marca__copy {
+    top: 0;
+  }
   #noticias .seccion__texto .seccion__parrafo {
     font-size: 1.55rem;
   }
@@ -1585,23 +1722,45 @@ body .footer__main .marca .marca__titulo .marca__copy {
     font-size: 3rem;
     color: #e7e7e7;
   }
-  body .footer__main .marca .copy {
-    display: block;
-    text-align: center;
-  }
-  body .footer__main .marca .copy .marca__copy {
-    top: 0;
-  }
 }
 
 @media only screen and (max-width: 396px) {
+  body .producto__container .producto .producto__inferior .titulo .producto__titulo {
+    font-family: 'poppins';
+    font-size: 1.8rem;
+  }
+  body .producto__container .producto .precio__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .producto__container .producto .precio__container .precio {
+    font-family: 'poppins';
+    font-size: 1.5rem;
+  }
+  body .texto__carrito {
+    font-size: 1.8rem;
+  }
   body .cabecera {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  }
+  body .nav__lista .dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .nav__lista .dropdown-item {
+    white-space: normal;
+  }
+  body .nav__lista .dropdown-menu {
+    width: 100%;
   }
   body .footer__main .marca .copy {
     display: block;
@@ -1609,6 +1768,12 @@ body .footer__main .marca .marca__titulo .marca__copy {
   }
   body .footer__main .marca .copy .marca__copy {
     top: 0;
+  }
+  #noticias {
+    padding: 0 1rem;
+  }
+  #noticias .seccion__imagen .seccion__imagen--style {
+    width: 80vw;
   }
   #noticias .seccion__parrafo {
     display: none;

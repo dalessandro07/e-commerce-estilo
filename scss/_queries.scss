@@ -10,7 +10,6 @@
         .cabecera {
             .nav__lista {
                 width: 100%;
-                justify-content: center;
                 flex-direction: row;
             }
         }
@@ -23,8 +22,6 @@
     }
     .carousel {
         .carousel__texto {
-            padding: 3.5rem 2.5rem 0 1rem;
-
             .carousel__titulo {
                 font-size: 2.2rem;
             }
@@ -59,22 +56,14 @@
 
 @media only screen and (min-width:560px) and (max-width: 768px) {
     
-    #noticias {
-        padding: 0 5rem;
-        .seccion__imagen {
-            width: 100%;
-            .seccion__imagen--style {
-                width: 70vw;
+    body {
+        .producto__container {
+            .producto {
+                .precio__container {
+                    flex-direction: column;
+                }
             }
         }
-    }
-
-    .asesoria__formulario {
-        #formulario {
-            width: 80%;
-        }
-    }
-    body {
         .footer__main {
             .marca {
                 .copy {
@@ -85,6 +74,71 @@
                         top: 0;
                     }
                 }
+            }
+        }
+    }
+    #noticias {
+        padding: 0 4.5rem;
+        .seccion__imagen {
+            width: 100%;
+        }
+        .seccion__texto {
+            .seccion__titulo {
+                font-size: 2.2rem;
+            }
+            .seccion__parrafo {
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .asesoria__formulario {
+        #formulario {
+            width: 80%;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    body {
+        .producto__container {
+            .producto {
+                .producto__inferior {
+                    .titulo {
+                        .producto__titulo {
+                            font-family: 'poppins';
+                            font-size: 2.2rem;
+                        }
+                    }
+                }
+                .precio__container {
+                    flex-direction: column;
+                    .precio {
+                        font-family: 'poppins';
+                        font-size: 1.75rem;
+                    }
+                }
+            }
+        }
+        .texto__carrito {
+            font-family: 'poppins';
+            font-size: 1.9rem;
+        }
+        .footer__main {
+            .redes {
+                margin-bottom: 2rem;
+            }
+            .marca {
+                .copy {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+    #noticias {
+        padding: 0 3rem;
+        .seccion__imagen {
+            .seccion__imagen--style {
+                width: 70vw;
             }
         }
     }
@@ -151,6 +205,13 @@
         }
     }
     body {
+        .producto__container {
+            .producto {
+                .precio__container {
+                    flex-direction: column;
+                }
+            }
+        }
         .footer__main {
             .marca {
                 .copy {
@@ -168,6 +229,39 @@
 
 @media only screen and (min-width: 396px) and (max-width:430px) {
 
+    body {
+        .nav__lista {
+            .dropdown {
+                display: flex;
+                flex-direction: column;
+            }
+            .dropdown-menu {
+                width: 100%;
+            }
+            .dropdown-item {
+                font-size: 1.28rem;
+            }
+        }
+        .producto__container {
+            .producto {
+                .precio__container {
+                    flex-direction: column;
+                }
+            }
+        }
+        .footer__main {
+            .marca {
+                .copy {
+                    display: block;
+                    text-align: center;
+    
+                    .marca__copy {
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
     #noticias {
         .seccion__texto {
             .seccion__parrafo {
@@ -177,7 +271,6 @@
        
         
     }
-
     .banner {
         #titulo__banner--size {
             font-size: 3.5rem;
@@ -241,29 +334,48 @@
             }
         }
     }
-    body {
-        .footer__main {
-            .marca {
-                .copy {
-                    display: block;
-                    text-align: center;
     
-                    .marca__copy {
-                        top: 0;
-                    }
-                }
-            }
-        }
-    }
 }
 
 @media only screen and (max-width:396px) {
     body {
+        .producto__container {
+            .producto {
+                .producto__inferior {
+                    .titulo {
+                        .producto__titulo {
+                            font-family: 'poppins';
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+                .precio__container {
+                    flex-direction: column;
+                    .precio {
+                        font-family: 'poppins';
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+        .texto__carrito {
+            font-size: 1.8rem;
+        }
         .cabecera {
             display: flex;
-            justify-content: center;
         }
-
+        .nav__lista {
+            .dropdown {
+                display: flex;
+                flex-direction: column;
+            }
+            .dropdown-item {
+                white-space: normal;
+            }
+            .dropdown-menu {
+                width: 100%;
+            }
+        }
         .footer__main {
             .marca {
                 .copy {
@@ -279,6 +391,12 @@
     }
 
     #noticias {
+        padding: 0 1rem;
+        .seccion__imagen {
+            .seccion__imagen--style {
+                width: 80vw;
+            }
+        }
         .seccion__parrafo {
             display: none;
         }

@@ -26,22 +26,23 @@
 </head>
 
 <body>
+
     <!-- inicio header + nav -->
+
     <header class="row cabecera">
-        <div class="col-xs-6 col-md-4 col-lg-4">
-            <!-- inicio logo -->
-            <a href="../index.html"><img class="cabecera__logo" src="../assets/img/logo.png" alt="logo"></a>
-            <!-- cierre logo -->
-        </div>
-        <nav class="col-xs-6 col-md-8 col-lg-8 cabecera__nav navbar navbar-expand-md navbar-light">
+
+        <!-- inicio menu de navegacion -->
+
+        <nav class="cabecera__nav navbar navbar-expand-md navbar-light">
+            <div class="navbar-brand logo">
+                <a href="../index.html"><img class="cabecera__logo" src="../assets/img/logo.png" alt="logo"></a>
+            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- inicio menú de navegación -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav__lista navbar-nav">
-                    <li class="nav-item lista__item lista__item--margin"><a class="nav-link" href="../index.html">Inicio</a></li>
                     <li class="nav-item lista__item"><a class="nav-link" href="productos.html">Productos</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -51,7 +52,6 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="servicios.html">Nuestros servicios</a>
                                 <a class="dropdown-item" href="servicios.html#mapa">Delivery</a>
                                 <a class="dropdown-item" href="servicios.html#asesoria">Asesoría para el cuidado
                                     de sus
@@ -66,10 +66,14 @@
                     <li class="nav-item lista__item lista__item--margin"><a class="nav-link" href="contacto.html" id="seccionActiva">Contacto</a></li>
                 </ul>
             </div>
-            <!-- cierre menú de navegación -->
         </nav>
+
+        <!-- cierre menu de navegacion -->
+
     </header>
+
     <!-- cierre header + nav -->
+
     <!-- inicio contenido -->
 
     <div class="container">
@@ -83,6 +87,7 @@
         <section class="row contacto container-fluid">
 
             <!-- inicio texto de formulario -->
+
             <div class="formulario__info container-fluid col-xs-12 col-md-12 col-lg-6">
                 <div class="formulario__texto">
                     <h4 class="texto__titulo">Envíanos un e-mail o mensaje</h4>
@@ -100,9 +105,11 @@
                     <img class="img-fluid" src="../assets/img/banner-principal.jpg" alt="banner">
                 </div>
             </div>
+
             <!-- cierre texto de formulario -->
 
             <!-- inicio de formulario -->
+            
             <div class="formulario container-fluid col-xs-12 col-md-12 col-lg-6">
 
                 <div class="formulario__titulo">
@@ -172,6 +179,7 @@
                 </div>
 
             </div>
+            
             <!-- cierre de formulario -->
 
         </section>

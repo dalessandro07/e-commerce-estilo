@@ -24,10 +24,6 @@ body {
         height: 3rem;
     }
 
-    .col-xs-6 {
-        width: auto;
-    }
-
     .container-fluid {
         padding: 0;
         margin: 0;
@@ -36,6 +32,33 @@ body {
     .row {
         margin: 0;
         padding: 0;
+    }
+
+    .col-12 {
+        padding: 0;
+    }
+
+    .carousel-inner {
+        .carousel-boton {
+            opacity: .1;
+        }
+
+        .carousel-boton:hover {
+            background-color: $negro;
+            opacity: .45;
+        }
+
+        .carousel-boton:focus {
+            background-color: $negro;
+            opacity: .1;
+        }
+
+    }
+
+    .badge {
+        margin: 0 .5rem;
+        display: flex;
+        align-items: center;
     }
 
     /* ESTILOS GENERALES HEADER */
@@ -52,7 +75,8 @@ body {
 
         .cabecera__nav {
             display: flex;
-            justify-content: flex-end;
+            width: 100%;
+            justify-content: space-between;
         }
 
         .cabecera__logo {
@@ -84,6 +108,7 @@ body {
 
         .dropdown {
             display: flex;
+
             .servicios--style {
                 color: $gris;
                 padding: 5px;
@@ -92,9 +117,11 @@ body {
                 text-decoration: none;
                 text-transform: uppercase;
             }
+
             .servicios--style:hover {
                 color: $negro;
             }
+
             .btn-secondary {
                 background: none;
                 border: none;
@@ -107,14 +134,23 @@ body {
                 text-decoration: none;
                 text-transform: uppercase;
             }
+
             .btn-secondary:hover {
                 background-color: $gris;
                 color: $negro;
             }
         }
-    
+
+        .dropdown-menu {
+            width: 350%;
+        }
+
         .dropdown-item {
-            font-size: 1.45rem;
+            display: flex;
+            flex-wrap: wrap;
+            font-family: 'poppins';
+            font-size: 1.35rem;
+            opacity: .85;
         }
 
         .lista__item {
@@ -154,53 +190,57 @@ body {
     /* ESTILOS GENERALES FOOTER */
 
     .footer__main {
-        background: linear-gradient(to top,  $verde-2, $verde-2);
+        background: linear-gradient(to top, $verde-2, $verde-2);
 
         .footer__principal {
             display: flex;
             justify-content: space-around;
             margin-top: 10rem;
             border-top: 3px solid $negro;
-    
+
             .info__page {
                 display: flex;
-    
+
                 .info__titulo {
                     color: $blanco;
                     font-size: 2rem;
                     text-decoration: underline;
                 }
-    
+
                 .info__productos {
                     margin: 1rem 2rem;
                     font-family: 'poppins';
-    
+
                     .productos__lista {
                         list-style-type: none;
+
                         .lista__item a {
                             color: $blanco;
                             opacity: .55;
                             text-decoration: none;
                             font-size: 1.45rem;
                         }
+
                         .lista__item a:hover {
                             opacity: 1;
                         }
                     }
                 }
-    
+
                 .info__servicios {
                     margin: 1rem 2rem;
                     font-family: 'poppins';
-    
+
                     .servicios__lista {
                         list-style-type: none;
+
                         .lista__item a {
                             color: $blanco;
                             opacity: .55;
                             text-decoration: none;
                             font-size: 1.45rem;
                         }
+
                         .lista__item a:hover {
                             opacity: 1;
                         }
@@ -208,13 +248,13 @@ body {
                 }
             }
         }
-    
+
         .redes {
             width: 40%;
-            margin: 1rem;
+
             .redes__container--padding {
                 padding: 0;
-    
+
                 .titulo__h3 {
                     display: flex;
                     justify-content: center;
@@ -225,18 +265,18 @@ body {
                     text-decoration: underline;
                 }
             }
-    
+
             .redes__lista {
                 display: flex;
                 justify-content: space-evenly;
                 margin-top: 1rem;
-    
+
                 $redes: (wsp: #00bb2d,
                         fb: #3b5998,
                         is: #c13584,
                         msg: #0078ff,
                     );
-    
+
                 @each $site,
                 $color in $redes {
                     .#{$site} i:hover {
@@ -244,7 +284,7 @@ body {
                         opacity: 1;
                     }
                 }
-    
+
                 .redes__icon {
                     transition: 1s;
                     margin: 2rem 1rem 0 1rem;
@@ -253,18 +293,18 @@ body {
                     font-size: 3.5rem;
                     text-decoration: none;
                 }
-    
+
                 .redes__icon:hover {
                     transform: scale(1.2, 1.2) rotate(360deg);
                 }
             }
-    
+
         }
-    
+
         .marca {
             margin: 0;
             padding: 0;
-    
+
             .marca__contenedor--padding {
                 padding: 0;
             }
@@ -288,7 +328,7 @@ body {
                     top: 1.6rem;
                 }
             }
-    
+
             .marca__titulo {
                 display: block;
                 text-align: center;
@@ -298,7 +338,7 @@ body {
                 margin: 0;
                 color: $blanco;
                 word-spacing: 5px;
-    
+
                 .marca__enlace {
                     font-family: 'ailerons';
                     font-size: 2.4rem;
@@ -306,11 +346,11 @@ body {
                     padding: 0;
                     opacity: .5;
                 }
-    
+
                 .marca__enlace:hover {
                     opacity: 1;
                 }
-    
+
                 .marca__copy {
                     position: absolute;
                     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -319,4 +359,29 @@ body {
             }
         }
     }
+}
+
+/* ESTILOS SCROLLBAR */
+
+body::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: $verde-2;
+    border-radius: 0.4rem;
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background-color: $blanco;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: $blanco;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-track {
+    background: $blanco;
+    border-radius: 0.4rem;
 }
