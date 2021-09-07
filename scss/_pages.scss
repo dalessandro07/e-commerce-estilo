@@ -1,5 +1,6 @@
 /* ESTILOS PAGES */
 
+
 /* ESTILOS INDEX */
 
 .banner {
@@ -9,7 +10,6 @@
     width: $completo;
     padding: 0;
     margin-bottom: 3rem;
-
     .titulo__banner {
         position: absolute;
         text-align: center;
@@ -20,11 +20,28 @@
         font-size: 6rem;
         padding: 0 1rem;
     }
-
     .banner__imagen {
         width: $completo;
         min-height: 87vh;
         object-fit: cover;
+    }
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem 0;
+    .titulo__h1,
+    .titulo__h2 {
+        font-size: 3rem;
+        font-family: 'poppins';
+        color: $negro;
+        font-weight: 600;
+        letter-spacing: .5rem;
+        text-align: center;
+        text-transform: capitalize;
+        border-bottom: 3px solid $terracota;
     }
 }
 
@@ -34,10 +51,8 @@
     width: $completo;
     margin: 2.5rem 0;
     font-family: 'poppins';
-
     .carousel-item {
         width: 100%;
-
         img {
             border: 3px solid $verde-2;
             width: 100%;
@@ -45,10 +60,8 @@
             object-fit: cover;
         }
     }
-
     .carousel__texto {
         padding: 0 1.5rem;
-
         .carousel__titulo {
             font-size: 2.8rem;
             color: $verde-2;
@@ -56,7 +69,6 @@
             width: 100%;
             text-align: center;
         }
-    
         .envio {
             text-align: center;
             padding: 0 1.5rem;
@@ -75,28 +87,23 @@
                 border-radius: 4px 4px 4px;
             }
         }
-    
         .carousel__parrafo {
             display: flex;
             flex-direction: column;
             margin-top: 2rem;
-    
             .carousel__p {
                 text-align: justify;
                 padding: 0 2rem 1rem 2rem;
                 font-size: 1.6rem;
-    
                 .carousel__enlace {
                     font-size: 1.55rem;
                     font-weight: 600;
                     text-decoration: none;
                     color: $verde-4;
                 }
-    
                 .carousel__enlace:hover {
                     text-decoration: underline;
                 }
-    
                 .compra-ya {
                     color: $blanco;
                     background-color: $verde-2;
@@ -105,54 +112,30 @@
                     padding: 0 .5rem;
                     border-radius: 4px 4px 4px;
                 }
-    
                 .tyc {
                     font-size: 1rem;
                     color: $gris;
                 }
             }
-    
             .btn {
                 background-color: $verde-4;
                 border: none;
                 align-self: center;
                 width: 135px;
-    
                 a {
                     text-decoration: none;
                     font-size: 1.5rem;
                     color: $blanco;
                 }
             }
-    
             .btn:hover {
                 transform: scale(1.1, 1.1);
                 transition: all .2s;
             }
-    
             .btn:active {
                 background-color: $verde-2;
             }
         }
-    }
-}
-
-.titulo {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 3rem 0;
-
-    .titulo__h1,
-    .titulo__h2 {
-        font-size: 3rem;
-        font-family: 'poppins';
-        color: $negro;
-        font-weight: 600;
-        letter-spacing: .5rem;
-        text-align: center;
-        text-transform: capitalize;
-        border-bottom: 3px solid $terracota;
     }
 }
 
@@ -163,7 +146,6 @@
     margin-top: 2rem;
     margin-bottom: 3rem;
     margin-left: 0;
-
     .titulo__h3 {
         font-size: 2.5rem;
         font-family: 'poppins';
@@ -175,13 +157,11 @@
 
 #noticias {
     padding: 0 6rem;
-
     .seccion__texto {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         .seccion__etiqueta {
             align-self: flex-start;
             font-size: 1.3rem;
@@ -189,11 +169,9 @@
             color: $verde-2;
             margin: 0 2rem;
         }
-
         .seccion__etiqueta--2 {
             color: $madera;
         }
-
         .seccion__info {
             align-self: flex-end;
             font-size: 1.3rem;
@@ -201,7 +179,6 @@
             color: $verde-2;
             margin: 0 2rem;
         }
-
         .seccion__titulo {
             color: $negro;
             text-decoration: none;
@@ -210,13 +187,11 @@
             padding: 0 1rem;
             margin: .5rem 0 1rem 1rem;
         }
-
         .seccion__titulo:hover {
             cursor: pointer;
             color: $verde-4;
             transition: color .5s;
         }
-
         .seccion__parrafo {
             font-size: 1.4rem;
             font-family: 'poppins';
@@ -224,7 +199,6 @@
             text-align: justify;
             line-height: 2.5rem;
             padding: 0 2rem;
-
             .keyword {
                 font-size: 1.3rem;
                 font-weight: 600;
@@ -232,37 +206,31 @@
             }
         }
     }
-
     .separacion {
         width: 100%;
         margin: 1.5rem 0;
     }
-
     .seccion__imagen {
         display: flex;
         justify-content: center;
         height: $h-250;
         padding: 1.5rem;
-
         .seccion__imagen--style {
             width: 40vw;
             height: $completo;
             object-fit: cover;
             outline: .00001px solid $gris;
         }
-
         .seccion__imagen--style:hover {
             cursor: pointer;
             opacity: .85;
         }
     }
-
     .ver-mas {
         display: flex;
         flex-basis: 100%;
         justify-content: center;
         margin-top: 5rem;
-
         .btn {
             background-color: $verde-2;
             border: none;
@@ -271,13 +239,13 @@
             font-family: 'poppins';
             font-size: 1.6rem;
         }
-
         .btn:hover {
             transform: scale(1.15, 1.15);
             transition: all .4s;
         }
     }
 }
+
 
 /* ESTILOS PRODUCTOS */
 
@@ -292,7 +260,6 @@
 .filtros {
     margin: 0 1.6rem;
     font-family: 'poppins';
-
     &__container {
         display: flex;
         flex-wrap: wrap;
@@ -300,77 +267,62 @@
         background-color: $verde-2;
         margin: 2rem 0 5rem 0;
         padding: .65rem;
-
         .filtros__dropdown {
-
             #btnGroupDrop1 {
                 color: $blanco;
             }
-
             .dropdown-menu {
                 background-color: $verde-2;
             }
-
             .dropdown-item {
                 font-size: 1.25rem;
                 color: $blanco;
             }
-
             .dropdown-item:hover {
                 background-color: $verde-gris;
                 opacity: .75;
             }
         }
-
         .filtros__secciones {
             display: flex;
+            flex-wrap: wrap;
             flex-basis: $medio;
             justify-content: space-between;
-
             .filtros__botones {
                 color: $blanco;
                 opacity: 1;
                 text-decoration: underline;
             }
         }
-
         .filtros__total {
             display: flex;
             align-items: center;
         }
-
         .total--color {
             margin: 0 .5rem 0 0;
             color: $blanco;
         }
-        
         .btn-secondary {
             background-color: transparent;
             border: none;
             font-size: 1.4rem;
         }
-        
         .btn-secondary:hover {
             background-color: $verde-gris;
             border: none;
         }
-
     }
-
 }
 
 .producto__container {
     padding: 0 8rem;
-
     .producto {
         font-family: 'poppins';
         margin-bottom: 2rem;
-
         .producto__imagen {
             height: $h-250 - 70px;
             object-fit: cover;
         }
-
         .producto__titulo {
             font-family: 'poppins';
             margin-top: 1rem;
@@ -378,44 +330,36 @@
             text-decoration: underline;
             color: $verde-3;
         }
-
         .producto__enlace {
             text-align: center;
         }
-
         .producto__icon {
             text-align: center;
             color: $verde-2;
             font-size: 2rem;
             padding: 5px;
         }
-
         .producto__icon:hover {
             color: $blanco;
             background-color: $verde-2;
             transition: all 1s;
         }
-
         .precio__container {
             display: flex;
             justify-content: space-around;
             margin: 2rem 0;
-
             .precio {
                 margin: 5px;
                 font-size: 1.4rem;
             }
         }
-
         .producto__inferior {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             height: $h-250 - 70px;
-
             .titulo {
                 margin: 0;
-
                 .producto__titulo {
                     margin: 0;
                     font-weight: bolder;
@@ -431,6 +375,7 @@
     margin-left: .5rem;
 }
 
+
 /* ESTILOS SERVICIOS */
 
 .servicios__container {
@@ -441,7 +386,6 @@
 
 .servicios__subtitulo {
     margin: 3rem;
-
     .subtitulo__h3 {
         font-family: 'poppins';
         font-size: 2rem;
@@ -453,13 +397,11 @@
     height: $h-250 + 100px;
     object-fit: cover;
     outline: 3.5px solid $verde-2;
-
     &:hover {
         outline: 3.5px solid $verde-4;
         opacity: .8;
         transition: all .4s;
     }
-
     &:active {
         transform: translateY(6px);
         transition: all .1s;
@@ -469,24 +411,25 @@
 .servicios__2 {
     margin: 2rem;
     #mapa {
-        height: 50px;
+        height: 6rem;
     }
-    #asesoria, #design {
-        height: 40px;
+    #asesoria,
+    #design {
+        height: 5.5rem;
     }
-
     .mapa {
-
         .mapa__datos {
             .mapa__form {
                 .columna__form {
                     padding: 1rem 2rem;
-
-                    input, select {
+                    input,
+                    select {
                         font-family: 'poppins';
                         font-size: 1.45rem;
                     }
-                    option {font-size: 1.25rem;}
+                    option {
+                        font-size: 1.25rem;
+                    }
                     label {
                         font-size: 1.45rem;
                     }
@@ -498,14 +441,12 @@
                     display: flex;
                     justify-content: center;
                     margin: 1rem 0;
-
                     .btn {
                         margin: 0 2rem;
                         font-size: 1.45rem;
                         background-color: $verde-2;
                         border: none;
                     }
-
                     .btn:hover {
                         opacity: .9;
                         transform: scale(1.15, 1.15);
@@ -514,14 +455,12 @@
                 }
             }
         }
-
         .mapa__iframe {
             border: 3px solid $verde-2;
             margin-top: 4rem;
             padding: 0;
         }
     }
-
     .titulo__h3--style {
         font-size: 2.4rem;
         margin-top: 4rem;
@@ -531,17 +470,14 @@
         color: $blanco;
         border: 3px solid $verde-1;
     }
-
     .asesoria__formulario {
-
         .formulario {
             background: linear-gradient(to right, #093028, #237a57);
             color: $blanco;
             border: 3px solid $negro;
-            width: $medio + 15%;
+            width: $medio + 5%;
             margin: auto;
             padding: 2rem;
-
             label,
             select,
             option,
@@ -549,27 +485,22 @@
                 font-size: 1.5rem;
                 padding: .6rem;
             }
-
             .form-check-label:hover {
                 cursor: pointer;
                 opacity: .8;
             }
-
             .form-check-input {
                 position: relative;
                 margin-right: .4rem;
             }
-
             .boton__solicitar {
                 text-align: center;
-
                 #boton__enviar {
                     background-color: $blanco;
                     color: $negro;
                     font-size: 1.5rem;
                     border: 3px solid $verde-2;
                 }
-
                 #boton__enviar:hover {
                     opacity: .8;
                     transform: translateY(-.4rem);
@@ -578,20 +509,16 @@
             }
         }
     }
-
     .design__gallery {
-
         .gallery__item {
             margin: 1rem 0;
             padding: 0 1rem;
-
             img {
                 width: $completo;
                 outline: 3px solid $verde-2;
                 height: $h-250 + 15px;
                 object-fit: cover;
             }
-
             img:hover {
                 cursor: pointer;
                 outline: 4px solid $verde-4;
@@ -603,6 +530,7 @@
     }
 }
 
+
 /* ESTILOS SOBRE-NOSOTROS */
 
 .video__container {
@@ -610,7 +538,6 @@
     max-height: $completo;
     text-align: center;
     margin: 1rem 0 3rem 0;
-
     .video--style {
         max-width: 80vw;
         max-height: 80vh;
@@ -619,23 +546,20 @@
 
 .accordion {
     margin-top: 2rem;
-
     .card-header {
         border: 1px solid $rojo-oscuro;
     }
-
     .card-body {
         font-family: 'poppins';
         font-size: 1.55rem;
     }
-
     .btn {
         color: $terracota;
         font-family: 'poppins';
         font-size: 1.85rem;
     }
-
 }
+
 
 /* ESTILOS CONTACTO */
 
@@ -652,51 +576,47 @@
 
 .contacto {
     display: flex;
-
     .formulario__info {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         outline: 3px solid $terracota;
-
         .formulario__texto {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 100%;
             margin: 2rem 0;
-
             .texto__titulo {
                 margin: 2rem;
                 font-family: 'poppins';
                 font-size: 2.2rem;
                 border-bottom: 3px solid $terracota;
             }
-
             .texto__parrafo {
-                margin:  2rem;
+                margin: 2rem;
                 text-align: justify;
                 font-family: 'poppins';
                 font-size: 1.4rem;
                 font-weight: 100;
-
                 .texto__enlace {
                     color: $terracota;
                     text-decoration: none;
                     font-size: 1.4rem;
                 }
             }
-
             .texto__contacto {
                 display: flex;
                 justify-content: space-between;
                 margin: 0 1rem;
-                .correo__enlace, .numero__enlace {
+                .correo__enlace,
+                .numero__enlace {
                     text-decoration: overline;
                     margin: 0 .5rem;
                     font-size: 1.15rem;
                 }
-                .correo__enlace:hover, .numero__enlace:hover {
+                .correo__enlace:hover,
+                .numero__enlace:hover {
                     cursor: pointer;
                     text-decoration: underline;
                     opacity: .95;
@@ -711,17 +631,14 @@
             }
         }
     }
-
     .formulario {
         padding: 0 2rem;
         padding: 0 4rem 1rem 4rem;
-
         .container__formulario {
             width: $completo;
             margin: auto;
             padding: 0;
             text-align: center;
-    
             .needs-validation {
                 #boton__enviar {
                     margin: 0 1rem;
@@ -731,11 +648,10 @@
                     font-weight: 600;
                     border: 3px solid $gris;
                 }
-
-                #boton__enviar:hover, #boton__limpiar:hover {
+                #boton__enviar:hover,
+                #boton__limpiar:hover {
                     opacity: .75;
                 }
-    
                 #boton__enviar:active {
                     background-color: $terracota;
                     border: 3px solid $gris;
@@ -743,7 +659,6 @@
                     transform: translateY(6px);
                     transition: all .3s;
                 }
-    
                 #boton__limpiar {
                     margin: 0 1rem;
                     background-color: $terracota;
@@ -752,7 +667,6 @@
                     font-weight: 600;
                     border: 3px solid $gris;
                 }
-    
                 #boton__limpiar:active {
                     background-color: $terracota;
                     border: 3px solid $gris;
@@ -761,31 +675,25 @@
                     transition: all .3s;
                 }
             }
-    
             label,
             input,
             select,
             textarea {
                 font-size: 1.6rem;
             }
-    
             option {
                 font-size: 1.4rem;
             }
-    
             .form-check-input {
                 position: relative;
                 margin: 1rem;
             }
         }
     }
-
     .formulario__imagen {
         padding: 0 2rem;
-
         img {
             object-fit: cover;
         }
     }
-    
 }

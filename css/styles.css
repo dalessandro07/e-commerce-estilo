@@ -160,10 +160,6 @@ body .row {
   padding: 0;
 }
 
-body .col-12 {
-  padding: 0;
-}
-
 body .carousel-inner .carousel-boton {
   opacity: .1;
 }
@@ -594,6 +590,29 @@ body::-webkit-scrollbar-track {
      object-fit: cover;
 }
 
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.titulo .titulo__h1,
+.titulo .titulo__h2 {
+  font-size: 3rem;
+  font-family: 'poppins';
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: .5rem;
+  text-align: center;
+  text-transform: capitalize;
+  border-bottom: 3px solid #df9b71;
+}
+
 .carousel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -717,29 +736,6 @@ body::-webkit-scrollbar-track {
 
 .carousel .carousel__texto .carousel__parrafo .btn:active {
   background-color: #225239;
-}
-
-.titulo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  margin: 3rem 0;
-}
-
-.titulo .titulo__h1,
-.titulo .titulo__h2 {
-  font-size: 3rem;
-  font-family: 'poppins';
-  color: #000000;
-  font-weight: 600;
-  letter-spacing: .5rem;
-  text-align: center;
-  text-transform: capitalize;
-  border-bottom: 3px solid #df9b71;
 }
 
 .subtitulo {
@@ -944,6 +940,8 @@ body::-webkit-scrollbar-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   -webkit-box-pack: justify;
@@ -1116,18 +1114,20 @@ body::-webkit-scrollbar-track {
 }
 
 .servicios__2 #mapa {
-  height: 50px;
+  height: 6rem;
 }
 
-.servicios__2 #asesoria, .servicios__2 #design {
-  height: 40px;
+.servicios__2 #asesoria,
+.servicios__2 #design {
+  height: 5.5rem;
 }
 
 .servicios__2 .mapa .mapa__datos .mapa__form .columna__form {
   padding: 1rem 2rem;
 }
 
-.servicios__2 .mapa .mapa__datos .mapa__form .columna__form input, .servicios__2 .mapa .mapa__datos .mapa__form .columna__form select {
+.servicios__2 .mapa .mapa__datos .mapa__form .columna__form input,
+.servicios__2 .mapa .mapa__datos .mapa__form .columna__form select {
   font-family: 'poppins';
   font-size: 1.45rem;
 }
@@ -1190,7 +1190,7 @@ body::-webkit-scrollbar-track {
   background: linear-gradient(to right, #093028, #237a57);
   color: #e7e7e7;
   border: 3px solid #000000;
-  width: 65%;
+  width: 55%;
   margin: auto;
   padding: 2rem;
 }
@@ -1369,13 +1369,15 @@ body::-webkit-scrollbar-track {
   margin: 0 1rem;
 }
 
-.contacto .formulario__info .formulario__texto .texto__contacto .correo__enlace, .contacto .formulario__info .formulario__texto .texto__contacto .numero__enlace {
+.contacto .formulario__info .formulario__texto .texto__contacto .correo__enlace,
+.contacto .formulario__info .formulario__texto .texto__contacto .numero__enlace {
   text-decoration: overline;
   margin: 0 .5rem;
   font-size: 1.15rem;
 }
 
-.contacto .formulario__info .formulario__texto .texto__contacto .correo__enlace:hover, .contacto .formulario__info .formulario__texto .texto__contacto .numero__enlace:hover {
+.contacto .formulario__info .formulario__texto .texto__contacto .correo__enlace:hover,
+.contacto .formulario__info .formulario__texto .texto__contacto .numero__enlace:hover {
   cursor: pointer;
   text-decoration: underline;
   opacity: .95;
@@ -1412,7 +1414,8 @@ body::-webkit-scrollbar-track {
   border: 3px solid #0009;
 }
 
-.contacto .formulario .container__formulario .needs-validation #boton__enviar:hover, .contacto .formulario .container__formulario .needs-validation #boton__limpiar:hover {
+.contacto .formulario .container__formulario .needs-validation #boton__enviar:hover,
+.contacto .formulario .container__formulario .needs-validation #boton__limpiar:hover {
   opacity: .75;
 }
 
@@ -1475,7 +1478,7 @@ body::-webkit-scrollbar-track {
 /* MEDIA QUERIES */
 @media only screen and (min-width: 768px) and (max-width: 990px) {
   .asesoria__formulario #formulario {
-    width: 80%;
+    width: 65%;
   }
   body .cabecera .nav__lista {
     width: 100%;
@@ -1486,6 +1489,9 @@ body::-webkit-scrollbar-track {
   }
   .contacto .formulario {
     margin-top: 2rem;
+  }
+  .carousel .carousel-item img {
+    height: 100%;
   }
   .carousel .carousel__texto .carousel__titulo {
     font-size: 2.2rem;
@@ -1769,14 +1775,35 @@ body::-webkit-scrollbar-track {
   body .footer__main .marca .copy .marca__copy {
     top: 0;
   }
+  .servicios__2 .asesoria__formulario .formulario {
+    width: 100%;
+  }
   #noticias {
-    padding: 0 1rem;
+    padding: 0;
   }
   #noticias .seccion__imagen .seccion__imagen--style {
     width: 80vw;
   }
   #noticias .seccion__parrafo {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 295px) {
+  .titulo .titulo__h1 {
+    font-size: 2.5rem;
+  }
+  .contacto .formulario {
+    padding: 0;
+  }
+  .contacto .formulario__info .formulario__texto .texto__titulo {
+    font-size: 2rem;
+  }
+  .contacto .formulario__info .formulario__texto .texto__contacto .correo__enlace {
+    font-size: 1rem;
+  }
+  .contacto .formulario__info .formulario__texto .texto__contacto .numero__enlace {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
