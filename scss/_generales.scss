@@ -84,8 +84,8 @@ body {
         height: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-end;
-        align-items: center;
+        align-items: flex-start;
+        margin: 1rem 0;
         .dropdown {
             display: flex;
             .servicios--style {
@@ -128,10 +128,7 @@ body {
         }
         .lista__item {
             list-style-type: none;
-            margin: 0 1.6rem;
-        }
-        .lista__item--margin {
-            margin: 0;
+            margin: .5rem 1.6rem;
         }
         .lista__item:active {
             transform: translateY(6px);
@@ -145,9 +142,8 @@ body {
             text-decoration: none;
             text-transform: uppercase;
         }
-        .lista__item a:hover {
+        .lista__item:hover>a {
             color: $negro !important;
-            border-bottom: 1.6px solid $negro;
         }
         #seccionActiva {
             color: $negro;
@@ -298,7 +294,7 @@ body {
 /* ESTILOS SCROLLBAR */
 
 body::-webkit-scrollbar {
-    width: 0.7rem;
+    width: 0.75rem;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -311,7 +307,7 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background: $blanco;
+    background: $verde-1;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 

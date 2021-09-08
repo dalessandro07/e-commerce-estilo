@@ -48,6 +48,7 @@
             .nav__lista {
                 width: 100%;
                 flex-direction: row;
+                justify-content: flex-end;
             }
         }
     }
@@ -87,6 +88,16 @@
                         font-size: 0.8rem;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        .cabecera {
+            .nav__lista {
+                justify-content: flex-end;
             }
         }
     }
@@ -375,7 +386,7 @@
 
 @media only screen and (max-width:396px) {
     * {
-        font-size: 50%;
+        font-size: 55%;
     }
     .banner {
         #titulo__banner--size {
