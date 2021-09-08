@@ -1,5 +1,6 @@
 /* ESTILOS GENERALES */
 
+
 /* CSS GENERAL */
 
 * {
@@ -16,49 +17,38 @@ html {
 body {
     font-family: $fuente-lato;
     background-color: $blanco;
-
     /* CSS BOOTSTRAP */
-
     .navbar-toggler-icon {
         width: 3rem;
         height: 3rem;
     }
-
     .container-fluid {
         padding: 0;
         margin: 0;
     }
-
     .row {
         margin: 0;
         padding: 0;
     }
-
     .carousel-inner {
         .carousel-boton {
             opacity: .1;
         }
-
         .carousel-boton:hover {
             background-color: $negro;
             opacity: .45;
         }
-
         .carousel-boton:focus {
             background-color: $negro;
             opacity: .1;
         }
-
     }
-
     .badge {
         margin: 0 .5rem;
         display: flex;
         align-items: center;
     }
-
     /* ESTILOS GENERALES HEADER */
-
     .cabecera {
         display: flex;
         justify-content: space-between;
@@ -68,32 +58,27 @@ body {
         top: 0;
         right: 0;
         opacity: .95;
-
         .cabecera__nav {
             display: flex;
             width: 100%;
             justify-content: space-between;
+            padding: 0 1rem;
         }
-
         .cabecera__logo {
             margin-top: 1rem;
-            width: 95px;
-            height: 75px;
+            width: 9rem;
+            height: 6.75rem;
             object-fit: cover;
         }
-
         .cabecera__logo:hover {
             opacity: .8;
         }
-
         .cabecera__logo:active {
             transform: translateY(6px);
             transition: all .3s;
         }
     }
-
     /* ESTILOS GENERALES NAVEGACIÓN */
-
     .nav__lista {
         width: 100%;
         height: 100%;
@@ -101,10 +86,8 @@ body {
         flex-wrap: wrap;
         justify-content: flex-end;
         align-items: center;
-
         .dropdown {
             display: flex;
-
             .servicios--style {
                 color: $gris;
                 padding: 5px;
@@ -113,11 +96,9 @@ body {
                 text-decoration: none;
                 text-transform: uppercase;
             }
-
             .servicios--style:hover {
                 color: $negro;
             }
-
             .btn-secondary {
                 background: none;
                 border: none;
@@ -130,17 +111,14 @@ body {
                 text-decoration: none;
                 text-transform: uppercase;
             }
-
             .btn-secondary:hover {
                 background-color: $gris;
                 color: $negro;
             }
         }
-
         .dropdown-menu {
             width: 350%;
         }
-
         .dropdown-item {
             display: flex;
             flex-wrap: wrap;
@@ -148,21 +126,17 @@ body {
             font-size: 1.35rem;
             opacity: .85;
         }
-
         .lista__item {
             list-style-type: none;
             margin: 0 1.6rem;
         }
-
         .lista__item--margin {
             margin: 0;
         }
-
         .lista__item:active {
             transform: translateY(6px);
             transition: all .4s;
         }
-
         .lista__item a {
             color: $gris;
             padding: 5px;
@@ -171,72 +145,57 @@ body {
             text-decoration: none;
             text-transform: uppercase;
         }
-
         .lista__item a:hover {
             color: $negro !important;
             border-bottom: 1.6px solid $negro;
         }
-
         #seccionActiva {
             color: $negro;
             opacity: 1;
         }
     }
-
     /* ESTILOS GENERALES FOOTER */
-
     .footer__main {
         background: linear-gradient(to top, $verde-2, $verde-2);
-
         .footer__principal {
             display: flex;
             justify-content: space-around;
             margin-top: 10rem;
             border-top: 3px solid $negro;
-
             .info__page {
                 display: flex;
-
                 .info__titulo {
                     color: $blanco;
                     font-size: 2rem;
                     text-decoration: underline;
                 }
-
                 .info__productos {
                     margin: 1rem 2rem;
                     font-family: 'poppins';
-
                     .productos__lista {
                         list-style-type: none;
-
                         .lista__item a {
                             color: $blanco;
                             opacity: .55;
                             text-decoration: none;
                             font-size: 1.45rem;
                         }
-
                         .lista__item a:hover {
                             opacity: 1;
                         }
                     }
                 }
-
                 .info__servicios {
                     margin: 1rem 2rem;
                     font-family: 'poppins';
-
                     .servicios__lista {
                         list-style-type: none;
-
                         .lista__item a {
                             color: $blanco;
                             opacity: .55;
                             text-decoration: none;
                             font-size: 1.45rem;
                         }
-
                         .lista__item a:hover {
                             opacity: 1;
                         }
@@ -244,35 +203,25 @@ body {
                 }
             }
         }
-
         .redes {
             width: 40%;
-
             .redes__container--padding {
                 padding: 0;
-
                 .titulo__h3 {
                     display: flex;
                     justify-content: center;
                     font-family: 'poppins';
-                    margin: 0 3rem;
+                    margin: 1rem 0;
                     color: $blanco;
                     font-size: 1.65rem;
                     text-decoration: underline;
                 }
             }
-
             .redes__lista {
                 display: flex;
                 justify-content: space-evenly;
                 margin-top: 1rem;
-
-                $redes: (wsp: #00bb2d,
-                        fb: #3b5998,
-                        is: #c13584,
-                        msg: #0078ff,
-                    );
-
+                $redes: (wsp: #00bb2d, fb: #3b5998, is: #c13584, msg: #0078ff, );
                 @each $site,
                 $color in $redes {
                     .#{$site} i:hover {
@@ -280,7 +229,6 @@ body {
                         opacity: 1;
                     }
                 }
-
                 .redes__icon {
                     transition: 1s;
                     margin: 2rem 1rem 0 1rem;
@@ -289,27 +237,21 @@ body {
                     font-size: 3.5rem;
                     text-decoration: none;
                 }
-
                 .redes__icon:hover {
                     transform: scale(1.2, 1.2) rotate(360deg);
                 }
             }
-
         }
-
         .marca {
             margin: 0;
             padding: 0;
-
             .marca__contenedor--padding {
                 padding: 0;
             }
-
             .copy {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
                 .copy__titulo {
                     text-align: center;
                     margin: 0 .65rem;
@@ -318,13 +260,11 @@ body {
                     font-family: 'poppins';
                     font-weight: 500;
                 }
-
                 .marca__copy {
                     position: absolute;
                     top: 1.6rem;
                 }
             }
-
             .marca__titulo {
                 display: block;
                 text-align: center;
@@ -334,7 +274,6 @@ body {
                 margin: 0;
                 color: $blanco;
                 word-spacing: 5px;
-
                 .marca__enlace {
                     font-family: 'ailerons';
                     font-size: 2.4rem;
@@ -342,11 +281,9 @@ body {
                     padding: 0;
                     opacity: .5;
                 }
-
                 .marca__enlace:hover {
                     opacity: 1;
                 }
-
                 .marca__copy {
                     position: absolute;
                     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -356,6 +293,7 @@ body {
         }
     }
 }
+
 
 /* ESTILOS SCROLLBAR */
 

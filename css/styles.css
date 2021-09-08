@@ -208,12 +208,13 @@ body .cabecera .cabecera__nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 1rem;
 }
 
 body .cabecera .cabecera__logo {
   margin-top: 1rem;
-  width: 95px;
-  height: 75px;
+  width: 9rem;
+  height: 6.75rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -415,7 +416,7 @@ body .footer__main .redes .redes__container--padding .titulo__h3 {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: 'poppins';
-  margin: 0 3rem;
+  margin: 1rem 0;
   color: #e7e7e7;
   font-size: 1.65rem;
   text-decoration: underline;
@@ -632,7 +633,7 @@ body::-webkit-scrollbar-track {
 .carousel .carousel-item img {
   border: 3px solid #225239;
   width: 100%;
-  height: 70vh;
+  height: 65vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -746,9 +747,7 @@ body::-webkit-scrollbar-track {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-  margin-left: 0;
+  margin: 3rem 0;
 }
 
 .subtitulo .titulo__h3 {
@@ -1476,6 +1475,29 @@ body::-webkit-scrollbar-track {
 }
 
 /* MEDIA QUERIES */
+@media only screen and (min-width: 1820px) {
+  * {
+    font-size: 110%;
+  }
+  body .cabecera .cabecera__logo {
+    width: 9.5rem;
+    height: 7rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1820px) {
+  * {
+    font-size: 76%;
+  }
+  .carousel .carousel__texto .carousel__parrafo .btn {
+    width: auto;
+  }
+  body .cabecera .cabecera__logo {
+    width: 10rem;
+    height: 7.5rem;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 990px) {
   .asesoria__formulario #formulario {
     width: 65%;
@@ -1606,7 +1628,11 @@ body::-webkit-scrollbar-track {
   .container__formulario #boton__enviar {
     font-size: 1.4rem;
   }
-  .container__formulario label, .container__formulario input, .container__formulario select, .container__formulario textarea, .container__formulario option {
+  .container__formulario label,
+  .container__formulario input,
+  .container__formulario select,
+  .container__formulario textarea,
+  .container__formulario option {
     font-size: 1.2rem;
   }
   .asesoria__formulario #formulario {
@@ -1625,7 +1651,8 @@ body::-webkit-scrollbar-track {
   .contenedor__404 .titulo {
     margin: 0;
   }
-  .contenedor__404 .titulo .titulo__principal, .contenedor__404 .titulo .pregunta {
+  .contenedor__404 .titulo .titulo__principal,
+  .contenedor__404 .titulo .pregunta {
     font-size: 4rem;
     color: #e7e7e7;
   }
@@ -1705,7 +1732,11 @@ body::-webkit-scrollbar-track {
   .container__formulario #boton__enviar {
     font-size: 1.4rem;
   }
-  .container__formulario label, .container__formulario input, .container__formulario select, .container__formulario textarea, .container__formulario option {
+  .container__formulario label,
+  .container__formulario input,
+  .container__formulario select,
+  .container__formulario textarea,
+  .container__formulario option {
     font-size: 1.3rem;
   }
   .asesoria__formulario #formulario {
@@ -1724,13 +1755,20 @@ body::-webkit-scrollbar-track {
   .contenedor__404 .titulo {
     margin: 0;
   }
-  .contenedor__404 .titulo .titulo__principal, .contenedor__404 .titulo .pregunta {
+  .contenedor__404 .titulo .titulo__principal,
+  .contenedor__404 .titulo .pregunta {
     font-size: 3rem;
     color: #e7e7e7;
   }
 }
 
 @media only screen and (max-width: 396px) {
+  * {
+    font-size: 50%;
+  }
+  .banner #titulo__banner--size {
+    font-size: 4.5rem;
+  }
   body .producto__container .producto .producto__inferior .titulo .producto__titulo {
     font-family: 'poppins';
     font-size: 1.8rem;
