@@ -3,6 +3,13 @@
 
 /* ESTILOS INDEX */
 
+.cabecera {
+    .cabecera__nav--index {
+        position: absolute;
+        background-color: $blanco-f;
+    }
+}
+
 .banner {
     display: flex;
     justify-content: center;
@@ -22,7 +29,7 @@
     }
     .banner__imagen {
         width: $completo;
-        min-height: 87vh;
+        height: 100vh;
         object-fit: cover;
     }
 }
