@@ -98,6 +98,16 @@
         .cabecera {
             .nav__lista {
                 justify-content: flex-end;
+                .dropdown {
+                    .servicios--syle {
+                        font-size: 1.3rem;
+                    }
+                }
+                .lista__item {
+                    a {
+                        font-size: 1.3rem;
+                    }
+                }
             }
         }
     }
