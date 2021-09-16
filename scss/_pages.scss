@@ -556,6 +556,9 @@
         font-family: 'poppins';
         font-size: 1.85rem;
     }
+    .btn:focus {
+        box-shadow: none;
+    }
 }
 
 
@@ -607,6 +610,12 @@
                 display: flex;
                 justify-content: space-between;
                 margin: 0 1rem;
+                .numero {
+                    text-align: center;
+                }
+                .correo {
+                    text-align: center;
+                }
                 .correo__enlace,
                 .numero__enlace {
                     text-decoration: overline;

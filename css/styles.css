@@ -1283,6 +1283,11 @@ body::-webkit-scrollbar-track {
   font-size: 1.85rem;
 }
 
+.accordion .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 /* ESTILOS CONTACTO */
 .titulo__h2--style {
   margin: 6rem 0;
@@ -1359,6 +1364,14 @@ body::-webkit-scrollbar-track {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 1rem;
+}
+
+.contacto .formulario__info .formulario__texto .texto__contacto .numero {
+  text-align: center;
+}
+
+.contacto .formulario__info .formulario__texto .texto__contacto .correo {
+  text-align: center;
 }
 
 .contacto .formulario__info .formulario__texto .texto__contacto .correo__enlace,
@@ -1610,6 +1623,12 @@ body::-webkit-scrollbar-track {
   #noticias .seccion__imagen .seccion__imagen--style {
     width: 70vw;
   }
+  .contacto .formulario__info .formulario__texto .texto__contacto .correo .correo__enlace {
+    font-size: 1.3rem;
+  }
+  .contacto .formulario__info .formulario__texto .texto__contacto .numero .numero__enlace {
+    font-size: 1.3rem;
+  }
 }
 
 @media only screen and (min-width: 430px) and (max-width: 560px) {
@@ -1832,6 +1851,33 @@ body::-webkit-scrollbar-track {
   }
   #noticias .seccion__parrafo {
     display: none;
+  }
+  .titulo .titulo__h1 {
+    font-size: 3.2rem;
+  }
+  .contacto .formulario__info .formulario__texto .texto__titulo {
+    font-size: 2.5rem;
+  }
+  .contacto .formulario__info .formulario__texto .texto__parrafo {
+    font-size: 1.65rem;
+  }
+  .contacto .formulario__info .formulario__texto .texto__contacto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacto .formulario__info .formulario__texto .texto__contacto .numero {
+    margin: 1rem;
+  }
+  .contacto .formulario__info .formulario__texto .texto__contacto .numero .numero__enlace {
+    font-size: 1.5rem;
+  }
+  .contacto .formulario__info .formulario__texto .texto__contacto .correo {
+    margin: 1rem;
+  }
+  .contacto .formulario__info .formulario__texto .texto__contacto .correo .correo__enlace {
+    font-size: 1.5rem;
   }
 }
 

@@ -199,6 +199,24 @@
             }
         }
     }
+    .contacto {
+        .formulario__info {
+            .formulario__texto {
+                .texto__contacto {
+                    .correo {
+                        .correo__enlace {
+                            font-size: 1.3rem;
+                        }
+                    }
+                    .numero {
+                        .numero__enlace {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width:430px) and (max-width:560px) {
@@ -467,6 +485,40 @@
         }
         .seccion__parrafo {
             display: none;
+        }
+    }
+    .titulo {
+        .titulo__h1 {
+            font-size: 3.2rem;
+        }
+    }
+    .contacto {
+        .formulario__info {
+            .formulario__texto {
+                .texto__titulo {
+                    font-size: 2.5rem;
+                }
+                .texto__parrafo {
+                    font-size: 1.65rem;
+                }
+            }
+            .formulario__texto {
+                .texto__contacto {
+                    flex-direction: column;
+                    .numero {
+                        margin: 1rem;
+                        .numero__enlace {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    .correo {
+                        margin: 1rem;
+                        .correo__enlace {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }
