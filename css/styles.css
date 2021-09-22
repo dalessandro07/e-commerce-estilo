@@ -584,6 +584,44 @@ body::-webkit-scrollbar-track {
      object-fit: cover;
 }
 
+.principal .css-typing h1 {
+  border-right: 0.15em solid #225239;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.principal .css-typing h1:nth-child(1) {
+  width: 12.5em;
+  -webkit-animation: type 3s steps(60, end);
+  animation: type 3s steps(60, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: 0.15em solid #6e9607;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: 0.15em solid #6e9607;
+  }
+  100% {
+    border: none;
+  }
+}
+
 .titulo {
   display: -webkit-box;
   display: -ms-flexbox;

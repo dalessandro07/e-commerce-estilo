@@ -27,6 +27,32 @@
     }
 }
 
+.principal {
+    .css-typing h1 {
+        border-right: .15em solid $verde-2;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .css-typing h1:nth-child(1) {
+        width: 12.5em;
+        -webkit-animation: type 3s steps(60, end);
+        animation: type 3s steps(60, end);
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+    @keyframes type {
+        0% {
+            width: 0;
+        }
+        99.9% {
+            border-right: .15em solid $verde-4;
+        }
+        100% {
+            border: none;
+        }
+    }
+}
+
 .titulo {
     display: flex;
     justify-content: center;
