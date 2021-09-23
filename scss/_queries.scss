@@ -113,7 +113,7 @@
     }
 }
 
-@media only screen and (min-width:560px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     body {
         .producto__container {
             .producto {
@@ -134,6 +134,11 @@
             }
         }
     }
+    .principal {
+        .css-typing h1 {
+            font-size: 5.5rem;
+        }
+    }
     #noticias {
         padding: 0 4.5rem;
         .seccion__imagen {
@@ -151,6 +156,83 @@
     .asesoria__formulario {
         #formulario {
             width: 80%;
+        }
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .principal {
+        .css-typing h1 {
+            font-size: 5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 635px) {
+    body {
+        .producto__container {
+            .producto {
+                .producto__inferior {
+                    .titulo {
+                        .producto__titulo {
+                            font-family: 'poppins';
+                            font-size: 2.2rem;
+                        }
+                    }
+                }
+                .precio__container {
+                    flex-direction: column;
+                    .precio {
+                        font-family: 'poppins';
+                        font-size: 1.75rem;
+                    }
+                }
+            }
+        }
+        .texto__carrito {
+            font-family: 'poppins';
+            font-size: 1.9rem;
+        }
+        .footer__main {
+            .redes {
+                margin-bottom: 2rem;
+            }
+            .marca {
+                .copy {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+    .principal {
+        .css-typing h1 {
+            font-size: 4.5rem;
+        }
+    }
+    #noticias {
+        padding: 0 3rem;
+        .seccion__imagen {
+            .seccion__imagen--style {
+                width: 70vw;
+            }
+        }
+    }
+    .contacto {
+        .formulario__info {
+            .formulario__texto {
+                .texto__contacto {
+                    .correo {
+                        .correo__enlace {
+                            font-size: 1.3rem;
+                        }
+                    }
+                    .numero {
+                        .numero__enlace {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -191,6 +273,11 @@
             }
         }
     }
+    .principal {
+        .css-typing h1 {
+            font-size: 4rem;
+        }
+    }
     #noticias {
         padding: 0 3rem;
         .seccion__imagen {
@@ -219,10 +306,10 @@
     }
 }
 
-@media only screen and (min-width:430px) and (max-width:560px) {
+@media only screen and (min-width:430px) and (max-width:520px) {
     .banner {
         #titulo__banner--size {
-            font-size: 4.5rem;
+            font-size: 3.5rem;
         }
         .banner__imagen {
             width: 100%;
@@ -345,7 +432,7 @@
     }
     .banner {
         #titulo__banner--size {
-            font-size: 3.5rem;
+            font-size: 3rem;
         }
         .banner__imagen {
             width: 100%;
@@ -416,7 +503,7 @@
     }
     .banner {
         #titulo__banner--size {
-            font-size: 4.5rem;
+            font-size: 2.8rem;
         }
     }
     body {

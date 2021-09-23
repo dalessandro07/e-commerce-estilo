@@ -1599,7 +1599,7 @@ body::-webkit-scrollbar-track {
   }
 }
 
-@media only screen and (min-width: 560px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   body .producto__container .producto .precio__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1612,6 +1612,9 @@ body::-webkit-scrollbar-track {
   }
   body .footer__main .marca .copy .marca__copy {
     top: 0;
+  }
+  .principal .css-typing h1 {
+    font-size: 5.5rem;
   }
   #noticias {
     padding: 0 4.5rem;
@@ -1627,6 +1630,54 @@ body::-webkit-scrollbar-track {
   }
   .asesoria__formulario #formulario {
     width: 80%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .principal .css-typing h1 {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  body .producto__container .producto .producto__inferior .titulo .producto__titulo {
+    font-family: 'poppins';
+    font-size: 2.2rem;
+  }
+  body .producto__container .producto .precio__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .producto__container .producto .precio__container .precio {
+    font-family: 'poppins';
+    font-size: 1.75rem;
+  }
+  body .texto__carrito {
+    font-family: 'poppins';
+    font-size: 1.9rem;
+  }
+  body .footer__main .redes {
+    margin-bottom: 2rem;
+  }
+  body .footer__main .marca .copy {
+    margin-bottom: 2rem;
+  }
+  .principal .css-typing h1 {
+    font-size: 4.5rem;
+  }
+  #noticias {
+    padding: 0 3rem;
+  }
+  #noticias .seccion__imagen .seccion__imagen--style {
+    width: 70vw;
+  }
+  .contacto .formulario__info .formulario__texto .texto__contacto .correo .correo__enlace {
+    font-size: 1.3rem;
+  }
+  .contacto .formulario__info .formulario__texto .texto__contacto .numero .numero__enlace {
+    font-size: 1.3rem;
   }
 }
 
@@ -1655,6 +1706,9 @@ body::-webkit-scrollbar-track {
   body .footer__main .marca .copy {
     margin-bottom: 2rem;
   }
+  .principal .css-typing h1 {
+    font-size: 4rem;
+  }
   #noticias {
     padding: 0 3rem;
   }
@@ -1669,9 +1723,9 @@ body::-webkit-scrollbar-track {
   }
 }
 
-@media only screen and (min-width: 430px) and (max-width: 560px) {
+@media only screen and (min-width: 430px) and (max-width: 520px) {
   .banner #titulo__banner--size {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
   .banner .banner__imagen {
     width: 100%;
@@ -1770,7 +1824,7 @@ body::-webkit-scrollbar-track {
     font-size: 1.55rem;
   }
   .banner #titulo__banner--size {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .banner .banner__imagen {
     width: 100%;
@@ -1832,7 +1886,7 @@ body::-webkit-scrollbar-track {
     font-size: 55%;
   }
   .banner #titulo__banner--size {
-    font-size: 4.5rem;
+    font-size: 2.8rem;
   }
   body .producto__container .producto .producto__inferior .titulo .producto__titulo {
     font-family: 'poppins';
