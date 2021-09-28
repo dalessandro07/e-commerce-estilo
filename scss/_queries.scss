@@ -306,7 +306,39 @@
     }
 }
 
-@media only screen and (min-width:430px) and (max-width:520px) {
+@media only screen and (min-width:430px) and (max-width:535px) {
+    body {
+        .nav__lista {
+            .dropdown {
+                display: flex;
+                flex-direction: column;
+            }
+            .dropdown-menu {
+                width: 100%;
+            }
+            .dropdown-item {
+                font-size: 1.28rem;
+            }
+        }
+        .producto__container {
+            .producto {
+                .precio__container {
+                    flex-direction: column;
+                }
+            }
+        }
+        .footer__main {
+            .marca {
+                .copy {
+                    display: block;
+                    text-align: center;
+                    .marca__copy {
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
     .banner {
         #titulo__banner--size {
             font-size: 3.5rem;
@@ -365,26 +397,6 @@
             .pregunta {
                 font-size: 4rem;
                 color: $blanco;
-            }
-        }
-    }
-    body {
-        .producto__container {
-            .producto {
-                .precio__container {
-                    flex-direction: column;
-                }
-            }
-        }
-        .footer__main {
-            .marca {
-                .copy {
-                    display: block;
-                    text-align: center;
-                    .marca__copy {
-                        top: 0;
-                    }
-                }
             }
         }
     }
