@@ -1578,50 +1578,50 @@ body::-webkit-scrollbar-track {
   width: 125px;
 }
 
-.card {
+.submit-form-container .card {
   padding: 0;
 }
 
-.card .card-header {
+.submit-form-container .card .card-header {
   color: #ffffff;
   background-color: #225239;
 }
 
-.card .card-header h2 {
+.submit-form-container .card .card-header h2 {
   font-size: 2.5rem;
 }
 
-.card .card-body .card-title {
+.submit-form-container .card .card-body .card-title {
   font-size: 2.5rem;
 }
 
-.card .card-body .card-text {
+.submit-form-container .card .card-body .card-text {
   font-size: 1.7rem;
 }
 
-.card .card-body .card-text .card-strong {
+.submit-form-container .card .card-body .card-text .card-strong {
   font-size: 1.6rem;
 }
 
-.card .card-body .card-text a {
+.submit-form-container .card .card-body .card-text a {
   font-size: 1.6rem;
   color: #225239;
   font-weight: bold;
 }
 
-.card .card-body .btn-card {
+.submit-form-container .card .card-body .btn-card {
   background-color: #225239;
   color: #ffffff;
   font-size: 1.8rem;
 }
 
-.card .card-body .btn-card:hover {
+.submit-form-container .card .card-body .btn-card:hover {
   opacity: .8;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-.card .card-footer {
+.submit-form-container .card .card-footer {
   font-size: 1.7rem;
 }
 

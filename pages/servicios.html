@@ -202,28 +202,32 @@
                 </div>
 
                 <div class="asesoria__contenido">
+
                     <div data-aos="zoom-in-up" class="contenido__imagen">
                         <img src="../assets/img/asesoria-personalizada.jpg" alt="">
                     </div>
+
                     <div data-aos="zoom-in-up" class="contenido__formulario">
-                        <form class="formulario" id="formulario">
+                        <form action="https://formsubmit.co/158ea0d8f34235aa589535cbe78210e8" method="POST" class="needs-validation formulario" id="formulario">
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/submit-form.html">
+                            <input type="hidden" name="_captcha" value="false">
                             <div class="form-group">
                                 <label for="validationCustom01">Nombres Completos o Razón Social</label>
-                                <input type="text" placeholder="Nombres o Empresa" class="form-control" id="validationCustom01" required>
+                                <input type="text" name="Nombres/RS" placeholder="Nombres o Empresa" class="form-control" id="validationCustom01" maxlength="75" required>
                             </div>
                             <div class="form-group">
                                 <label for="validationCustom02">DNI o RUC</label>
-                                <input type="number" placeholder="Ingrese DNI o RUC" class="form-control" id="validationCustom02" required>
+                                <input type="number" name="DNI/RUC" placeholder="Ingrese DNI o RUC" class="form-control" id="validationCustom02" min="10000000" max="999999999" required>
                             </div>
                             <div class="form-group">
                                 <label class="formulario__label" for="exampleFormControlInput1">Ingresa tu correo
                                     electrónico:</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com" required>
+                                <input type="email" name="E-mail" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com" maxlength="45" required>
                             </div>
                             <div class="form-group">
                                 <label class="formulario__label" for="exampleFormControlSelect1">Selecciona el
                                     problema:</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
+                                <select name="Problema" class="form-control" id="exampleFormControlSelect1">
                                     <option>Cuidados básicos</option>
                                     <option>Cambios de Sustrato</option>
                                     <option>Trasplantar</option>
