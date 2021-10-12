@@ -730,3 +730,66 @@
         }
     }
 }
+
+
+/* ESTILO SUBMIT-FORM */
+
+.submit-form {
+    .titulo {
+        .titulo__h1 {
+            font-size: 2.6rem;
+        }
+    }
+}
+
+.sent {
+    text-align: center;
+    margin: 2rem 0;
+    h2 {
+        font-size: 2.35rem;
+        color: $verde-5;
+    }
+    .img-sent {
+        margin: 2rem 0;
+        width: 125px;
+    }
+}
+
+.card {
+    padding: 0;
+    .card-header {
+        color: $blanco-f;
+        background-color: $verde-2;
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+    .card-body {
+        .card-title {
+            font-size: 2.5rem;
+        }
+        .card-text {
+            font-size: 1.7rem;
+            .card-strong {
+                font-size: 1.6rem;
+            }
+            a {
+                font-size: 1.6rem;
+                color: $verde-2;
+                font-weight: bold;
+            }
+        }
+        .btn-card {
+            background-color: $verde-2;
+            color: $blanco-f;
+            font-size: 1.8rem;
+        }
+        .btn-card:hover {
+            opacity: .8;
+            transition: all 0.4s;
+        }
+    }
+    .card-footer {
+        font-size: 1.7rem;
+    }
+}

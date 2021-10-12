@@ -1518,6 +1518,73 @@ body::-webkit-scrollbar-track {
      object-fit: cover;
 }
 
+/* ESTILO SUBMIT-FORM */
+.submit-form .titulo .titulo__h1 {
+  font-size: 2.6rem;
+}
+
+.sent {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.sent h2 {
+  font-size: 2.35rem;
+  color: #7AC043;
+}
+
+.sent .img-sent {
+  margin: 2rem 0;
+  width: 125px;
+}
+
+.card {
+  padding: 0;
+}
+
+.card .card-header {
+  color: #ffffff;
+  background-color: #225239;
+}
+
+.card .card-header h2 {
+  font-size: 2.5rem;
+}
+
+.card .card-body .card-title {
+  font-size: 2.5rem;
+}
+
+.card .card-body .card-text {
+  font-size: 1.7rem;
+}
+
+.card .card-body .card-text .card-strong {
+  font-size: 1.6rem;
+}
+
+.card .card-body .card-text a {
+  font-size: 1.6rem;
+  color: #225239;
+  font-weight: bold;
+}
+
+.card .card-body .btn-card {
+  background-color: #225239;
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+.card .card-body .btn-card:hover {
+  opacity: .8;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.card .card-footer {
+  font-size: 1.7rem;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (min-width: 1820px) {
   * {

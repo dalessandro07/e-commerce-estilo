@@ -119,51 +119,61 @@
 
                 <div class="container__formulario container-form container">
 
-                    <form class="needs-validation" novalidate>
+                    <form action="https://formsubmit.co/158ea0d8f34235aa589535cbe78210e8" method="POST" class="needs-validation">
+                        <input type="hidden" name="_next" value="https://dalessandro07.github.io/tienda-online-rios-villegas/pages/submit-form.html">
                         <div class="form-row">
                             <div class="col-md-6 mb-3">
                                 <label for="validationCustom01">Nombres o Razón Social</label>
-                                <input type="text" class="form-control" id="validationCustom01" required>
+                                <input type="text" name="Nombres/RS" class="form-control" id="validationCustom01" required>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="validationCustom02">DNI o RUC</label>
-                                <input type="number" class="form-control" id="validationCustom02" required>
+                                <input type="number" name="DNI/RUC" class="form-control" id="validationCustom02" min="10000000" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-md-6 mb-3">
-                                <label for="validationCustom03">Ciudad</label>
-                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <label for="validationCustom03">Correo Electrónico</label>
+                                <input type="email" name="E-mail" class="form-control" id="validationCustom03" required>
                             </div>
                             <div class="col-md-3 mb-3">
-                                <label for="validationCustom04">Distrito</label>
+                                <label for="validationCustom04">Departamento</label>
                                 <select class="custom-select" id="validationCustom04" required>
                                     <option selected disabled value="">Escoger...</option>
-                                    <option>San Miguel</option>
-                                    <option>Magdalena</option>
-                                    <option>Pueblo Libre</option>
-                                    <option>Jesús María</option>
-                                    <option>Barranco</option>
-                                    <option>Cercado de Lima</option>
-                                    <option>Surco</option>
-                                    <option>Breña</option>
-                                    <option>Chorrillos</option>
-                                    <option>San Martín de Porres</option>
-                                    <option>San Juan de Lurigancho</option>
-                                    <option>Chosica</option>
-                                    <option>Chaclacayo</option>
-                                    <option>La Molina</option>
-                                    <option>Ate</option>
+                                    <option>Tumbes</option>
+                                    <option>Piura</option>
+                                    <option>Lambayeque</option>
+                                    <option>La Libertad</option>
+                                    <option>Áncash</option>
+                                    <option>Lima</option>
+                                    <option>Ica</option>
+                                    <option>Arequipa</option>
+                                    <option>Moquegua</option>
+                                    <option>Tacna</option>
+                                    <option>Cajamarca</option>
+                                    <option>Amazonas</option>
+                                    <option>San Martín</option>
+                                    <option>Huánuco</option>
+                                    <option>Pasco</option>
+                                    <option>Junín</option>
+                                    <option>Huancavelica</option>
+                                    <option>Ayacucho</option>
+                                    <option>Apurímac</option>
+                                    <option>Cusco</option>
+                                    <option>Puno</option>
+                                    <option>Loreto</option>
+                                    <option>Ucayali</option>
+                                    <option>Madre de Dios</option>
                                 </select>
                             </div>
                             <div class="col-md-3 mb-3">
                                 <label for="validationCustom05">Código Postal</label>
-                                <input type="text" class="form-control" id="validationCustom05" required>
+                                <input type="number" name="Código-Postal" class="form-control" id="validationCustom05" min="10000" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Mensaje</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea class="form-control" name="Mensaje" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <div class="form-group">
                             <div class="form-check">
