@@ -1215,46 +1215,64 @@ body::-webkit-scrollbar-track {
   border: 3px solid #356b4f;
 }
 
-.servicios__2 .asesoria__formulario .formulario {
-  background: -webkit-gradient(linear, left top, right top, from(#093028), to(#237a57));
-  background: linear-gradient(to right, #093028, #237a57);
+.servicios__2 .asesoria__contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.servicios__2 .asesoria__contenido .contenido__formulario {
+  width: 60%;
+}
+
+.servicios__2 .asesoria__contenido .contenido__formulario .formulario {
+  background: -webkit-gradient(linear, left top, right top, from(#225239), to(#7AC043));
+  background: linear-gradient(to right, #225239, #7AC043);
+  border: 3px solid #225239;
   color: #e7e7e7;
-  border: 3px solid #000000;
-  width: 55%;
-  margin: auto;
+  height: 100%;
   padding: 2rem;
 }
 
-.servicios__2 .asesoria__formulario .formulario label,
-.servicios__2 .asesoria__formulario .formulario select,
-.servicios__2 .asesoria__formulario .formulario option,
-.servicios__2 .asesoria__formulario .formulario input {
+.servicios__2 .asesoria__contenido .contenido__formulario .formulario label,
+.servicios__2 .asesoria__contenido .contenido__formulario .formulario select,
+.servicios__2 .asesoria__contenido .contenido__formulario .formulario option,
+.servicios__2 .asesoria__contenido .contenido__formulario .formulario input {
   font-size: 1.5rem;
   padding: .6rem;
 }
 
-.servicios__2 .asesoria__formulario .formulario .form-check-label:hover {
+.servicios__2 .asesoria__contenido .contenido__formulario .formulario textarea:focus,
+.servicios__2 .asesoria__contenido .contenido__formulario .formulario input:focus,
+.servicios__2 .asesoria__contenido .contenido__formulario .formulario select:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border: 2px solid #225239;
+}
+
+.servicios__2 .asesoria__contenido .contenido__formulario .formulario .form-check-label:hover {
   cursor: pointer;
   opacity: .8;
 }
 
-.servicios__2 .asesoria__formulario .formulario .form-check-input {
+.servicios__2 .asesoria__contenido .contenido__formulario .formulario .form-check-input {
   position: relative;
   margin-right: .4rem;
 }
 
-.servicios__2 .asesoria__formulario .formulario .boton__solicitar {
+.servicios__2 .asesoria__contenido .contenido__formulario .formulario .boton__solicitar {
   text-align: center;
 }
 
-.servicios__2 .asesoria__formulario .formulario .boton__solicitar #boton__enviar {
+.servicios__2 .asesoria__contenido .contenido__formulario .formulario .boton__solicitar #boton__enviar {
   background-color: #e7e7e7;
   color: #000000;
   font-size: 1.5rem;
   border: 3px solid #225239;
 }
 
-.servicios__2 .asesoria__formulario .formulario .boton__solicitar #boton__enviar:hover {
+.servicios__2 .asesoria__contenido .contenido__formulario .formulario .boton__solicitar #boton__enviar:hover {
   opacity: .8;
   -webkit-transform: translateY(-0.4rem);
           transform: translateY(-0.4rem);
@@ -1262,6 +1280,14 @@ body::-webkit-scrollbar-track {
   transition: -webkit-transform .7s;
   transition: transform .7s;
   transition: transform .7s, -webkit-transform .7s;
+}
+
+.servicios__2 .asesoria__contenido .contenido__imagen img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid #225239;
 }
 
 .servicios__2 .design__gallery .gallery__item {
@@ -1500,20 +1526,34 @@ body::-webkit-scrollbar-track {
   font-size: 1.6rem;
 }
 
-.contacto .formulario .container__formulario option {
+.contacto .formulario .container__formulario textarea {
+  height: 110px;
+  resize: none;
+}
+
+.contacto .formulario .container__formulario textarea:focus,
+.contacto .formulario .container__formulario input:focus,
+.contacto .formulario .container__formulario select:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border: 2px solid #df9b71;
+}
+
+.contacto .formulario option {
   font-size: 1.4rem;
 }
 
-.contacto .formulario .container__formulario .form-check-input {
+.contacto .formulario .form-check-input {
   position: relative;
   margin: 1rem;
 }
 
-.contacto .formulario__imagen {
+.formulario__imagen {
   padding: 0 2rem;
 }
 
-.contacto .formulario__imagen img {
+.formulario__imagen img {
   -o-object-fit: cover;
      object-fit: cover;
 }

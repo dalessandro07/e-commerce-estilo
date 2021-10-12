@@ -78,10 +78,10 @@
     margin: 2.5rem 0;
     font-family: 'poppins';
     .carousel-item {
-        width: 100%;
+        width: $completo;
         img {
             border: 3px solid $verde-2;
-            width: 100%;
+            width: $completo;
             height: 65vh;
             object-fit: cover;
         }
@@ -92,7 +92,7 @@
             font-size: 2.8rem;
             color: $verde-2;
             padding: 0.5rem 0 2rem 0;
-            width: 100%;
+            width: $completo;
             text-align: center;
         }
         .envio {
@@ -231,7 +231,7 @@
         }
     }
     .separacion {
-        width: 100%;
+        width: $completo;
         margin: 1.5rem 0;
     }
     .seccion__imagen {
@@ -494,42 +494,60 @@
         color: $blanco;
         border: 3px solid $verde-1;
     }
-    .asesoria__formulario {
-        .formulario {
-            background: linear-gradient(to right, #093028, #237a57);
-            color: $blanco;
-            border: 3px solid $negro;
-            width: $medio + 5%;
-            margin: auto;
-            padding: 2rem;
-            label,
-            select,
-            option,
-            input {
-                font-size: 1.5rem;
-                padding: .6rem;
-            }
-            .form-check-label:hover {
-                cursor: pointer;
-                opacity: .8;
-            }
-            .form-check-input {
-                position: relative;
-                margin-right: .4rem;
-            }
-            .boton__solicitar {
-                text-align: center;
-                #boton__enviar {
-                    background-color: $blanco;
-                    color: $negro;
+    .asesoria__contenido {
+        display: flex;
+        .contenido__formulario {
+            width: $medio + 10%;
+            .formulario {
+                background: linear-gradient(to right, $verde-2, $verde-5);
+                border: 3px solid $verde-2;
+                color: $blanco;
+                height: $completo;
+                padding: 2rem;
+                label,
+                select,
+                option,
+                input {
                     font-size: 1.5rem;
-                    border: 3px solid $verde-2;
+                    padding: .6rem;
                 }
-                #boton__enviar:hover {
+                textarea:focus,
+                input:focus,
+                select:focus {
+                    box-shadow: none;
+                    outline: none;
+                    border: 2px solid $verde-2;
+                }
+                .form-check-label:hover {
+                    cursor: pointer;
                     opacity: .8;
-                    transform: translateY(-.4rem);
-                    transition: transform .7s;
                 }
+                .form-check-input {
+                    position: relative;
+                    margin-right: .4rem;
+                }
+                .boton__solicitar {
+                    text-align: center;
+                    #boton__enviar {
+                        background-color: $blanco;
+                        color: $negro;
+                        font-size: 1.5rem;
+                        border: 3px solid $verde-2;
+                    }
+                    #boton__enviar:hover {
+                        opacity: .8;
+                        transform: translateY(-.4rem);
+                        transition: transform .7s;
+                    }
+                }
+            }
+        }
+        .contenido__imagen {
+            img {
+                width: $completo;
+                height: $completo;
+                object-fit: cover;
+                border: 3px solid $verde-2;
             }
         }
     }
@@ -612,7 +630,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 100%;
+            width: $completo;
             margin: 2rem 0;
             .texto__titulo {
                 margin: 2rem;
@@ -714,20 +732,32 @@
             textarea {
                 font-size: 1.6rem;
             }
-            option {
-                font-size: 1.4rem;
+            textarea {
+                height: 110px;
+                resize: none;
             }
-            .form-check-input {
-                position: relative;
-                margin: 1rem;
+            textarea:focus,
+            input:focus,
+            select:focus {
+                box-shadow: none;
+                outline: none;
+                border: 2px solid $terracota;
             }
+        }
+        option {
+            font-size: 1.4rem;
+        }
+        .form-check-input {
+            position: relative;
+            margin: 1rem;
         }
     }
-    .formulario__imagen {
-        padding: 0 2rem;
-        img {
-            object-fit: cover;
-        }
+}
+
+.formulario__imagen {
+    padding: 0 2rem;
+    img {
+        object-fit: cover;
     }
 }
 
